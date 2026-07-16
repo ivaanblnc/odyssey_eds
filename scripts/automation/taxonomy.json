@@ -1,0 +1,132 @@
+[
+  {
+    "name": "flota",
+    "title": "Flota de Yates Premium",
+    "template": "hub-page",
+    "children": [
+      {
+        "name": "megayates",
+        "title": "Megayates",
+        "template": "category-page",
+        "children": [
+          { "name": "azimut-grande-27", "title": "Azimut Grande 27", "template": "yacht-detail" },
+          { "name": "oasis-40m", "title": "Oasis 40M", "template": "yacht-detail" },
+          { "name": "riva-corsaro", "title": "Riva Corsaro", "template": "yacht-detail" },
+          { "name": "lursen-ahs", "title": "Lürssen AHS", "template": "yacht-detail" },
+          { "name": "feadship-savannah", "title": "Feadship Savannah", "template": "yacht-detail" }
+        ]
+      },
+      {
+        "name": "catamaranes",
+        "title": "Catamaranes",
+        "template": "category-page",
+        "children": [
+          { "name": "sunreef-80", "title": "Sunreef 80", "template": "yacht-detail" },
+          { "name": "lagoon-seventy-7", "title": "Lagoon Seventy 7", "template": "yacht-detail" },
+          { "name": "fountaine-pajot-alegria-67", "title": "Fountaine Pajot Alegria 67", "template": "yacht-detail" }
+        ]
+      },
+      {
+        "name": "deportivos",
+        "title": "Yates Deportivos",
+        "template": "category-page",
+        "children": [
+          { "name": "sunseeker-95", "title": "Sunseeker 95", "template": "yacht-detail" },
+          { "name": "pershing-9x", "title": "Pershing 9X", "template": "yacht-detail" },
+          { "name": "wally-101", "title": "Wally 101", "template": "yacht-detail" }
+        ]
+      },
+      {
+        "name": "clasicos",
+        "title": "Yates Clásicos",
+        "template": "category-page",
+        "children": [
+          { "name": "schooner-eleonora", "title": "Schooner Eleonora", "template": "yacht-detail" }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "destinos",
+    "title": "Destinos de Ensueño",
+    "template": "hub-page",
+    "children": [
+      {
+        "name": "mediterraneo",
+        "title": "Mar Mediterráneo",
+        "template": "category-page",
+        "children": [
+          { "name": "ibiza", "title": "Ibiza", "template": "destination-page" },
+          { "name": "mallorca", "title": "Mallorca", "template": "destination-page" },
+          { "name": "costa-del-sol", "title": "Costa del Sol", "template": "destination-page" },
+          { "name": "mykonos", "title": "Mykonos", "template": "destination-page" },
+          { "name": "corfu", "title": "Corfú", "template": "destination-page" },
+          { "name": "monaco", "title": "Mónaco", "template": "destination-page" },
+          { "name": "costa-amalfina", "title": "Costa Amalfitana", "template": "destination-page" },
+          { "name": "cerdena", "title": "Cerdeña", "template": "destination-page" },
+          { "name": "corcega", "title": "Córcega", "template": "destination-page" }
+        ]
+      },
+      {
+        "name": "caribe",
+        "title": "El Caribe",
+        "template": "category-page",
+        "children": [
+          { "name": "bahamas", "title": "Bahamas", "template": "destination-page" },
+          { "name": "islas-virgenes-britanicas", "title": "Islas Vírgenes Británicas", "template": "destination-page" },
+          { "name": "san-bartolome", "title": "San Bartolomé (St. Barths)", "template": "destination-page" },
+          { "name": "islas-exumas", "title": "Islas Exumas", "template": "destination-page" }
+        ]
+      },
+      {
+        "name": "indico",
+        "title": "Océano Índico",
+        "template": "category-page",
+        "children": [
+          { "name": "maldivas", "title": "Maldivas", "template": "destination-page" },
+          { "name": "seychelles", "title": "Seychelles", "template": "destination-page" }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "experiencias",
+    "title": "Experiencias a Bordo",
+    "template": "hub-page",
+    "children": [
+      { "name": "chef-privado", "title": "Chef Privado", "template": "experience-page" },
+      { "name": "deportes-acuaticos", "title": "Deportes Acuáticos", "template": "experience-page" },
+      { "name": "eventos-corporativos", "title": "Eventos Corporativos", "template": "experience-page" },
+      { "name": "bienestar-spa", "title": "Bienestar y Spa", "template": "experience-page" },
+      { "name": "expediciones-submarinas", "title": "Expediciones Submarinas", "template": "experience-page" }
+    ]
+  },
+  {
+    "name": "login",
+    "title": "Iniciar Sesión",
+    "template": "auth-page"
+  },
+  {
+    "name": "register",
+    "title": "Registro VIP",
+    "template": "auth-page"
+  },
+  {
+    "name": "profile",
+    "title": "Mi Perfil",
+    "template": "profile-page",
+    "children": [
+      { "name": "mis-reservas", "title": "Mis Reservas", "template": "gated-page" },
+      { "name": "bitacoras", "title": "Bitácoras de Viaje", "template": "gated-page" }
+    ]
+  },
+  {
+    "name": "legal",
+    "title": "Legal",
+    "template": "content-page",
+    "children": [
+      { "name": "terminos-condiciones", "title": "Términos y Condiciones", "template": "content-page" },
+      { "name": "politica-privacidad", "title": "Política de Privacidad", "template": "content-page" }
+    ]
+  }
+]

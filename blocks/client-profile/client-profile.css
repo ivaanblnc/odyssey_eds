@@ -1,0 +1,102 @@
+.client-profile {
+  display: flex;
+  justify-content: center;
+  padding: var(--spacing-xl) var(--spacing-m);
+}
+
+.client-profile .profile-card {
+  background: var(--surface-color, #fff);
+  border-radius: var(--radius-l, 16px);
+  padding: var(--spacing-l, 32px);
+  width: 100%;
+  max-width: 600px;
+  box-shadow: 0 10px 30px rgb(0 0 0 / 5%);
+  border: 1px solid var(--border-color, #e5e7eb);
+}
+
+.client-profile .profile-header {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-m);
+  margin-bottom: var(--spacing-l);
+  padding-bottom: var(--spacing-l);
+  border-bottom: 1px solid var(--border-color, #e5e7eb);
+}
+
+.client-profile .profile-avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--primary-color, #0f172a), #334155);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  font-weight: 600;
+  font-family: var(--heading-font-family, serif);
+}
+
+.client-profile .profile-name {
+  margin: 0 0 4px;
+  font-size: 1.5rem;
+  color: var(--text-color, #111827);
+}
+
+.client-profile .profile-email {
+  margin: 0 0 8px;
+  color: var(--text-muted-color, #6b7280);
+}
+
+.client-profile .badge {
+  display: inline-block;
+  padding: 4px 12px;
+  background-color: #fef3c7;
+  color: #92400e;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.client-profile .profile-actions {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.client-profile .logout-btn {
+  padding: 10px 20px;
+  background-color: transparent;
+  color: #dc2626;
+  border: 1px solid #dc2626;
+  border-radius: var(--radius-m, 8px);
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.client-profile .logout-btn:hover {
+  background-color: #fef2f2;
+}
+
+/* Skeleton Loading */
+.client-profile .profile-skeleton .skeleton-header {
+  height: 80px;
+  background: #f3f4f6;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  animation: pulse 1.5s infinite;
+}
+
+.client-profile .profile-skeleton .skeleton-details {
+  height: 120px;
+  background: #f3f4f6;
+  border-radius: 8px;
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
