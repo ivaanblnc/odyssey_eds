@@ -6,7 +6,7 @@
 // Configure base URL based on environment (development vs production)
 
 // Go BFF URL (Local Development)
-const BFF_URL = 'https://9d3f06225d2c6406-185-202-163-198.serveousercontent.com/api/v1';
+const BFF_URL = 'https://cc2d3bed892b7ab6-185-202-163-198.serveousercontent.com/api/v1';
 
 /**
  * Gets the JWT auth token from localStorage
