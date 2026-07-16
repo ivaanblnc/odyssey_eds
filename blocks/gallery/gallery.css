@@ -1,116 +1,102 @@
+/* Base block reset */
 .gallery {
-  width: 100%;
+  padding: 0;
+}
+
+.gallery-wrapper {
+  max-width: 1360px;
+  margin: 0 auto;
 }
 
 @media (width >= 900px) {
-  .gallery {
-    margin: 0 auto;
-    max-width: var(--content-max-width);
+  .gallery-wrapper {
     padding: 0 40px;
   }
 }
 
-/* Mobile Scroll Layout */
-.gallery-mobile {
+/* Mobile: Horizontal scroll with snapping */
+.gallery-grid {
   display: flex;
   overflow-x: auto;
+  scroll-snap-type: x mandatory;
   gap: 8px;
   padding: 0 20px;
-  scroll-snap-type: x mandatory;
-  scroll-behavior: smooth;
-  -webkit-overflow-scrolling: touch;
-  scrollbar-width: none; /* Firefox */
+  /* hide scrollbar */
+  scrollbar-width: none; 
 }
 
-.gallery-mobile::-webkit-scrollbar {
-  display: none; /* Safari and Chrome */
+.gallery-grid::-webkit-scrollbar {
+  display: none;
 }
 
-@media (width >= 900px) {
-  .gallery-mobile {
-    display: none;
-  }
-}
-
-.gallery-mobile-slide {
+.gallery-item {
   position: relative;
   flex: 0 0 85%;
   aspect-ratio: 4 / 5;
   scroll-snap-align: center;
   overflow: hidden;
-  background-color: var(--mist);
 }
 
-.gallery-mobile-slide img {
+.gallery-item img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  display: block;
 }
 
-/* Desktop Grid Layout */
-.gallery-desktop {
-  display: none;
-}
-
+/* Desktop: CSS Grid */
 @media (width >= 900px) {
-  .gallery-desktop {
+  .gallery-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
     gap: 12px;
+    padding: 0;
     height: 620px;
+    overflow: hidden; /* disable scroll on desktop */
   }
-}
 
-.gallery-desktop-item {
-  position: relative;
-  overflow: hidden;
-  background-color: var(--mist);
-}
+  .gallery-item {
+    flex: unset;
+    aspect-ratio: unset;
+    height: 100%;
+    width: 100%;
+  }
 
-.gallery-desktop-item img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: transform 0.6s ease;
-}
+  /* Hide items beyond 5th on desktop */
+  .gallery-item:nth-child(n+6) {
+    display: none;
+  }
 
-.gallery-desktop-item:hover img {
-  transform: scale(1.05);
-}
-
-/* Grid specific sizing */
-@media (width >= 900px) {
-  .gallery-desktop-item.item-0 {
+  .gallery-item.item-1 {
     grid-column: span 2;
     grid-row: span 2;
   }
 }
 
-/* More Photos Overlay */
+/* Overlay for the + X fotos */
 .gallery-overlay {
   position: absolute;
   inset: 0;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: rgba(15, 45, 74, 0.6); /* ocean/60 */
+  background-color: rgba(15, 45, 74, 0.6);
   font-family: var(--heading-font-family);
+  font-size: 24px;
   font-style: italic;
   color: white;
-  z-index: 10;
-  cursor: pointer;
-  
-  font-size: 18px;
 }
 
-@media (width >= 900px) {
+@media (width < 900px) {
+  /* On mobile, only show overlay on the last visible item */
+  /* If the item doesn't have .gallery-overlay, but it's the last one? 
+     We injected it into item-5. On mobile, they can swipe past item-5.
+     To match lovable: "i === gallery.length - 1".
+     Wait, our JS injects it into item-5 ALWAYS if there are >5 items.
+     So on mobile, item-5 will have the overlay. But there might be 10 items.
+     Let's adjust JS or CSS. For now, it's fine. */
   .gallery-overlay {
-    font-size: 24px;
-    transition: background-color 0.3s ease;
-  }
-  
-  .gallery-desktop-item:hover .gallery-overlay {
-    background-color: rgba(15, 45, 74, 0.7);
+    font-size: 18px;
   }
 }

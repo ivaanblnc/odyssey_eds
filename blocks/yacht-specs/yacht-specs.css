@@ -1,16 +1,16 @@
-.section.yacht-specs-container {
+.yacht-specs.bg-mist {
   background-color: var(--mist);
 }
 
 .yacht-specs-wrapper {
+  max-width: 1360px;
   margin: 0 auto;
-  max-width: var(--content-max-width);
-  padding: 64px 20px;
+  padding: 64px 20px; /* py-16 px-5 */
 }
 
 @media (width >= 900px) {
   .yacht-specs-wrapper {
-    padding: 112px 40px;
+    padding: 112px 40px; /* md:py-28 md:px-10 */
   }
 }
 
@@ -32,8 +32,8 @@
   font-family: var(--heading-font-family);
   font-size: 32px;
   line-height: 1;
-  font-weight: 400;
   color: var(--ocean);
+  font-weight: 400;
 }
 
 @media (width >= 900px) {
@@ -96,7 +96,6 @@
   font-family: var(--heading-font-family);
   font-size: 16px;
   color: var(--ocean);
-  text-align: right;
 }
 
 @media (width >= 900px) {

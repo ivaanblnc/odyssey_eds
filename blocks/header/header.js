@@ -148,8 +148,8 @@ export default async function decorate(block) {
     }
   });
 
-  // Check if we are on a page that should be solid by default (not home page)
-  if (window.location.pathname !== '/' && window.location.pathname !== '/content/odyssey-eds/index') {
+  // Check if we are on a page that should be solid by default (not home page) or in Universal Editor
+  if (window.location.pathname !== '/' && window.location.pathname !== '/content/odyssey-eds/index' || window.location.hostname.includes('author')) {
     navWrapper.classList.add('solid');
   }
 

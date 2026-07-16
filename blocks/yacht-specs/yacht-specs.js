@@ -1,54 +1,58 @@
 export default function decorate(block) {
-  const rows = [...block.children];
+  const rows = Array.from(block.children);
+  if (rows.length < 2) return;
 
-  const eyebrowText = rows[0]?.textContent?.trim() || '';
-  const titleText = rows[1]?.textContent?.trim() || '';
-  const specsTable = rows[2]?.querySelector('table');
+  // Extract Eyebrow and Title (first two rows)
+  const eyebrowRow = rows[0];
+  const titleRow = rows[1];
+  
+  const eyebrowText = eyebrowRow.textContent.trim();
+  const titleText = titleRow.textContent.trim();
 
-  block.textContent = '';
-
-  // Wrap block in a full width section for bg-mist, if not handled by section metadata
-  // Since AEM Edge Delivery blocks fill sections, the parent section can be styled with bg-mist,
-  // but we can add the inner wrapper here to manage the max-width layout.
-
+  // Create new DOM structure
   const wrapper = document.createElement('div');
   wrapper.className = 'yacht-specs-wrapper';
 
-  if (eyebrowText) {
-    const eyebrow = document.createElement('div');
-    eyebrow.className = 'yacht-specs-eyebrow';
-    eyebrow.textContent = eyebrowText;
-    wrapper.append(eyebrow);
+  const eyebrow = document.createElement('div');
+  eyebrow.className = 'yacht-specs-eyebrow';
+  eyebrow.textContent = eyebrowText;
+
+  const title = document.createElement('h2');
+  title.className = 'yacht-specs-title';
+  title.textContent = titleText;
+
+  const grid = document.createElement('div');
+  grid.className = 'yacht-specs-grid';
+
+  // Process spec items (remaining rows)
+  for (let i = 2; i < rows.length; i++) {
+    const row = rows[i];
+    const cols = Array.from(row.children);
+    if (cols.length >= 2) {
+      const item = document.createElement('div');
+      item.className = 'yacht-specs-item';
+
+      const label = document.createElement('span');
+      label.className = 'yacht-specs-label';
+      // keep inner elements if there are spans/strongs, else text
+      label.append(...cols[0].childNodes);
+
+      const value = document.createElement('span');
+      value.className = 'yacht-specs-value';
+      value.append(...cols[1].childNodes);
+
+      item.append(label, value);
+      grid.append(item);
+    }
   }
 
-  if (titleText) {
-    const title = document.createElement('h2');
-    title.className = 'yacht-specs-title';
-    title.textContent = titleText;
-    wrapper.append(title);
-  }
+  wrapper.append(eyebrow, title, grid);
 
-  if (specsTable) {
-    const grid = document.createElement('div');
-    grid.className = 'yacht-specs-grid';
-
-    // Parse the table
-    const trs = specsTable.querySelectorAll('tr');
-    trs.forEach((tr) => {
-      const tds = tr.querySelectorAll('td');
-      if (tds.length >= 2) {
-        const item = document.createElement('div');
-        item.className = 'yacht-specs-item';
-        item.innerHTML = `
-          <span class="yacht-specs-label">\${tds[0].innerHTML}</span>
-          <span class="yacht-specs-value">\${tds[1].innerHTML}</span>
-        `;
-        grid.append(item);
-      }
-    });
-
-    wrapper.append(grid);
-  }
-
+  // Clear original block and append new structure
+  block.textContent = '';
   block.append(wrapper);
+  
+  // Section background color should ideally be handled by Section Metadata in AEM,
+  // but if we want to force the Mist background, we can add a class to the block itself.
+  block.classList.add('bg-mist');
 }

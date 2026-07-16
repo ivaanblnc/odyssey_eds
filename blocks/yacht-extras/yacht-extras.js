@@ -1,58 +1,70 @@
 export default function decorate(block) {
-  const rows = [...block.children];
+  const rows = Array.from(block.children);
+  if (rows.length < 3) return;
 
-  const eyebrowText = rows[0]?.textContent?.trim() || '';
-  const titleText = rows[1]?.textContent?.trim() || '';
-  const descHtml = rows[2]?.querySelector('div')?.innerHTML || '';
-  const extrasTable = rows[3]?.querySelector('table');
+  // Extract Eyebrow, Title, Description
+  const eyebrowRow = rows[0];
+  const titleRow = rows[1];
+  const descRow = rows[2];
+  
+  const eyebrowText = eyebrowRow.textContent.trim();
+  const titleHtml = titleRow.innerHTML;
+  const descHtml = descRow.innerHTML;
 
-  block.textContent = '';
-
+  // Create Wrapper
   const wrapper = document.createElement('div');
-  wrapper.className = 'yacht-extras-grid';
+  wrapper.className = 'yacht-extras-wrapper';
 
-  // Left Column
-  const left = document.createElement('div');
-  left.className = 'yacht-extras-left';
+  // Left side (Text content)
+  const leftCol = document.createElement('div');
+  leftCol.className = 'yacht-extras-left';
 
-  if (eyebrowText) {
-    left.innerHTML += `<div class="yacht-extras-eyebrow">${eyebrowText}</div>`;
+  const eyebrow = document.createElement('div');
+  eyebrow.className = 'yacht-extras-eyebrow';
+  eyebrow.textContent = eyebrowText;
+
+  const title = document.createElement('h2');
+  title.className = 'yacht-extras-title';
+  title.innerHTML = titleRow.children[0]?.innerHTML || titleText;
+
+  const desc = document.createElement('div');
+  desc.className = 'yacht-extras-description';
+  desc.innerHTML = descRow.children[0]?.innerHTML || descHtml;
+
+  leftCol.append(eyebrow, title, desc);
+
+  // Right side (List)
+  const rightCol = document.createElement('div');
+  rightCol.className = 'yacht-extras-right';
+
+  const list = document.createElement('ul');
+  list.className = 'yacht-extras-list';
+
+  // Process extra items (remaining rows)
+  for (let i = 3; i < rows.length; i++) {
+    const row = rows[i];
+    const cols = Array.from(row.children);
+    if (cols.length >= 2) {
+      const item = document.createElement('li');
+      item.className = 'yacht-extras-item';
+
+      const name = document.createElement('span');
+      name.className = 'yacht-extras-name';
+      name.append(...cols[0].childNodes);
+
+      const price = document.createElement('span');
+      price.className = 'yacht-extras-price';
+      price.append(...cols[1].childNodes);
+
+      item.append(name, price);
+      list.append(item);
+    }
   }
-  if (titleText) {
-    left.innerHTML += `<h2 class="yacht-extras-title">${titleText}</h2>`;
-  }
-  if (descHtml) {
-    left.innerHTML += `<div class="yacht-extras-desc">${descHtml}</div>`;
-  }
 
-  wrapper.append(left);
+  rightCol.append(list);
+  wrapper.append(leftCol, rightCol);
 
-  // Right Column
-  const right = document.createElement('div');
-  right.className = 'yacht-extras-right';
-
-  if (extrasTable) {
-    const ul = document.createElement('ul');
-    ul.className = 'yacht-extras-list';
-
-    // Parse the table
-    const trs = extrasTable.querySelectorAll('tr');
-    trs.forEach((tr) => {
-      const tds = tr.querySelectorAll('td');
-      if (tds.length >= 2) {
-        const li = document.createElement('li');
-        li.className = 'yacht-extras-item';
-        li.innerHTML = `
-          <span class="yacht-extras-name">\${tds[0].innerHTML}</span>
-          <span class="yacht-extras-price">\${tds[1].innerHTML}</span>
-        `;
-        ul.append(li);
-      }
-    });
-
-    right.append(ul);
-  }
-
-  wrapper.append(right);
+  // Clear and append
+  block.textContent = '';
   block.append(wrapper);
 }
