@@ -1,0 +1,12 @@
+{
+  "mappings": [
+    {
+      "from": "/",
+      "to": "/content/odyssey-eds/"
+    },
+    {
+      "from": "/(.*)",
+      "to": "/content/odyssey-eds/$1"
+    }
+  ]
+}
