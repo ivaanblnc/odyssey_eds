@@ -79,26 +79,33 @@ async function createAEMTemplate(templateName) {
   // Initial Content Node (What gets copied to the page)
   params.append('initial/jcr:primaryType', 'cq:Page');
   params.append('initial/jcr:content/jcr:primaryType', 'cq:PageContent');
-  params.append('initial/jcr:content/sling:resourceType', 'odyssey/components/page');
+  params.append('initial/jcr:content/sling:resourceType', 'core/franklin/components/page/v1/page');
   params.append('initial/jcr:content/root/jcr:primaryType', 'nt:unstructured');
+  params.append('initial/jcr:content/root/sling:resourceType', 'core/franklin/components/root/v1/root');
+
+  // Inject a section
+  params.append('initial/jcr:content/root/section/jcr:primaryType', 'nt:unstructured');
+  params.append('initial/jcr:content/root/section/sling:resourceType', 'core/franklin/components/section/v1/section');
 
   // Inject default blocks based on the dictionary
   const defaultBlocks = INITIAL_CONTENT_MAP[templateName] || [];
   defaultBlocks.forEach((blockName, index) => {
     const nodeName = `${blockName}_${index}`;
-    params.append(`initial/jcr:content/root/${nodeName}/jcr:primaryType`, 'nt:unstructured');
-    params.append(`initial/jcr:content/root/${nodeName}/sling:resourceType`, `odyssey/components/${blockName}`);
+    params.append(`initial/jcr:content/root/section/${nodeName}/jcr:primaryType`, 'nt:unstructured');
+    params.append(`initial/jcr:content/root/section/${nodeName}/sling:resourceType`, `core/franklin/components/block/v1/block`);
+    params.append(`initial/jcr:content/root/section/${nodeName}/model`, blockName);
+    params.append(`initial/jcr:content/root/section/${nodeName}/name`, blockName);
   });
 
   // Policies Node
   params.append('policies/jcr:primaryType', 'cq:Page');
   params.append('policies/jcr:content/jcr:primaryType', 'cq:PageContent');
-  params.append('policies/jcr:content/sling:resourceType', 'odyssey/components/page');
+  params.append('policies/jcr:content/sling:resourceType', 'core/franklin/components/page/v1/page');
 
   // Structure Node
   params.append('structure/jcr:primaryType', 'cq:Page');
   params.append('structure/jcr:content/jcr:primaryType', 'cq:PageContent');
-  params.append('structure/jcr:content/sling:resourceType', 'odyssey/components/page');
+  params.append('structure/jcr:content/sling:resourceType', 'core/franklin/components/page/v1/page');
   params.append('structure/jcr:content/root/jcr:primaryType', 'nt:unstructured');
 
   try {

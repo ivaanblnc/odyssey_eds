@@ -63,7 +63,7 @@ async function createAEMPage(parentPath, name, title, templateName = 'content-pa
   params.append('jcr:content/jcr:primaryType', 'cq:PageContent');
   params.append('jcr:content/jcr:title', title);
   params.append('jcr:content/cq:template', `${AEM_TEMPLATE_BASE}/${templateName}`);
-  params.append('jcr:content/sling:resourceType', 'odyssey/components/page');
+  params.append('jcr:content/sling:resourceType', 'core/franklin/components/page/v1/page');
 
   try {
     const response = await fetch(url, {

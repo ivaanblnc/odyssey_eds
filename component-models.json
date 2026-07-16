@@ -146,6 +146,32 @@
     ]
   },
   {
+    "id": "auth-form",
+    "fields": [
+      {
+        "component": "select",
+        "name": "formType",
+        "label": "Form Type",
+        "options": [
+          {
+            "name": "Login",
+            "value": "login"
+          },
+          {
+            "name": "Register",
+            "value": "register"
+          }
+        ]
+      },
+      {
+        "component": "text",
+        "name": "title",
+        "label": "Form Title",
+        "valueType": "string"
+      }
+    ]
+  },
+  {
     "id": "card",
     "fields": [
       {
@@ -160,6 +186,17 @@
         "name": "text",
         "value": "",
         "label": "Text",
+        "valueType": "string"
+      }
+    ]
+  },
+  {
+    "id": "client-profile",
+    "fields": [
+      {
+        "component": "text",
+        "name": "title",
+        "label": "Profile Title",
         "valueType": "string"
       }
     ]

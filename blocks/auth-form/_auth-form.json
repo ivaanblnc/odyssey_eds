@@ -1,0 +1,48 @@
+{
+  "definitions": [
+    {
+      "title": "Auth Form",
+      "id": "auth-form",
+      "plugins": {
+        "xwalk": {
+          "page": {
+            "resourceType": "core/franklin/components/block/v1/block",
+            "template": {
+              "name": "Auth Form",
+              "model": "auth-form"
+            }
+          }
+        }
+      }
+    }
+  ],
+  "models": [
+    {
+      "id": "auth-form",
+      "fields": [
+        {
+          "component": "select",
+          "name": "formType",
+          "label": "Form Type",
+          "options": [
+            {
+              "name": "Login",
+              "value": "login"
+            },
+            {
+              "name": "Register",
+              "value": "register"
+            }
+          ]
+        },
+        {
+          "component": "text",
+          "name": "title",
+          "label": "Form Title",
+          "valueType": "string"
+        }
+      ]
+    }
+  ],
+  "filters": []
+}
