@@ -172,6 +172,18 @@
     ]
   },
   {
+    "id": "breadcrumb",
+    "fields": [
+      {
+        "component": "richtext",
+        "name": "links",
+        "label": "Breadcrumb Links",
+        "valueType": "string",
+        "description": "Create an unordered list of links. The last item without a link will be the current page."
+      }
+    ]
+  },
+  {
     "id": "card",
     "fields": [
       {
@@ -336,6 +348,22 @@
     ]
   },
   {
+    "id": "gallery",
+    "fields": []
+  },
+  {
+    "id": "gallery-item",
+    "fields": [
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "image",
+        "label": "Image",
+        "multi": false
+      }
+    ]
+  },
+  {
     "id": "hero",
     "fields": [
       {
@@ -353,41 +381,112 @@
         "value": ""
       },
       {
+        "component": "text",
+        "name": "eyebrow",
+        "label": "Eyebrow Text",
+        "valueType": "string"
+      },
+      {
         "component": "richtext",
         "name": "text",
         "label": "Content",
-        "description": "Title, description, and stats as richtext",
+        "description": "Title and description as richtext",
+        "valueType": "string"
+      },
+      {
+        "component": "text",
+        "name": "destinationLabel",
+        "label": "Destination Label",
+        "valueType": "string",
+        "value": "Destino"
+      },
+      {
+        "component": "text",
+        "name": "destinationValue",
+        "label": "Destination Value",
+        "valueType": "string"
+      },
+      {
+        "component": "text",
+        "name": "departureLabel",
+        "label": "Departure Label",
+        "valueType": "string",
+        "value": "Embarque"
+      },
+      {
+        "component": "text",
+        "name": "departureValue",
+        "label": "Departure Value",
+        "valueType": "string"
+      },
+      {
+        "component": "text",
+        "name": "returnLabel",
+        "label": "Return Label",
+        "valueType": "string",
+        "value": "Regreso"
+      },
+      {
+        "component": "text",
+        "name": "returnValue",
+        "label": "Return Value",
+        "valueType": "string"
+      },
+      {
+        "component": "text",
+        "name": "guestsLabel",
+        "label": "Guests Label",
+        "valueType": "string",
+        "value": "Huéspedes"
+      },
+      {
+        "component": "text",
+        "name": "guestsValue",
+        "label": "Guests Value",
         "valueType": "string"
       }
     ]
   },
   {
-    "id": "journal-entry",
+    "id": "journal",
     "fields": [
       {
         "component": "text",
+        "name": "eyebrow",
+        "label": "Eyebrow Text",
         "valueType": "string",
-        "name": "tag",
-        "label": "Tag",
-        "description": "e.g. Diario, Gastronomía, Rutas"
+        "value": "05 — Diario de a bordo"
       },
       {
-        "component": "text",
-        "valueType": "string",
-        "name": "title",
-        "label": "Title"
+        "component": "richtext",
+        "name": "headline",
+        "label": "Headline",
+        "valueType": "string"
       },
       {
-        "component": "text",
+        "component": "reference",
+        "name": "readAllLink",
+        "label": "Read All Link",
+        "valueType": "string"
+      }
+    ]
+  },
+  {
+    "id": "journal-article",
+    "fields": [
+      {
+        "component": "reference",
         "valueType": "string",
-        "name": "readTime",
-        "label": "Read Time",
-        "description": "e.g. 6 min"
+        "name": "image",
+        "label": "Image",
+        "multi": false
       },
       {
-        "component": "aem-content",
-        "name": "link",
-        "label": "Link"
+        "component": "richtext",
+        "name": "text",
+        "label": "Text",
+        "valueType": "string",
+        "description": "Include Date (p), Title (h3), and Link"
       }
     ]
   },
@@ -396,27 +495,34 @@
     "fields": [
       {
         "component": "text",
-        "valueType": "string",
         "name": "eyebrow",
-        "label": "Eyebrow",
-        "description": "e.g. 01 — Manifiesto"
+        "label": "Eyebrow Text",
+        "valueType": "string",
+        "value": "01 — Manifiesto"
       },
       {
         "component": "richtext",
-        "name": "heading",
-        "label": "Heading",
+        "name": "headline",
+        "label": "Headline",
+        "description": "Main manifesto headline. Use italics for emphasis.",
         "valueType": "string"
       },
       {
         "component": "richtext",
-        "name": "textLeft",
-        "label": "Left Paragraph",
+        "name": "leftCol",
+        "label": "Left Column",
         "valueType": "string"
       },
       {
         "component": "richtext",
-        "name": "textRight",
-        "label": "Right Paragraph",
+        "name": "rightCol",
+        "label": "Right Column",
+        "valueType": "string"
+      },
+      {
+        "component": "text",
+        "name": "subtitle",
+        "label": "Subtitle",
         "valueType": "string"
       }
     ]
@@ -459,15 +565,14 @@
     "fields": [
       {
         "component": "text",
-        "valueType": "string",
         "name": "eyebrow",
-        "label": "Eyebrow",
-        "description": "e.g. A la carta"
+        "label": "Eyebrow Text",
+        "valueType": "string"
       },
       {
-        "component": "richtext",
-        "name": "heading",
-        "label": "Heading",
+        "component": "text",
+        "name": "title",
+        "label": "Title",
         "valueType": "string"
       },
       {
@@ -475,25 +580,13 @@
         "name": "description",
         "label": "Description",
         "valueType": "string"
-      }
-    ]
-  },
-  {
-    "id": "extra-service",
-    "fields": [
-      {
-        "component": "text",
-        "valueType": "string",
-        "name": "name",
-        "label": "Service Name",
-        "description": "e.g. Chef privado a bordo"
       },
       {
-        "component": "text",
+        "component": "richtext",
+        "name": "extras",
+        "label": "Extras Table",
         "valueType": "string",
-        "name": "price",
-        "label": "Price",
-        "description": "e.g. € 480 / día"
+        "description": "Insert a 2-column table. Left column for service name, Right column for price."
       }
     ]
   },
@@ -516,47 +609,105 @@
     ]
   },
   {
-    "id": "yacht-overview",
+    "id": "yacht-header",
     "fields": [
       {
         "component": "text",
-        "valueType": "string",
         "name": "eyebrow",
-        "label": "Eyebrow",
-        "description": "e.g. Sobre Aeolus"
-      },
-      {
-        "component": "richtext",
-        "name": "text",
-        "label": "Content",
-        "description": "Heading, description, and features as richtext",
+        "label": "Eyebrow Text",
         "valueType": "string"
       },
       {
         "component": "richtext",
-        "name": "sidebar",
-        "label": "Sidebar Content",
-        "description": "Alert text and CTA as richtext",
+        "name": "title",
+        "label": "Yacht Title",
+        "valueType": "string",
+        "description": "Use italics for the model name if desired."
+      },
+      {
+        "component": "text",
+        "name": "priceLabel",
+        "label": "Price Label",
+        "valueType": "string"
+      },
+      {
+        "component": "text",
+        "name": "price",
+        "label": "Price",
+        "valueType": "string"
+      },
+      {
+        "component": "text",
+        "name": "location",
+        "label": "Location",
         "valueType": "string"
       }
     ]
   },
   {
-    "id": "spec",
+    "id": "yacht-overview",
     "fields": [
       {
         "component": "text",
-        "valueType": "string",
-        "name": "label",
-        "label": "Label",
-        "description": "e.g. Eslora"
+        "name": "eyebrow",
+        "label": "Eyebrow",
+        "valueType": "string"
       },
       {
         "component": "text",
+        "name": "title",
+        "label": "Title",
+        "valueType": "string"
+      },
+      {
+        "component": "richtext",
+        "name": "description",
+        "label": "Description",
+        "valueType": "string"
+      },
+      {
+        "component": "text",
+        "name": "tags",
+        "label": "Tags (Comma Separated)",
+        "valueType": "string"
+      },
+      {
+        "component": "text",
+        "name": "alertText",
+        "label": "Inventory Alert Text",
         "valueType": "string",
-        "name": "value",
-        "label": "Value",
-        "description": "e.g. 18.20 m"
+        "description": "Leave blank to hide the alert box."
+      },
+      {
+        "component": "richtext",
+        "name": "bookingForm",
+        "label": "Booking Form",
+        "valueType": "string",
+        "description": "Use Tables for dates and prices. Heading for title, links for buttons."
+      }
+    ]
+  },
+  {
+    "id": "yacht-specs",
+    "fields": [
+      {
+        "component": "text",
+        "name": "eyebrow",
+        "label": "Eyebrow Text",
+        "valueType": "string"
+      },
+      {
+        "component": "text",
+        "name": "title",
+        "label": "Title",
+        "valueType": "string"
+      },
+      {
+        "component": "richtext",
+        "name": "specs",
+        "label": "Specs Table",
+        "valueType": "string",
+        "description": "Insert a 2-column table. Left column for property (e.g. 'Eslora'), Right column for value (e.g. '18.2 m')."
       }
     ]
   },

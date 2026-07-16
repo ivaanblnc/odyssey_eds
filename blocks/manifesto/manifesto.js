@@ -3,66 +3,58 @@
  * @param {Element} block The manifesto block element
  */
 export default function decorate(block) {
-  // Expected matrix rows:
-  // Row 0: eyebrow
-  // Row 1: heading (richtext)
-  // Row 2: left paragraph
-  // Row 3: right paragraph
   const rows = [...block.children];
-  const eyebrowRow = rows[0];
-  const headingRow = rows[1];
-  const textLeftRow = rows[2];
-  const textRightRow = rows[3];
+
+  // We expect:
+  // Row 1: Eyebrow text
+  // Row 2: Headline
+  // Row 3: Left paragraph
+  // Row 4: Right paragraph
+
+  // Row 5: Subtitle (optional)
+  const eyebrowText = rows[0]?.textContent?.trim() || '';
+  const headlineHtml = rows[1]?.querySelector('div')?.innerHTML || '';
+  const leftColHtml = rows[2]?.querySelector('div')?.innerHTML || '';
+  const rightColHtml = rows[3]?.querySelector('div')?.innerHTML || '';
+  const subtitleText = rows[4]?.textContent?.trim() || '';
 
   block.textContent = '';
 
-  const container = document.createElement('div');
-  container.className = 'manifesto-grid';
+  const grid = document.createElement('div');
+  grid.className = 'manifesto-grid';
 
-  // Left column — eyebrow
-  const leftCol = document.createElement('div');
-  leftCol.className = 'manifesto-left';
-  if (eyebrowRow) {
-    const eyebrow = document.createElement('div');
-    eyebrow.className = 'manifesto-eyebrow';
-    const val = eyebrowRow.querySelector('div:last-child') || eyebrowRow;
-    eyebrow.append(...val.childNodes);
-    leftCol.append(eyebrow);
+  // Left side (eyebrow & optional subtitle)
+  const left = document.createElement('div');
+  left.className = 'manifesto-left';
+  left.innerHTML = `<div class="manifesto-eyebrow">${eyebrowText}</div>`;
+  if (subtitleText) {
+    left.innerHTML += `<div class="manifesto-subtitle">${subtitleText}</div>`;
   }
-  container.append(leftCol);
+  grid.append(left);
 
-  // Right column — heading + two paragraphs
-  const rightCol = document.createElement('div');
-  rightCol.className = 'manifesto-right';
+  // Right side (content)
+  const right = document.createElement('div');
+  right.className = 'manifesto-right';
 
-  if (headingRow) {
-    const h2 = document.createElement('h2');
-    h2.className = 'manifesto-heading';
-    const val = headingRow.querySelector('div:last-child') || headingRow;
-    h2.append(...val.childNodes);
-    rightCol.append(h2);
+  const h2 = document.createElement('h2');
+  h2.className = 'manifesto-title';
+  h2.innerHTML = headlineHtml;
+  right.append(h2);
+
+  const columns = document.createElement('div');
+  columns.className = 'manifesto-columns';
+
+  if (block.classList.contains('bay')) {
+    columns.classList.add('bay-variant');
+    columns.innerHTML = `<div>${leftColHtml}</div>`;
+  } else {
+    columns.innerHTML = `
+      <div>${leftColHtml}</div>
+      <div>${rightColHtml}</div>
+    `;
   }
+  right.append(columns);
 
-  const textGrid = document.createElement('div');
-  textGrid.className = 'manifesto-text-grid';
-
-  if (textLeftRow) {
-    const p = document.createElement('p');
-    p.className = 'manifesto-text';
-    const val = textLeftRow.querySelector('div:last-child') || textLeftRow;
-    p.append(...val.childNodes);
-    textGrid.append(p);
-  }
-
-  if (textRightRow) {
-    const p = document.createElement('p');
-    p.className = 'manifesto-text';
-    const val = textRightRow.querySelector('div:last-child') || textRightRow;
-    p.append(...val.childNodes);
-    textGrid.append(p);
-  }
-
-  rightCol.append(textGrid);
-  container.append(rightCol);
-  block.append(container);
+  grid.append(right);
+  block.append(grid);
 }

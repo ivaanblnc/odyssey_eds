@@ -1,3 +1,4 @@
+/* Default cards */
 .cards > ul {
   list-style: none;
   margin: 0;
@@ -8,7 +9,6 @@
 }
 
 .cards > ul > li {
-  border: 1px solid #dadada;
   background-color: var(--background-color);
 }
 
@@ -24,4 +24,376 @@
   width: 100%;
   aspect-ratio: 4 / 3;
   object-fit: cover;
+}
+
+/* ------------------------------------- */
+/* Variant: Destinations                 */
+/* ------------------------------------- */
+.cards.destinations > ul {
+  grid-template-columns: 1fr;
+  gap: 48px 32px;
+}
+
+@media (width >= 900px) {
+  .cards.destinations > ul {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 56px 32px;
+  }
+}
+
+.cards.destinations > ul > li {
+  border: none;
+  margin: 0;
+}
+
+.cards.destinations .cards-card-image {
+  position: relative;
+  aspect-ratio: 3 / 4;
+  overflow: hidden;
+  background-color: rgba(15, 45, 74, 0.05); /* ocean/5 */
+  line-height: 0;
+}
+
+.cards.destinations .cards-card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  aspect-ratio: 3 / 4;
+}
+
+/* Number overlay injected via JS */
+.cards.destinations .dest-number {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-family: var(--heading-font-family);
+  font-size: 14px;
+  font-style: italic;
+  color: white;
+  z-index: 2;
+}
+
+@media (width >= 900px) {
+  .cards.destinations .dest-number {
+    top: 24px;
+    left: 24px;
+  }
+}
+
+/* Body layout */
+.cards.destinations .cards-card-body {
+  margin: 20px 0 0 0;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+@media (width >= 900px) {
+  .cards.destinations .cards-card-body {
+    margin-top: 24px;
+  }
+}
+
+/* Left side: region + title */
+.cards.destinations .dest-left {
+  display: flex;
+  flex-direction: column;
+}
+
+.cards.destinations .dest-region {
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.32em;
+  color: var(--gold);
+}
+
+@media (width >= 900px) {
+  .cards.destinations .dest-region {
+    font-size: 11px;
+  }
+}
+
+.cards.destinations .dest-title {
+  margin: 8px 0 0 0;
+  font-family: var(--heading-font-family);
+  font-size: 28px;
+  line-height: 1;
+  font-weight: 400;
+}
+
+@media (width >= 900px) {
+  .cards.destinations .dest-title {
+    margin-top: 12px;
+    font-size: 36px;
+  }
+}
+
+/* Right side: price label + price */
+.cards.destinations .dest-right {
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+}
+
+.cards.destinations .dest-price-label {
+  font-size: 9px;
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+  color: var(--ocean-soft);
+}
+
+@media (width >= 900px) {
+  .cards.destinations .dest-price-label {
+    font-size: 10px;
+  }
+}
+
+.cards.destinations .dest-price {
+  margin: 4px 0 0 0;
+  font-family: var(--heading-font-family);
+  font-size: 18px;
+  color: var(--gold);
+}
+
+@media (width >= 900px) {
+  .cards.destinations .dest-price {
+    font-size: 20px;
+  }
+}
+
+/* ------------------------------------- */
+/* Variant: Fleet                        */
+/* ------------------------------------- */
+.cards.fleet > ul {
+  grid-template-columns: 1fr;
+  gap: 56px 32px;
+}
+
+@media (width >= 900px) {
+  .cards.fleet > ul {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 64px 32px;
+  }
+}
+
+.cards.fleet > ul > li {
+  border: none;
+  margin: 0;
+}
+
+.cards.fleet .cards-card-image {
+  position: relative;
+  aspect-ratio: 4 / 5;
+  overflow: hidden;
+  background-color: rgba(15, 45, 74, 0.05);
+  line-height: 0;
+}
+
+.cards.fleet .cards-card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  aspect-ratio: 4 / 5;
+}
+
+.cards.fleet .fleet-number {
+  position: absolute;
+  bottom: 16px;
+  right: 16px;
+  font-family: var(--heading-font-family);
+  font-size: 11px;
+  font-style: italic;
+  color: rgba(255, 255, 255, 0.9);
+  z-index: 2;
+}
+
+@media (width >= 900px) {
+  .cards.fleet .fleet-number {
+    bottom: 24px;
+    right: 24px;
+  }
+}
+
+.cards.fleet .fleet-tag {
+  position: absolute;
+  left: 16px;
+  top: 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 4px 10px;
+  font-size: 9px;
+  text-transform: uppercase;
+  letter-spacing: 0.28em;
+  color: var(--ocean);
+  backdrop-filter: blur(4px);
+  z-index: 2;
+}
+
+@media (width >= 900px) {
+  .cards.fleet .fleet-tag {
+    left: 24px;
+    top: 24px;
+    padding: 6px 12px;
+    font-size: 10px;
+    letter-spacing: 0.3em;
+  }
+}
+
+.cards.fleet .fleet-tag-dot {
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background-color: var(--gold);
+}
+
+.cards.fleet .cards-card-body {
+  margin: 24px 0 0 0;
+}
+
+.cards.fleet .dest-top {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+@media (width >= 900px) {
+  .cards.fleet .dest-top {
+    gap: 24px;
+  }
+}
+
+.cards.fleet .dest-title {
+  margin-top: 8px;
+  font-size: 24px;
+  line-height: 1.05;
+}
+
+@media (width >= 900px) {
+  .cards.fleet .dest-title {
+    margin-top: 12px;
+    font-size: 32px;
+  }
+}
+
+.cards.fleet .dest-price {
+  font-size: 22px;
+}
+
+@media (width >= 900px) {
+  .cards.fleet .dest-price {
+    font-size: 28px;
+  }
+}
+
+.cards.fleet .fleet-specs {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  border-top: 1px solid var(--hairline);
+  padding-top: 16px;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: var(--ocean-soft);
+}
+
+@media (width >= 900px) {
+  .cards.fleet .fleet-specs {
+    margin-top: 24px;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0 16px;
+    padding-top: 20px;
+    font-size: 11px;
+    letter-spacing: 0.22em;
+  }
+}
+
+.cards.fleet .fleet-specs dt {
+  opacity: 0.6;
+}
+
+.cards.fleet .fleet-specs dd {
+  margin: 4px 0 0 0;
+  font-family: var(--heading-font-family);
+  font-size: 15px;
+  text-transform: none;
+  letter-spacing: normal;
+  color: var(--ocean);
+}
+
+@media (width >= 900px) {
+  .cards.fleet .fleet-specs dd {
+    margin-top: 6px;
+    font-size: 16px;
+  }
+}
+
+.cards.fleet .fleet-footer {
+  margin-top: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.28em;
+  color: var(--ocean-soft);
+}
+
+@media (width >= 900px) {
+  .cards.fleet .fleet-footer {
+    margin-top: 28px;
+    font-size: 11px;
+    letter-spacing: 0.3em;
+  }
+}
+
+.cards.fleet .fleet-footer .fleet-link {
+  color: var(--gold);
+  letter-spacing: 0.3em;
+}
+
+/* Filters */
+.fleet-filters {
+  margin: 32px -20px 40px;
+  overflow-x: auto;
+}
+
+@media (width >= 900px) {
+  .fleet-filters {
+    margin: 40px 0 56px;
+    overflow-x: visible;
+  }
+}
+
+.fleet-filters-scroll {
+  display: flex;
+  min-width: max-content;
+  gap: 24px;
+  padding: 0 20px;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.28em;
+  color: var(--ocean-soft);
+}
+
+@media (width >= 900px) {
+  .fleet-filters-scroll {
+    min-width: 0;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 32px;
+    padding: 0;
+    font-size: 11px;
+    letter-spacing: 0.32em;
+  }
+}
+
+.fleet-filters-scroll .active {
+  border-bottom: 1px solid var(--ocean);
+  padding-bottom: 8px;
+  color: var(--ocean);
 }

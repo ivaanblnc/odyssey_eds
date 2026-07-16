@@ -9,22 +9,7 @@
             "resourceType": "core/franklin/components/block/v1/block",
             "template": {
               "name": "Yacht Specs",
-              "filter": "yacht-specs"
-            }
-          }
-        }
-      }
-    },
-    {
-      "title": "Spec",
-      "id": "spec",
-      "plugins": {
-        "xwalk": {
-          "page": {
-            "resourceType": "core/franklin/components/block/v1/block/item",
-            "template": {
-              "name": "Spec",
-              "model": "spec"
+              "model": "yacht-specs"
             }
           }
         }
@@ -33,31 +18,29 @@
   ],
   "models": [
     {
-      "id": "spec",
+      "id": "yacht-specs",
       "fields": [
         {
           "component": "text",
-          "valueType": "string",
-          "name": "label",
-          "label": "Label",
-          "description": "e.g. Eslora"
+          "name": "eyebrow",
+          "label": "Eyebrow Text",
+          "valueType": "string"
         },
         {
           "component": "text",
+          "name": "title",
+          "label": "Title",
+          "valueType": "string"
+        },
+        {
+          "component": "richtext",
+          "name": "specs",
+          "label": "Specs Table",
           "valueType": "string",
-          "name": "value",
-          "label": "Value",
-          "description": "e.g. 18.20 m"
+          "description": "Insert a 2-column table. Left column for property (e.g. 'Eslora'), Right column for value (e.g. '18.2 m')."
         }
       ]
     }
   ],
-  "filters": [
-    {
-      "id": "yacht-specs",
-      "components": [
-        "spec"
-      ]
-    }
-  ]
+  "filters": []
 }

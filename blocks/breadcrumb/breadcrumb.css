@@ -1,0 +1,50 @@
+.breadcrumb {
+  margin: 0 auto;
+  max-width: var(--content-max-width);
+  overflow-x: auto;
+  white-space: nowrap;
+  padding: 24px 20px 0;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.28em;
+  color: var(--ocean-soft);
+}
+
+@media (width >= 900px) {
+  .breadcrumb {
+    overflow-x: visible;
+    padding: 40px 40px 0;
+    font-size: 11px;
+    letter-spacing: 0.32em;
+  }
+}
+
+.breadcrumb-nav {
+  display: flex;
+  align-items: center;
+}
+
+.breadcrumb-link {
+  color: var(--ocean-soft);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.breadcrumb-link:hover {
+  color: var(--ocean);
+}
+
+.breadcrumb-current {
+  color: var(--ocean);
+}
+
+.breadcrumb-separator {
+  margin: 0 8px;
+  color: var(--gold);
+}
+
+@media (width >= 900px) {
+  .breadcrumb-separator {
+    margin: 0 12px;
+  }
+}

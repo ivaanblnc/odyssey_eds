@@ -9,22 +9,7 @@
             "resourceType": "core/franklin/components/block/v1/block",
             "template": {
               "name": "Yacht Extras",
-              "filter": "yacht-extras"
-            }
-          }
-        }
-      }
-    },
-    {
-      "title": "Extra Service",
-      "id": "extra-service",
-      "plugins": {
-        "xwalk": {
-          "page": {
-            "resourceType": "core/franklin/components/block/v1/block/item",
-            "template": {
-              "name": "Extra Service",
-              "model": "extra-service"
+              "model": "yacht-extras"
             }
           }
         }
@@ -37,15 +22,14 @@
       "fields": [
         {
           "component": "text",
-          "valueType": "string",
           "name": "eyebrow",
-          "label": "Eyebrow",
-          "description": "e.g. A la carta"
+          "label": "Eyebrow Text",
+          "valueType": "string"
         },
         {
-          "component": "richtext",
-          "name": "heading",
-          "label": "Heading",
+          "component": "text",
+          "name": "title",
+          "label": "Title",
           "valueType": "string"
         },
         {
@@ -53,35 +37,16 @@
           "name": "description",
           "label": "Description",
           "valueType": "string"
-        }
-      ]
-    },
-    {
-      "id": "extra-service",
-      "fields": [
-        {
-          "component": "text",
-          "valueType": "string",
-          "name": "name",
-          "label": "Service Name",
-          "description": "e.g. Chef privado a bordo"
         },
         {
-          "component": "text",
+          "component": "richtext",
+          "name": "extras",
+          "label": "Extras Table",
           "valueType": "string",
-          "name": "price",
-          "label": "Price",
-          "description": "e.g. € 480 / día"
+          "description": "Insert a 2-column table. Left column for service name, Right column for price."
         }
       ]
     }
   ],
-  "filters": [
-    {
-      "id": "yacht-extras",
-      "components": [
-        "extra-service"
-      ]
-    }
-  ]
+  "filters": []
 }

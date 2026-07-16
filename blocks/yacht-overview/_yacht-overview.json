@@ -22,24 +22,41 @@
       "fields": [
         {
           "component": "text",
-          "valueType": "string",
           "name": "eyebrow",
           "label": "Eyebrow",
-          "description": "e.g. Sobre Aeolus"
+          "valueType": "string"
         },
         {
-          "component": "richtext",
-          "name": "text",
-          "label": "Content",
-          "description": "Heading, description, and features as richtext",
+          "component": "text",
+          "name": "title",
+          "label": "Title",
           "valueType": "string"
         },
         {
           "component": "richtext",
-          "name": "sidebar",
-          "label": "Sidebar Content",
-          "description": "Alert text and CTA as richtext",
+          "name": "description",
+          "label": "Description",
           "valueType": "string"
+        },
+        {
+          "component": "text",
+          "name": "tags",
+          "label": "Tags (Comma Separated)",
+          "valueType": "string"
+        },
+        {
+          "component": "text",
+          "name": "alertText",
+          "label": "Inventory Alert Text",
+          "valueType": "string",
+          "description": "Leave blank to hide the alert box."
+        },
+        {
+          "component": "richtext",
+          "name": "bookingForm",
+          "label": "Booking Form",
+          "valueType": "string",
+          "description": "Use Tables for dates and prices. Heading for title, links for buttons."
         }
       ]
     }

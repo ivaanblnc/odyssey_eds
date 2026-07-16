@@ -1,82 +1,58 @@
-/**
- * loads and decorates the yacht-extras block
- * @param {Element} block The yacht-extras block element
- */
 export default function decorate(block) {
-  // Row 0: eyebrow
-  // Row 1: heading (richtext)
-  // Row 2: description (richtext)
-  // Rows 3+: Service items (Col 0: name, Col 1: price)
   const rows = [...block.children];
-  const eyebrowRow = rows[0];
-  const headingRow = rows[1];
-  const descRow = rows[2];
-  const serviceRows = rows.slice(3);
 
-  const getValue = (row) => {
-    if (!row) return null;
-    return row.querySelector('div:last-child') || row;
-  };
+  const eyebrowText = rows[0]?.textContent?.trim() || '';
+  const titleText = rows[1]?.textContent?.trim() || '';
+  const descHtml = rows[2]?.querySelector('div')?.innerHTML || '';
+  const extrasTable = rows[3]?.querySelector('table');
 
   block.textContent = '';
 
-  const container = document.createElement('div');
-  container.className = 'yacht-extras-grid';
+  const wrapper = document.createElement('div');
+  wrapper.className = 'yacht-extras-grid';
 
-  // Left column — intro
-  const introCol = document.createElement('div');
-  introCol.className = 'yacht-extras-intro';
+  // Left Column
+  const left = document.createElement('div');
+  left.className = 'yacht-extras-left';
 
-  const eyebrowVal = getValue(eyebrowRow);
-  if (eyebrowVal) {
-    const eyebrow = document.createElement('div');
-    eyebrow.className = 'yacht-extras-eyebrow';
-    eyebrow.append(...eyebrowVal.childNodes);
-    introCol.append(eyebrow);
+  if (eyebrowText) {
+    left.innerHTML += `<div class="yacht-extras-eyebrow">${eyebrowText}</div>`;
+  }
+  if (titleText) {
+    left.innerHTML += `<h2 class="yacht-extras-title">${titleText}</h2>`;
+  }
+  if (descHtml) {
+    left.innerHTML += `<div class="yacht-extras-desc">${descHtml}</div>`;
   }
 
-  const headingVal = getValue(headingRow);
-  if (headingVal) {
-    const h2 = document.createElement('h2');
-    h2.className = 'yacht-extras-heading';
-    h2.append(...headingVal.childNodes);
-    introCol.append(h2);
+  wrapper.append(left);
+
+  // Right Column
+  const right = document.createElement('div');
+  right.className = 'yacht-extras-right';
+
+  if (extrasTable) {
+    const ul = document.createElement('ul');
+    ul.className = 'yacht-extras-list';
+
+    // Parse the table
+    const trs = extrasTable.querySelectorAll('tr');
+    trs.forEach((tr) => {
+      const tds = tr.querySelectorAll('td');
+      if (tds.length >= 2) {
+        const li = document.createElement('li');
+        li.className = 'yacht-extras-item';
+        li.innerHTML = `
+          <span class="yacht-extras-name">\${tds[0].innerHTML}</span>
+          <span class="yacht-extras-price">\${tds[1].innerHTML}</span>
+        `;
+        ul.append(li);
+      }
+    });
+
+    right.append(ul);
   }
 
-  const descVal = getValue(descRow);
-  if (descVal) {
-    const p = document.createElement('p');
-    p.className = 'yacht-extras-desc';
-    p.append(...descVal.childNodes);
-    introCol.append(p);
-  }
-
-  container.append(introCol);
-
-  // Right column — services list
-  const listCol = document.createElement('div');
-  listCol.className = 'yacht-extras-list-col';
-  const ul = document.createElement('ul');
-  ul.className = 'yacht-extras-list';
-
-  serviceRows.forEach((row) => {
-    const cols = [...row.children];
-    const li = document.createElement('li');
-    li.className = 'yacht-extras-item';
-
-    const name = document.createElement('span');
-    name.className = 'yacht-extras-name';
-    if (cols[0]) name.append(...cols[0].childNodes);
-
-    const price = document.createElement('span');
-    price.className = 'yacht-extras-price';
-    if (cols[1]) price.append(...cols[1].childNodes);
-
-    li.append(name, price);
-    ul.append(li);
-  });
-
-  listCol.append(ul);
-  container.append(listCol);
-  block.append(container);
+  wrapper.append(right);
+  block.append(wrapper);
 }

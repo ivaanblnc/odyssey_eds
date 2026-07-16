@@ -1,50 +1,89 @@
+import { createOptimizedPicture } from '../../scripts/aem.js';
+
 /**
  * loads and decorates the journal block
  * @param {Element} block The journal block element
  */
 export default function decorate(block) {
-  // Each row = one journal entry
-  // Col 0: Tag
-  // Col 1: Title
-  // Col 2: Read time
-  // Col 3: Link (optional)
   const rows = [...block.children];
+
+  // Header row
+  const headerRow = rows[0];
+  const eyebrowText = headerRow?.querySelector('p')?.textContent || '05 — Diario de a bordo';
+  const headlineHtml = headerRow?.querySelector('h1, h2, h3, h4, h5, h6')?.innerHTML || 'Historias de<br /><em>alta mar.</em>';
+  const readAllLink = headerRow?.querySelector('a');
+  const readAllHref = readAllLink?.href || '#';
+  const readAllText = readAllLink?.textContent || 'Leer todo el diario →';
+
+  // Articles rows
+  const articleRows = rows.slice(1);
+
+  block.textContent = '';
+
+  // 1. Header
+  const header = document.createElement('div');
+  header.className = 'journal-header';
+
+  const headerLeft = document.createElement('div');
+  headerLeft.innerHTML = `
+    <div class="journal-eyebrow">${eyebrowText}</div>
+    <h2 class="journal-title">${headlineHtml}</h2>
+  `;
+  header.append(headerLeft);
+
+  const headerRight = document.createElement('div');
+  headerRight.className = 'journal-read-all';
+  headerRight.innerHTML = `<a href="${readAllHref}">${readAllText}</a>`;
+  header.append(headerRight);
+
+  block.append(header);
+
+  // 2. Grid
   const grid = document.createElement('div');
   grid.className = 'journal-grid';
 
-  rows.forEach((row) => {
+  articleRows.forEach((row) => {
+    const card = document.createElement('div');
+    card.className = 'journal-card';
+
+    const pic = row.querySelector('picture');
     const cols = [...row.children];
-    const article = document.createElement('article');
-    article.className = 'journal-entry';
+    // assume column 0 is image, column 1 is content
+    const contentCol = cols.length > 1 ? cols[1] : cols[0];
 
-    const meta = document.createElement('div');
-    meta.className = 'journal-meta';
-    const tag = document.createElement('span');
-    tag.className = 'journal-tag';
-    if (cols[0]) tag.append(...cols[0].childNodes);
-    const readTime = document.createElement('span');
-    readTime.className = 'journal-read-time';
-    if (cols[2]) readTime.append(...cols[2].childNodes);
-    meta.append(tag, readTime);
+    // Extract data from content column
+    const elements = [...contentCol.children];
+    const date = elements[0]?.textContent || '';
+    const titleEl = elements.find((el) => el.tagName.match(/^H[1-6]$/)) || elements[1];
+    const title = titleEl?.textContent || '';
+    const linkEl = contentCol.querySelector('a');
+    const linkHref = linkEl?.href || '#';
+    const linkText = linkEl?.textContent || 'Leer artículo →';
 
-    const h3 = document.createElement('h3');
-    h3.className = 'journal-title';
-    if (cols[1]) h3.append(...cols[1].childNodes);
-
-    article.append(meta, h3);
-
-    // Wrap in link if present
-    const link = cols[3]?.querySelector('a');
-    if (link) {
-      link.className = 'journal-link';
-      link.textContent = '';
-      link.append(article);
-      grid.append(link);
-    } else {
-      grid.append(article);
+    // Image
+    const imgDiv = document.createElement('div');
+    imgDiv.className = 'journal-card-image';
+    if (pic) {
+      const img = pic.querySelector('img');
+      if (img) {
+        const optimizedPic = createOptimizedPicture(img.src, img.alt || title, false, [{ width: '400' }]);
+        imgDiv.append(optimizedPic);
+      }
     }
+    card.append(imgDiv);
+
+    // Body
+    const bodyDiv = document.createElement('div');
+    bodyDiv.className = 'journal-card-body';
+    bodyDiv.innerHTML = `
+      <div class="journal-card-date">${date}</div>
+      <h3 class="journal-card-title">${title}</h3>
+      <a href="${linkHref}" class="journal-card-link">${linkText}</a>
+    `;
+    card.append(bodyDiv);
+
+    grid.append(card);
   });
 
-  block.textContent = '';
   block.append(grid);
 }

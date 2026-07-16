@@ -1,8 +1,9 @@
-/* Journal block */
+/* Journal block styling inspired by Lovable */
+
 .journal {
-  max-width: var(--content-max-width);
   margin: 0 auto;
-  padding: 64px 20px;
+  max-width: var(--content-max-width);
+  padding: 80px 20px;
 }
 
 @media (width >= 900px) {
@@ -11,63 +12,182 @@
   }
 }
 
-.journal .journal-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 32px;
-}
-
-@media (width >= 900px) {
-  .journal .journal-grid {
-    grid-template-columns: repeat(3, 1fr);
-    gap: 40px;
-  }
-}
-
-.journal .journal-link {
-  display: block;
-  text-decoration: none;
-  color: inherit;
-}
-
-.journal .journal-entry {
-  border-top: 1px solid var(--ocean);
-  padding-top: 20px;
-}
-
-@media (width >= 900px) {
-  .journal .journal-entry {
-    padding-top: 24px;
-  }
-}
-
-.journal .journal-meta {
+/* Header Section */
+.journal .journal-header {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  flex-direction: column;
+}
+
+@media (width >= 900px) {
+  .journal .journal-header {
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+  }
+}
+
+/* Eyebrow */
+.journal .journal-eyebrow {
   font-size: 10px;
   text-transform: uppercase;
-  letter-spacing: 0.3em;
-  color: var(--ocean-soft);
+  letter-spacing: 0.4em;
+  color: var(--gold);
 }
 
 @media (width >= 900px) {
-  .journal .journal-meta {
+  .journal .journal-eyebrow {
     font-size: 11px;
   }
 }
 
+/* Headline */
 .journal .journal-title {
-  margin-top: 16px;
+  margin: 16px 0 0 0;
   font-family: var(--heading-font-family);
-  font-size: 20px;
-  line-height: 1.3;
+  font-size: 32px;
+  line-height: 1.1;
   font-weight: 400;
+  color: white;
 }
 
 @media (width >= 900px) {
   .journal .journal-title {
     margin-top: 24px;
+    font-size: 48px;
+  }
+}
+
+.journal .journal-title em {
+  font-style: italic;
+  font-weight: 400;
+}
+
+/* Read All Link */
+.journal .journal-read-all {
+  margin-top: 24px;
+}
+
+@media (width >= 900px) {
+  .journal .journal-read-all {
+    margin-top: 0;
+  }
+}
+
+.journal .journal-read-all a {
+  display: inline-block;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+  color: rgba(255, 255, 255, 0.7);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+@media (width >= 900px) {
+  .journal .journal-read-all a {
+    font-size: 11px;
+  }
+}
+
+.journal .journal-read-all a:hover {
+  color: white;
+}
+
+/* Grid of Articles */
+.journal .journal-grid {
+  margin-top: 48px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+}
+
+@media (width >= 900px) {
+  .journal .journal-grid {
+    margin-top: 64px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+  }
+}
+
+/* Article Card */
+.journal .journal-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.journal .journal-card-image {
+  position: relative;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+}
+
+.journal .journal-card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.journal .journal-card:hover .journal-card-image img {
+  transform: scale(1.05);
+}
+
+.journal .journal-card-body {
+  margin-top: 20px;
+}
+
+@media (width >= 900px) {
+  .journal .journal-card-body {
+    margin-top: 24px;
+  }
+}
+
+.journal .journal-card-date {
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+@media (width >= 900px) {
+  .journal .journal-card-date {
+    font-size: 11px;
+  }
+}
+
+.journal .journal-card-title {
+  margin: 12px 0 0 0;
+  font-family: var(--heading-font-family);
+  font-size: 20px;
+  line-height: 1.3;
+  color: white;
+  font-weight: 400;
+}
+
+@media (width >= 900px) {
+  .journal .journal-card-title {
+    margin-top: 16px;
     font-size: 24px;
   }
+}
+
+.journal .journal-card-link {
+  margin-top: 16px;
+  display: inline-block;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+  color: var(--gold);
+  text-decoration: none;
+}
+
+@media (width >= 900px) {
+  .journal .journal-card-link {
+    margin-top: 20px;
+    font-size: 11px;
+  }
+}
+
+.journal .journal-card-link:hover {
+  text-decoration: underline;
 }

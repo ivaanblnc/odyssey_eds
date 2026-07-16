@@ -1,7 +1,8 @@
-/* Manifesto block */
+/* Manifesto block styling inspired by Lovable */
+
 .manifesto {
-  max-width: var(--content-max-width);
   margin: 0 auto;
+  max-width: var(--content-max-width);
   padding: 80px 20px;
 }
 
@@ -13,14 +14,23 @@
 
 .manifesto .manifesto-grid {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: repeat(12, 1fr);
   gap: 24px;
 }
 
 @media (width >= 900px) {
   .manifesto .manifesto-grid {
-    grid-template-columns: 1fr 2fr;
     gap: 48px;
+  }
+}
+
+.manifesto .manifesto-left {
+  grid-column: span 12;
+}
+
+@media (width >= 900px) {
+  .manifesto .manifesto-left {
+    grid-column: span 4;
   }
 }
 
@@ -37,45 +47,91 @@
   }
 }
 
-.manifesto .manifesto-heading {
+.manifesto .manifesto-right {
+  grid-column: span 12;
+}
+
+@media (width >= 900px) {
+  .manifesto .manifesto-right {
+    grid-column: span 8;
+  }
+}
+
+.manifesto .manifesto-title {
   margin-top: 16px;
   font-family: var(--heading-font-family);
   font-size: 32px;
   line-height: 1.1;
+  letter-spacing: -0.01em;
+  color: var(--ocean);
   font-weight: 400;
 }
 
 @media (width >= 900px) {
-  .manifesto .manifesto-heading {
+  .manifesto .manifesto-title {
     margin-top: 0;
     font-size: 56px;
     line-height: 1.05;
   }
 }
 
-.manifesto .manifesto-heading em {
+.manifesto .manifesto-title em {
   font-style: italic;
   font-weight: 400;
 }
 
-.manifesto .manifesto-text-grid {
+.manifesto .manifesto-columns {
   margin-top: 32px;
   display: grid;
+  grid-template-columns: 1fr;
   gap: 24px;
-}
-
-@media (width >= 900px) {
-  .manifesto .manifesto-text-grid {
-    margin-top: 48px;
-    grid-template-columns: 1fr 1fr;
-    gap: 40px;
-  }
-}
-
-.manifesto .manifesto-text {
   font-size: 14px;
   line-height: 1.9;
   font-weight: 300;
   color: var(--ocean-soft);
+}
+
+@media (width >= 900px) {
+  .manifesto .manifesto-columns {
+    margin-top: 48px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+  }
+}
+
+.manifesto .manifesto-columns p {
   margin: 0;
+}
+
+/* ------------------------------------- */
+/* Variant: Bay (Destination Subtitle)   */
+/* ------------------------------------- */
+
+.manifesto .manifesto-subtitle {
+  margin-top: 12px;
+  font-family: var(--heading-font-family);
+  font-size: 13px;
+  font-style: italic;
+  color: var(--ocean-soft);
+}
+
+@media (width >= 900px) {
+  .manifesto .manifesto-subtitle {
+    margin-top: 16px;
+  }
+}
+
+.manifesto.bay .manifesto-title {
+  font-size: 32px;
+}
+
+@media (width >= 900px) {
+  .manifesto.bay .manifesto-title {
+    font-size: 52px;
+  }
+}
+
+.manifesto .manifesto-columns.bay-variant {
+  grid-template-columns: 1fr;
+  max-width: 672px;
 }

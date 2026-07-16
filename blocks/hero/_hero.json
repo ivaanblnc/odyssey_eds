@@ -35,10 +35,68 @@
           "value": ""
         },
         {
+          "component": "text",
+          "name": "eyebrow",
+          "label": "Eyebrow Text",
+          "valueType": "string"
+        },
+        {
           "component": "richtext",
           "name": "text",
           "label": "Content",
-          "description": "Title, description, and stats as richtext",
+          "description": "Title and description as richtext",
+          "valueType": "string"
+        },
+        {
+          "component": "text",
+          "name": "destinationLabel",
+          "label": "Destination Label",
+          "valueType": "string",
+          "value": "Destino"
+        },
+        {
+          "component": "text",
+          "name": "destinationValue",
+          "label": "Destination Value",
+          "valueType": "string"
+        },
+        {
+          "component": "text",
+          "name": "departureLabel",
+          "label": "Departure Label",
+          "valueType": "string",
+          "value": "Embarque"
+        },
+        {
+          "component": "text",
+          "name": "departureValue",
+          "label": "Departure Value",
+          "valueType": "string"
+        },
+        {
+          "component": "text",
+          "name": "returnLabel",
+          "label": "Return Label",
+          "valueType": "string",
+          "value": "Regreso"
+        },
+        {
+          "component": "text",
+          "name": "returnValue",
+          "label": "Return Value",
+          "valueType": "string"
+        },
+        {
+          "component": "text",
+          "name": "guestsLabel",
+          "label": "Guests Label",
+          "valueType": "string",
+          "value": "Huéspedes"
+        },
+        {
+          "component": "text",
+          "name": "guestsValue",
+          "label": "Guests Value",
           "valueType": "string"
         }
       ]

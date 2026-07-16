@@ -1,47 +1,135 @@
-/**
- * loads and decorates the yacht-overview block
- * @param {Element} block The yacht-overview block element
- */
+import { getAuthToken, confirmBooking } from '../../scripts/api.js';
+
 export default function decorate(block) {
-  // Row 0: eyebrow
-  // Row 1: main content (richtext: heading, desc, features)
-  // Row 2: sidebar content (richtext: alert + CTA)
   const rows = [...block.children];
+
+  const eyebrowText = rows[0]?.textContent?.trim() || '';
+  const titleText = rows[1]?.textContent?.trim() || '';
+  const descHtml = rows[2]?.querySelector('div')?.innerHTML || '';
+  const tagsText = rows[3]?.textContent?.trim() || '';
+  const alertText = rows[4]?.textContent?.trim() || '';
+  const bookingHtml = rows[5]?.querySelector('div')?.innerHTML || '';
 
   block.textContent = '';
 
   const container = document.createElement('div');
   container.className = 'yacht-overview-grid';
 
-  // Main content column
-  const mainCol = document.createElement('div');
-  mainCol.className = 'yacht-overview-main';
+  // Left Column
+  const left = document.createElement('div');
+  left.className = 'yacht-overview-left';
 
-  if (rows[0]) {
-    const eyebrow = document.createElement('div');
-    eyebrow.className = 'yacht-overview-eyebrow';
-    const val = rows[0].querySelector('div:last-child') || rows[0];
-    eyebrow.append(...val.childNodes);
-    mainCol.append(eyebrow);
+  if (eyebrowText) {
+    left.innerHTML += `<div class="yacht-overview-eyebrow">${eyebrowText}</div>`;
+  }
+  if (titleText) {
+    left.innerHTML += `<h2 class="yacht-overview-title">${titleText}</h2>`;
+  }
+  if (descHtml) {
+    left.innerHTML += `<div class="yacht-overview-desc">${descHtml}</div>`;
   }
 
-  if (rows[1]) {
-    const val = rows[1].querySelector('div:last-child') || rows[1];
-    val.classList.add('yacht-overview-body');
-    mainCol.append(val);
+  if (tagsText) {
+    const tagsContainer = document.createElement('div');
+    tagsContainer.className = 'yacht-overview-tags';
+    const tagsArray = tagsText.split(',').map((t) => t.trim()).filter(Boolean);
+    tagsArray.forEach((t) => {
+      const tag = document.createElement('span');
+      tag.className = 'yacht-tag';
+      tag.textContent = t;
+      tagsContainer.append(tag);
+    });
+    left.append(tagsContainer);
   }
 
-  container.append(mainCol);
+  // Right Column
+  const right = document.createElement('aside');
+  right.className = 'yacht-overview-right';
 
-  // Sidebar
-  if (rows[2]) {
-    const sidebar = document.createElement('aside');
-    sidebar.className = 'yacht-overview-sidebar';
-    const val = rows[2].querySelector('div:last-child') || rows[2];
-    val.classList.add('yacht-overview-sidebar-body');
-    sidebar.append(val);
-    container.append(sidebar);
+  if (alertText) {
+    const alertBox = document.createElement('div');
+    alertBox.className = 'yacht-alert-box';
+    alertBox.innerHTML = `
+      <div class="yacht-alert-header">
+        <span class="yacht-alert-dot"></span> Alerta de inventario
+      </div>
+      <p class="yacht-alert-text">\${alertText}</p>
+    `;
+    right.append(alertBox);
   }
 
+  if (bookingHtml) {
+    const bookingBox = document.createElement('div');
+    bookingBox.className = 'yacht-booking-box';
+    bookingBox.innerHTML = bookingHtml;
+
+    // Apply specific classes to elements inside bookingHtml
+
+    // The first heading is the title
+    const headings = bookingBox.querySelectorAll('h1, h2, h3, h4, h5, h6');
+    if (headings.length > 0) {
+      headings[0].className = 'yacht-booking-title';
+    }
+
+    // Process tables
+    const tables = bookingBox.querySelectorAll('table');
+    tables.forEach((table, idx) => {
+      if (idx === 0) {
+        // First table: dates/details
+        table.className = 'yacht-booking-dates';
+      } else if (idx === 1) {
+        // Second table: price breakdown
+        table.className = 'yacht-booking-breakdown';
+      }
+    });
+
+    // Style the Total
+    const strongs = bookingBox.querySelectorAll('strong');
+    strongs.forEach((s) => {
+      if (s.textContent.includes('Total') || s.textContent.includes('€')) {
+        s.classList.add('yacht-booking-total');
+      }
+    });
+
+    // Style links as buttons and intercept
+    const links = bookingBox.querySelectorAll('a');
+    links.forEach((link, idx) => {
+      if (idx === 0) {
+        link.className = 'yacht-btn-primary';
+
+        // Hydrate with backend integration
+        link.addEventListener('click', async (e) => {
+          e.preventDefault();
+          if (!getAuthToken()) {
+            window.location.href = `/login?redirect=${encodeURIComponent(window.location.pathname)}`;
+            return;
+          }
+
+          link.textContent = 'Procesando...';
+          link.style.pointerEvents = 'none';
+
+          try {
+            const yachtName = document.querySelector('h1')?.textContent || 'Yacht';
+            await confirmBooking({ yacht: yachtName, dates: 'TBD' });
+            link.textContent = '¡Reserva Confirmada!';
+            link.style.backgroundColor = 'var(--success, #28a745)';
+            setTimeout(() => {
+              window.location.href = '/profile/mis-reservas';
+            }, 1500);
+          } catch (error) {
+            link.textContent = 'Error. Reintentar';
+            link.style.pointerEvents = 'auto';
+          }
+        });
+      } else {
+        link.className = 'yacht-btn-link';
+      }
+    });
+
+    right.append(bookingBox);
+  }
+
+  container.append(left);
+  container.append(right);
   block.append(container);
 }

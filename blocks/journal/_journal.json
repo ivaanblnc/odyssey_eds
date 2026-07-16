@@ -9,6 +9,7 @@
             "resourceType": "core/franklin/components/block/v1/block",
             "template": {
               "name": "Journal",
+              "model": "journal",
               "filter": "journal"
             }
           }
@@ -16,15 +17,15 @@
       }
     },
     {
-      "title": "Journal Entry",
-      "id": "journal-entry",
+      "title": "Journal Article",
+      "id": "journal-article",
       "plugins": {
         "xwalk": {
           "page": {
             "resourceType": "core/franklin/components/block/v1/block/item",
             "template": {
-              "name": "Journal Entry",
-              "model": "journal-entry"
+              "name": "Journal Article",
+              "model": "journal-article"
             }
           }
         }
@@ -33,32 +34,45 @@
   ],
   "models": [
     {
-      "id": "journal-entry",
+      "id": "journal",
       "fields": [
         {
           "component": "text",
+          "name": "eyebrow",
+          "label": "Eyebrow Text",
           "valueType": "string",
-          "name": "tag",
-          "label": "Tag",
-          "description": "e.g. Diario, Gastronomía, Rutas"
+          "value": "05 — Diario de a bordo"
         },
         {
-          "component": "text",
-          "valueType": "string",
-          "name": "title",
-          "label": "Title"
+          "component": "richtext",
+          "name": "headline",
+          "label": "Headline",
+          "valueType": "string"
         },
         {
-          "component": "text",
+          "component": "reference",
+          "name": "readAllLink",
+          "label": "Read All Link",
+          "valueType": "string"
+        }
+      ]
+    },
+    {
+      "id": "journal-article",
+      "fields": [
+        {
+          "component": "reference",
           "valueType": "string",
-          "name": "readTime",
-          "label": "Read Time",
-          "description": "e.g. 6 min"
+          "name": "image",
+          "label": "Image",
+          "multi": false
         },
         {
-          "component": "aem-content",
-          "name": "link",
-          "label": "Link"
+          "component": "richtext",
+          "name": "text",
+          "label": "Text",
+          "valueType": "string",
+          "description": "Include Date (p), Title (h3), and Link"
         }
       ]
     }
@@ -67,7 +81,7 @@
     {
       "id": "journal",
       "components": [
-        "journal-entry"
+        "journal-article"
       ]
     }
   ]

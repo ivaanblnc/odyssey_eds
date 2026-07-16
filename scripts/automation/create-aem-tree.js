@@ -48,10 +48,10 @@ const delay = (ms) => new Promise((resolve) => {
 
 // Dictionary mapping templates to their initial default components
 const INITIAL_CONTENT_MAP = {
-  'hub-page': ['hero', 'cards'],
+  'hub-page': ['hero', 'manifesto', 'cards', 'columns', 'journal'],
   'category-page': ['hero', 'cards'],
-  'yacht-detail': ['hero', 'columns'],
-  'destination-page': ['hero', 'columns'],
+  'yacht-detail': [['breadcrumb', 'yacht-header', 'gallery', 'yacht-overview'], ['yacht-specs'], ['yacht-extras']],
+  'destination-page': ['breadcrumb', 'hero', 'manifesto', 'cards'],
   'experience-page': ['hero', 'columns'],
   'auth-page': ['auth-form'],
   'profile-page': ['client-profile'],
@@ -76,21 +76,31 @@ async function createAEMPage(parentPath, name, title, templateName = 'content-pa
   params.append('jcr:content/jcr:title', title);
   params.append('jcr:content/cq:template', `${AEM_TEMPLATE_BASE}/${templateName}`);
   params.append('jcr:content/sling:resourceType', 'core/franklin/components/page/v1/page');
-  
-  // Explicitly create the root and section since raw Sling POST doesn't copy from the template
+
+  // Explicitly create the root since raw Sling POST doesn't copy from the template
   params.append('jcr:content/root/jcr:primaryType', 'nt:unstructured');
   params.append('jcr:content/root/sling:resourceType', 'core/franklin/components/root/v1/root');
-  params.append('jcr:content/root/section/jcr:primaryType', 'nt:unstructured');
-  params.append('jcr:content/root/section/sling:resourceType', 'core/franklin/components/section/v1/section');
 
   // Inject default blocks based on the dictionary
   const defaultBlocks = INITIAL_CONTENT_MAP[templateName] || [];
-  defaultBlocks.forEach((blockName, index) => {
-    const nodeName = `${blockName}_${index}`;
-    params.append(`jcr:content/root/section/${nodeName}/jcr:primaryType`, 'nt:unstructured');
-    params.append(`jcr:content/root/section/${nodeName}/sling:resourceType`, `core/franklin/components/block/v1/block`);
-    params.append(`jcr:content/root/section/${nodeName}/model`, blockName);
-    params.append(`jcr:content/root/section/${nodeName}/name`, blockName);
+
+  // Normalize into array of sections
+  const sections = (defaultBlocks.length > 0 && Array.isArray(defaultBlocks[0]))
+    ? defaultBlocks
+    : [defaultBlocks];
+
+  sections.forEach((sectionBlocks, sIndex) => {
+    const sectionNode = sIndex === 0 ? 'section' : `section_${sIndex}`;
+    params.append(`jcr:content/root/${sectionNode}/jcr:primaryType`, 'nt:unstructured');
+    params.append(`jcr:content/root/${sectionNode}/sling:resourceType`, 'core/franklin/components/section/v1/section');
+
+    sectionBlocks.forEach((blockName, bIndex) => {
+      const nodeName = `${blockName}_${bIndex}`;
+      params.append(`jcr:content/root/${sectionNode}/${nodeName}/jcr:primaryType`, 'nt:unstructured');
+      params.append(`jcr:content/root/${sectionNode}/${nodeName}/sling:resourceType`, 'core/franklin/components/block/v1/block');
+      params.append(`jcr:content/root/${sectionNode}/${nodeName}/model`, blockName);
+      params.append(`jcr:content/root/${sectionNode}/${nodeName}/name`, blockName);
+    });
   });
 
   try {

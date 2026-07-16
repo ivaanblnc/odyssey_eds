@@ -21,6 +21,7 @@
         "title": "Catamaranes",
         "template": "category-page",
         "children": [
+          { "name": "sunreef-60-aeolus", "title": "Sunreef 60 Aeolus", "template": "yacht-detail" },
           { "name": "sunreef-80", "title": "Sunreef 80", "template": "yacht-detail" },
           { "name": "lagoon-seventy-7", "title": "Lagoon Seventy 7", "template": "yacht-detail" },
           { "name": "fountaine-pajot-alegria-67", "title": "Fountaine Pajot Alegria 67", "template": "yacht-detail" }

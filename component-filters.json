@@ -63,27 +63,21 @@
     ]
   },
   {
-    "id": "journal",
+    "id": "gallery",
     "components": [
-      "journal-entry"
+      "gallery-item"
     ]
   },
   {
-    "id": "yacht-extras",
+    "id": "journal",
     "components": [
-      "extra-service"
+      "journal-article"
     ]
   },
   {
     "id": "yacht-gallery",
     "components": [
       "gallery-image"
-    ]
-  },
-  {
-    "id": "yacht-specs",
-    "components": [
-      "spec"
     ]
   }
 ]

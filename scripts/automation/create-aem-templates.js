@@ -92,7 +92,7 @@ async function createAEMTemplate(templateName) {
   defaultBlocks.forEach((blockName, index) => {
     const nodeName = `${blockName}_${index}`;
     params.append(`initial/jcr:content/root/section/${nodeName}/jcr:primaryType`, 'nt:unstructured');
-    params.append(`initial/jcr:content/root/section/${nodeName}/sling:resourceType`, `core/franklin/components/block/v1/block`);
+    params.append(`initial/jcr:content/root/section/${nodeName}/sling:resourceType`, 'core/franklin/components/block/v1/block');
     params.append(`initial/jcr:content/root/section/${nodeName}/model`, blockName);
     params.append(`initial/jcr:content/root/section/${nodeName}/name`, blockName);
   });

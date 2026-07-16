@@ -1,36 +1,69 @@
-/* Yacht Specs block */
-.yacht-specs {
-  max-width: var(--content-max-width);
+.section.yacht-specs-container {
+  background-color: var(--mist);
+}
+
+.yacht-specs-wrapper {
   margin: 0 auto;
+  max-width: var(--content-max-width);
   padding: 64px 20px;
 }
 
 @media (width >= 900px) {
-  .yacht-specs {
+  .yacht-specs-wrapper {
     padding: 112px 40px;
   }
 }
 
-.yacht-specs .yacht-specs-grid {
+.yacht-specs-eyebrow {
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.4em;
+  color: var(--gold);
+}
+
+@media (width >= 900px) {
+  .yacht-specs-eyebrow {
+    font-size: 11px;
+  }
+}
+
+.yacht-specs-title {
+  margin-top: 16px;
+  font-family: var(--heading-font-family);
+  font-size: 32px;
+  line-height: 1;
+  font-weight: 400;
+  color: var(--ocean);
+}
+
+@media (width >= 900px) {
+  .yacht-specs-title {
+    margin-top: 20px;
+    font-size: 48px;
+  }
+}
+
+.yacht-specs-grid {
+  margin-top: 40px;
   display: grid;
   grid-template-columns: 1fr;
-  gap: 0;
+  column-gap: 64px;
 }
 
 @media (width >= 600px) {
-  .yacht-specs .yacht-specs-grid {
+  .yacht-specs-grid {
     grid-template-columns: repeat(2, 1fr);
-    column-gap: 64px;
   }
 }
 
 @media (width >= 900px) {
-  .yacht-specs .yacht-specs-grid {
+  .yacht-specs-grid {
+    margin-top: 56px;
     grid-template-columns: repeat(3, 1fr);
   }
 }
 
-.yacht-specs .yacht-specs-item {
+.yacht-specs-item {
   display: flex;
   align-items: baseline;
   justify-content: space-between;
@@ -40,12 +73,12 @@
 }
 
 @media (width >= 900px) {
-  .yacht-specs .yacht-specs-item {
+  .yacht-specs-item {
     padding: 20px 0;
   }
 }
 
-.yacht-specs .yacht-specs-label {
+.yacht-specs-label {
   font-size: 10px;
   text-transform: uppercase;
   letter-spacing: 0.26em;
@@ -53,20 +86,21 @@
 }
 
 @media (width >= 900px) {
-  .yacht-specs .yacht-specs-label {
+  .yacht-specs-label {
     font-size: 11px;
     letter-spacing: 0.28em;
   }
 }
 
-.yacht-specs .yacht-specs-value {
+.yacht-specs-value {
   font-family: var(--heading-font-family);
   font-size: 16px;
   color: var(--ocean);
+  text-align: right;
 }
 
 @media (width >= 900px) {
-  .yacht-specs .yacht-specs-value {
+  .yacht-specs-value {
     font-size: 18px;
   }
 }
