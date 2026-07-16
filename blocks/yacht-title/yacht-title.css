@@ -1,0 +1,107 @@
+/* Traducción de utilidades Tailwind de Lovable a CSS Semántico Puro */
+
+.yacht-title {
+  max-width: 1360px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2rem 1.25rem;
+}
+
+@media (width >= 768px) {
+  .yacht-title {
+    padding: 2.5rem 2.5rem 3.5rem;
+  }
+}
+
+.yacht-title-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  border-bottom: 1px solid var(--hairline, #e5e7eb); /* Fallback a color claro si la variable global no carga antes */
+  padding-bottom: 2rem;
+}
+
+@media (width >= 768px) {
+  .yacht-title-container {
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding-bottom: 2.5rem;
+  }
+}
+
+.yacht-title-category {
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.32em;
+  color: var(--gold, #d4af37);
+}
+
+@media (width >= 768px) {
+  .yacht-title-category {
+    font-size: 11px;
+    letter-spacing: 0.4em;
+  }
+}
+
+.yacht-title-heading {
+  margin-top: 1.25rem;
+  font-family: var(--font-serif, "Playfair Display", serif);
+  font-size: 52px;
+  line-height: 0.95;
+  letter-spacing: -0.025em;
+  margin-bottom: 0;
+}
+
+@media (width >= 768px) {
+  .yacht-title-heading {
+    margin-top: 1.5rem;
+    font-size: 88px;
+  }
+}
+
+.yacht-title-subtitle {
+  font-style: italic;
+  font-weight: 400;
+  color: var(--gold, #d4af37);
+}
+
+.yacht-title-price-col {
+  text-align: left;
+}
+
+@media (width >= 768px) {
+  .yacht-title-price-col {
+    text-align: right;
+  }
+}
+
+.yacht-title-price-prefix,
+.yacht-title-base {
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.28em;
+  color: var(--ocean-soft, #64748b);
+}
+
+@media (width >= 768px) {
+  .yacht-title-price-prefix,
+  .yacht-title-base {
+    font-size: 11px;
+    letter-spacing: 0.3em;
+  }
+}
+
+.yacht-title-price-val {
+  margin-top: 0.375rem;
+  font-family: var(--font-serif, "Playfair Display", serif);
+  font-size: 36px;
+  color: var(--gold, #d4af37);
+}
+
+@media (width >= 768px) {
+  .yacht-title-price-val {
+    margin-top: 0.5rem;
+    font-size: 48px;
+  }
+}

@@ -1,0 +1,81 @@
+/* Manifesto block */
+.manifesto {
+  max-width: var(--content-max-width);
+  margin: 0 auto;
+  padding: 80px 20px;
+}
+
+@media (width >= 900px) {
+  .manifesto {
+    padding: 160px 40px;
+  }
+}
+
+.manifesto .manifesto-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+}
+
+@media (width >= 900px) {
+  .manifesto .manifesto-grid {
+    grid-template-columns: 1fr 2fr;
+    gap: 48px;
+  }
+}
+
+.manifesto .manifesto-eyebrow {
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.4em;
+  color: var(--gold);
+}
+
+@media (width >= 900px) {
+  .manifesto .manifesto-eyebrow {
+    font-size: 11px;
+  }
+}
+
+.manifesto .manifesto-heading {
+  margin-top: 16px;
+  font-family: var(--heading-font-family);
+  font-size: 32px;
+  line-height: 1.1;
+  font-weight: 400;
+}
+
+@media (width >= 900px) {
+  .manifesto .manifesto-heading {
+    margin-top: 0;
+    font-size: 56px;
+    line-height: 1.05;
+  }
+}
+
+.manifesto .manifesto-heading em {
+  font-style: italic;
+  font-weight: 400;
+}
+
+.manifesto .manifesto-text-grid {
+  margin-top: 32px;
+  display: grid;
+  gap: 24px;
+}
+
+@media (width >= 900px) {
+  .manifesto .manifesto-text-grid {
+    margin-top: 48px;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+  }
+}
+
+.manifesto .manifesto-text {
+  font-size: 14px;
+  line-height: 1.9;
+  font-weight: 300;
+  color: var(--ocean-soft);
+  margin: 0;
+}

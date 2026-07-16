@@ -136,6 +136,10 @@
           {
             "name": "Highlight",
             "value": "highlight"
+          },
+          {
+            "name": "Mist",
+            "value": "mist"
           }
         ]
       }
@@ -180,6 +184,111 @@
     ]
   },
   {
+    "id": "concierge",
+    "fields": [
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "image",
+        "label": "Image",
+        "multi": false
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "imageAlt",
+        "label": "Image Alt Text"
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "eyebrow",
+        "label": "Eyebrow",
+        "description": "e.g. 03 — Concierge"
+      },
+      {
+        "component": "richtext",
+        "name": "heading",
+        "label": "Heading",
+        "valueType": "string"
+      }
+    ]
+  },
+  {
+    "id": "concierge-service",
+    "fields": [
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "text",
+        "label": "Service Name"
+      }
+    ]
+  },
+  {
+    "id": "destination",
+    "fields": [
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "image",
+        "label": "Image",
+        "multi": false
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "imageAlt",
+        "label": "Image Alt Text"
+      },
+      {
+        "component": "richtext",
+        "name": "text",
+        "label": "Content",
+        "description": "Region, name, and price as richtext",
+        "valueType": "string"
+      },
+      {
+        "component": "aem-content",
+        "name": "link",
+        "label": "Link"
+      }
+    ]
+  },
+  {
+    "id": "dynamic-fleet-grid",
+    "fields": [
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "title",
+        "label": "Title",
+        "description": "Heading for the fleet grid"
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "region",
+        "label": "Default Region",
+        "description": "e.g., corfu, ibiza, mykonos"
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "maxItems",
+        "label": "Max Items",
+        "description": "Number of boats to display (e.g., 4)"
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "noResults",
+        "label": "No Results Message",
+        "description": "Text to show if no yachts are found"
+      }
+    ]
+  },
+  {
     "id": "fragment",
     "fields": [
       {
@@ -196,6 +305,168 @@
         "component": "reference",
         "valueType": "string",
         "name": "image",
+        "label": "Background Image",
+        "multi": false
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "imageAlt",
+        "label": "Image Alt Text",
+        "value": ""
+      },
+      {
+        "component": "richtext",
+        "name": "text",
+        "label": "Content",
+        "description": "Title, description, and stats as richtext",
+        "valueType": "string"
+      }
+    ]
+  },
+  {
+    "id": "journal-entry",
+    "fields": [
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "tag",
+        "label": "Tag",
+        "description": "e.g. Diario, Gastronomía, Rutas"
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "title",
+        "label": "Title"
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "readTime",
+        "label": "Read Time",
+        "description": "e.g. 6 min"
+      },
+      {
+        "component": "aem-content",
+        "name": "link",
+        "label": "Link"
+      }
+    ]
+  },
+  {
+    "id": "manifesto",
+    "fields": [
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "eyebrow",
+        "label": "Eyebrow",
+        "description": "e.g. 01 — Manifiesto"
+      },
+      {
+        "component": "richtext",
+        "name": "heading",
+        "label": "Heading",
+        "valueType": "string"
+      },
+      {
+        "component": "richtext",
+        "name": "textLeft",
+        "label": "Left Paragraph",
+        "valueType": "string"
+      },
+      {
+        "component": "richtext",
+        "name": "textRight",
+        "label": "Right Paragraph",
+        "valueType": "string"
+      }
+    ]
+  },
+  {
+    "id": "pricing-calculator",
+    "fields": [
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "title",
+        "label": "Title",
+        "description": "e.g. Calcula tu presupuesto"
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "basePrice",
+        "label": "Base Price (EUR)",
+        "description": "e.g. 28900"
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "extras",
+        "label": "Extras Label",
+        "description": "e.g. Servicios Adicionales"
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "cta",
+        "label": "CTA Text",
+        "description": "e.g. Solicitar Reserva"
+      }
+    ]
+  },
+  {
+    "id": "yacht-extras",
+    "fields": [
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "eyebrow",
+        "label": "Eyebrow",
+        "description": "e.g. A la carta"
+      },
+      {
+        "component": "richtext",
+        "name": "heading",
+        "label": "Heading",
+        "valueType": "string"
+      },
+      {
+        "component": "richtext",
+        "name": "description",
+        "label": "Description",
+        "valueType": "string"
+      }
+    ]
+  },
+  {
+    "id": "extra-service",
+    "fields": [
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "name",
+        "label": "Service Name",
+        "description": "e.g. Chef privado a bordo"
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "price",
+        "label": "Price",
+        "description": "e.g. € 480 / día"
+      }
+    ]
+  },
+  {
+    "id": "gallery-image",
+    "fields": [
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "image",
         "label": "Image",
         "multi": false
       },
@@ -203,15 +474,78 @@
         "component": "text",
         "valueType": "string",
         "name": "imageAlt",
-        "label": "Alt",
-        "value": ""
+        "label": "Alt Text"
+      }
+    ]
+  },
+  {
+    "id": "yacht-overview",
+    "fields": [
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "eyebrow",
+        "label": "Eyebrow",
+        "description": "e.g. Sobre Aeolus"
       },
       {
         "component": "richtext",
         "name": "text",
-        "value": "",
-        "label": "Text",
+        "label": "Content",
+        "description": "Heading, description, and features as richtext",
         "valueType": "string"
+      },
+      {
+        "component": "richtext",
+        "name": "sidebar",
+        "label": "Sidebar Content",
+        "description": "Alert text and CTA as richtext",
+        "valueType": "string"
+      }
+    ]
+  },
+  {
+    "id": "spec",
+    "fields": [
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "label",
+        "label": "Label",
+        "description": "e.g. Eslora"
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "value",
+        "label": "Value",
+        "description": "e.g. 18.20 m"
+      }
+    ]
+  },
+  {
+    "id": "yacht-title",
+    "fields": [
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "category",
+        "label": "Category",
+        "description": "e.g. Catamarán de lujo · 2023 · Signature"
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "title",
+        "label": "Title & Subtitle",
+        "description": "Main title row: col1=model name, col2=yacht name"
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "price",
+        "label": "Price & Base",
+        "description": "Price row: col1=price label, col2=base port"
       }
     ]
   }

@@ -33,6 +33,10 @@
             {
               "name": "Highlight",
               "value": "highlight"
+            },
+            {
+              "name": "Mist",
+              "value": "mist"
             }
           ]
         }
@@ -50,7 +54,18 @@
         "hero",
         "cards",
         "columns",
-        "fragment"
+        "fragment",
+        "manifesto",
+        "destinations",
+        "concierge",
+        "journal",
+        "yacht-title",
+        "yacht-gallery",
+        "yacht-overview",
+        "yacht-specs",
+        "yacht-extras",
+        "pricing-calculator",
+        "dynamic-fleet-grid"
       ]
     }
   ]

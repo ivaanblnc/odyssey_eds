@@ -1,0 +1,87 @@
+{
+  "definitions": [
+    {
+      "title": "Yacht Extras",
+      "id": "yacht-extras",
+      "plugins": {
+        "xwalk": {
+          "page": {
+            "resourceType": "core/franklin/components/block/v1/block",
+            "template": {
+              "name": "Yacht Extras",
+              "filter": "yacht-extras"
+            }
+          }
+        }
+      }
+    },
+    {
+      "title": "Extra Service",
+      "id": "extra-service",
+      "plugins": {
+        "xwalk": {
+          "page": {
+            "resourceType": "core/franklin/components/block/v1/block/item",
+            "template": {
+              "name": "Extra Service",
+              "model": "extra-service"
+            }
+          }
+        }
+      }
+    }
+  ],
+  "models": [
+    {
+      "id": "yacht-extras",
+      "fields": [
+        {
+          "component": "text",
+          "valueType": "string",
+          "name": "eyebrow",
+          "label": "Eyebrow",
+          "description": "e.g. A la carta"
+        },
+        {
+          "component": "richtext",
+          "name": "heading",
+          "label": "Heading",
+          "valueType": "string"
+        },
+        {
+          "component": "richtext",
+          "name": "description",
+          "label": "Description",
+          "valueType": "string"
+        }
+      ]
+    },
+    {
+      "id": "extra-service",
+      "fields": [
+        {
+          "component": "text",
+          "valueType": "string",
+          "name": "name",
+          "label": "Service Name",
+          "description": "e.g. Chef privado a bordo"
+        },
+        {
+          "component": "text",
+          "valueType": "string",
+          "name": "price",
+          "label": "Price",
+          "description": "e.g. € 480 / día"
+        }
+      ]
+    }
+  ],
+  "filters": [
+    {
+      "id": "yacht-extras",
+      "components": [
+        "extra-service"
+      ]
+    }
+  ]
+}

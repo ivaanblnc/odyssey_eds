@@ -1,3 +1,6 @@
+/* Hero block — Odyssey destination hero */
+
+/* CLS prevention: reserve space for hero before image loads */
 .hero-container .hero-wrapper {
   max-width: unset;
   padding: 0;
@@ -5,33 +8,182 @@
 
 .hero {
   position: relative;
-  padding: 40px 24px;
-  min-height: 300px;
-}
-
-.hero h1 {
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-  color: var(--background-color);
-}
-
-.hero picture {
-  position: absolute;
-  z-index: -1;
-  inset: 0;
-  object-fit: cover;
-  box-sizing: border-box;
-}
-
-.hero img {
-  object-fit: cover;
+  min-height: 640px;
   width: 100%;
-  height: 100%;
+  overflow: hidden;
+  color: white;
 }
 
 @media (width >= 900px) {
   .hero {
-    padding: 40px 32px;
+    min-height: 720px;
+    height: 92vh;
+  }
+}
+
+/* Background image */
+.hero .hero-bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.hero .hero-bg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Gradient overlay */
+.hero .hero-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: linear-gradient(
+    to bottom,
+    rgb(15 45 74 / 60%),
+    rgb(15 45 74 / 25%) 50%,
+    rgb(15 45 74 / 80%)
+  );
+}
+
+/* Content */
+.hero .hero-content {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  min-height: 600px;
+  max-width: var(--content-max-width);
+  margin: 0 auto;
+  padding: 128px 20px 48px;
+}
+
+@media (width >= 900px) {
+  .hero .hero-content {
+    min-height: unset;
+    height: 100%;
+    padding: 128px 40px 96px;
+  }
+}
+
+/* Eyebrow */
+.hero .hero-eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.35em;
+  color: var(--gold);
+}
+
+@media (width >= 900px) {
+  .hero .hero-eyebrow {
+    font-size: 11px;
+    letter-spacing: 0.4em;
+  }
+}
+
+.hero .hero-eyebrow-line {
+  display: inline-block;
+  height: 1px;
+  width: 32px;
+  background: var(--gold);
+}
+
+@media (width >= 900px) {
+  .hero .hero-eyebrow-line {
+    width: 40px;
+  }
+}
+
+/* Title */
+.hero .hero-title {
+  margin-top: 20px;
+  font-family: var(--heading-font-family);
+  font-size: 52px;
+  line-height: 0.98;
+  letter-spacing: -0.025em;
+  color: white;
+  font-weight: 400;
+}
+
+@media (width >= 900px) {
+  .hero .hero-title {
+    margin-top: 24px;
+    font-size: 104px;
+    max-width: 900px;
+  }
+}
+
+.hero .hero-title em {
+  font-style: italic;
+  font-weight: 400;
+}
+
+/* Description */
+.hero .hero-description {
+  margin-top: 24px;
+  max-width: 560px;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.7;
+  color: rgb(255 255 255 / 85%);
+}
+
+@media (width >= 900px) {
+  .hero .hero-description {
+    margin-top: 32px;
+    font-size: 15px;
+  }
+}
+
+/* Stats bar */
+.hero .hero-stats {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  border-top: 1px solid rgb(255 255 255 / 20%);
+  padding-top: 24px;
+}
+
+@media (width >= 900px) {
+  .hero .hero-stats {
+    margin-top: 56px;
+    gap: 56px;
+    padding-top: 32px;
+  }
+}
+
+.hero .hero-stat-value {
+  font-family: var(--heading-font-family);
+  font-size: 24px;
+  font-style: italic;
+  color: white;
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+@media (width >= 900px) {
+  .hero .hero-stat-value {
+    font-size: 30px;
+  }
+}
+
+.hero .hero-stat-label {
+  margin-top: 6px;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.24em;
+  color: rgb(255 255 255 / 70%);
+}
+
+@media (width >= 900px) {
+  .hero .hero-stat-label {
+    margin-top: 8px;
+    letter-spacing: 0.28em;
   }
 }

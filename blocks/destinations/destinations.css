@@ -1,0 +1,134 @@
+/* Destinations block */
+.destinations {
+  max-width: var(--content-max-width);
+  margin: 0 auto;
+  padding: 64px 20px;
+}
+
+@media (width >= 900px) {
+  .destinations {
+    padding: 128px 40px;
+  }
+}
+
+.destinations .destinations-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 48px;
+}
+
+@media (width >= 900px) {
+  .destinations .destinations-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 56px 32px;
+  }
+}
+
+.destinations .destinations-link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+/* CLS prevention: reserve aspect-ratio for card image */
+.destinations .destinations-img-wrap {
+  position: relative;
+  aspect-ratio: 3 / 4;
+  overflow: hidden;
+  background-color: rgb(15 45 74 / 5%);
+}
+
+.destinations .destinations-img-wrap picture,
+.destinations .destinations-img-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.destinations .destinations-number {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  font-family: var(--heading-font-family);
+  font-size: 14px;
+  font-style: italic;
+  color: white;
+}
+
+@media (width >= 900px) {
+  .destinations .destinations-number {
+    left: 24px;
+    top: 24px;
+  }
+}
+
+.destinations .destinations-info {
+  margin-top: 20px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+@media (width >= 900px) {
+  .destinations .destinations-info {
+    margin-top: 24px;
+  }
+}
+
+.destinations .destinations-region {
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.32em;
+  color: var(--gold);
+}
+
+@media (width >= 900px) {
+  .destinations .destinations-region {
+    font-size: 11px;
+  }
+}
+
+.destinations .destinations-name {
+  margin-top: 8px;
+  font-family: var(--heading-font-family);
+  font-size: 28px;
+  line-height: 1;
+  font-weight: 400;
+}
+
+@media (width >= 900px) {
+  .destinations .destinations-name {
+    margin-top: 12px;
+    font-size: 36px;
+  }
+}
+
+.destinations .destinations-price-col {
+  text-align: right;
+}
+
+.destinations .destinations-price-label {
+  font-size: 9px;
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+  color: var(--ocean-soft);
+}
+
+@media (width >= 900px) {
+  .destinations .destinations-price-label {
+    font-size: 10px;
+  }
+}
+
+.destinations .destinations-price {
+  margin-top: 4px;
+  font-family: var(--heading-font-family);
+  font-size: 18px;
+  color: var(--gold);
+}
+
+@media (width >= 900px) {
+  .destinations .destinations-price {
+    font-size: 20px;
+  }
+}

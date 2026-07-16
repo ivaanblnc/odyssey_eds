@@ -1,0 +1,72 @@
+/* Yacht Specs block */
+.yacht-specs {
+  max-width: var(--content-max-width);
+  margin: 0 auto;
+  padding: 64px 20px;
+}
+
+@media (width >= 900px) {
+  .yacht-specs {
+    padding: 112px 40px;
+  }
+}
+
+.yacht-specs .yacht-specs-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0;
+}
+
+@media (width >= 600px) {
+  .yacht-specs .yacht-specs-grid {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 64px;
+  }
+}
+
+@media (width >= 900px) {
+  .yacht-specs .yacht-specs-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.yacht-specs .yacht-specs-item {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 16px;
+  border-bottom: 1px solid var(--hairline);
+  padding: 16px 0;
+}
+
+@media (width >= 900px) {
+  .yacht-specs .yacht-specs-item {
+    padding: 20px 0;
+  }
+}
+
+.yacht-specs .yacht-specs-label {
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.26em;
+  color: var(--ocean-soft);
+}
+
+@media (width >= 900px) {
+  .yacht-specs .yacht-specs-label {
+    font-size: 11px;
+    letter-spacing: 0.28em;
+  }
+}
+
+.yacht-specs .yacht-specs-value {
+  font-family: var(--heading-font-family);
+  font-size: 16px;
+  color: var(--ocean);
+}
+
+@media (width >= 900px) {
+  .yacht-specs .yacht-specs-value {
+    font-size: 18px;
+  }
+}

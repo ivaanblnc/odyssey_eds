@@ -1,0 +1,102 @@
+/* Yacht Gallery block */
+
+/* CLS prevention: reserve height before images load */
+.yacht-gallery {
+  max-width: var(--content-max-width);
+  margin: 0 auto;
+  min-height: 400px;
+}
+
+@media (width >= 900px) {
+  .yacht-gallery {
+    padding: 0 40px;
+    min-height: 620px;
+  }
+}
+
+/* Mobile horizontal scroller */
+.yacht-gallery .yacht-gallery-mobile {
+  display: flex;
+  gap: 8px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding: 0 20px;
+}
+
+@media (width >= 900px) {
+  .yacht-gallery .yacht-gallery-mobile {
+    display: none;
+  }
+}
+
+.yacht-gallery .yacht-gallery-slide {
+  position: relative;
+  aspect-ratio: 4 / 5;
+  width: 85%;
+  flex-shrink: 0;
+  scroll-snap-align: center;
+  overflow: hidden;
+}
+
+.yacht-gallery .yacht-gallery-slide picture,
+.yacht-gallery .yacht-gallery-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Desktop masonry grid */
+.yacht-gallery .yacht-gallery-desktop {
+  display: none;
+}
+
+@media (width >= 900px) {
+  .yacht-gallery .yacht-gallery-desktop {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 12px;
+    height: 620px;
+  }
+}
+
+.yacht-gallery .yacht-gallery-cell {
+  overflow: hidden;
+}
+
+.yacht-gallery .yacht-gallery-cell picture,
+.yacht-gallery .yacht-gallery-cell img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.yacht-gallery .yacht-gallery-cell-hero {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+/* "More photos" overlay */
+.yacht-gallery .yacht-gallery-more {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgb(15 45 74 / 60%);
+  font-family: var(--heading-font-family);
+  font-style: italic;
+  font-size: 18px;
+  color: white;
+}
+
+@media (width >= 900px) {
+  .yacht-gallery .yacht-gallery-more {
+    font-size: 24px;
+  }
+}
+
+/* Make the last cell relative for overlay positioning */
+.yacht-gallery .yacht-gallery-cell:last-child {
+  position: relative;
+}

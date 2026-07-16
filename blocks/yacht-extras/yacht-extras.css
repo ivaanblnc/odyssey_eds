@@ -1,0 +1,118 @@
+/* Yacht Extras block */
+.yacht-extras {
+  max-width: var(--content-max-width);
+  margin: 0 auto;
+  padding: 64px 20px;
+}
+
+@media (width >= 900px) {
+  .yacht-extras {
+    padding: 112px 40px;
+  }
+}
+
+.yacht-extras .yacht-extras-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 32px;
+}
+
+@media (width >= 900px) {
+  .yacht-extras .yacht-extras-grid {
+    grid-template-columns: 1fr 2fr;
+    gap: 48px;
+  }
+}
+
+.yacht-extras .yacht-extras-eyebrow {
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.4em;
+  color: var(--gold);
+}
+
+@media (width >= 900px) {
+  .yacht-extras .yacht-extras-eyebrow {
+    font-size: 11px;
+  }
+}
+
+.yacht-extras .yacht-extras-heading {
+  margin-top: 16px;
+  font-family: var(--heading-font-family);
+  font-size: 32px;
+  line-height: 1.1;
+  font-weight: 400;
+}
+
+@media (width >= 900px) {
+  .yacht-extras .yacht-extras-heading {
+    margin-top: 20px;
+    font-size: 44px;
+    line-height: 1.05;
+  }
+}
+
+.yacht-extras .yacht-extras-desc {
+  margin-top: 20px;
+  font-size: 13px;
+  line-height: 1.9;
+  font-weight: 300;
+  color: var(--ocean-soft);
+}
+
+@media (width >= 900px) {
+  .yacht-extras .yacht-extras-desc {
+    margin-top: 24px;
+    font-size: 14px;
+  }
+}
+
+.yacht-extras .yacht-extras-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border-top: 1px solid var(--ocean);
+}
+
+.yacht-extras .yacht-extras-item {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  gap: 16px;
+  border-bottom: 1px solid var(--hairline);
+  padding: 20px 0;
+}
+
+@media (width >= 900px) {
+  .yacht-extras .yacht-extras-item {
+    padding: 24px 0;
+  }
+}
+
+.yacht-extras .yacht-extras-name {
+  font-family: var(--heading-font-family);
+  font-size: 18px;
+  line-height: 1.2;
+}
+
+@media (width >= 900px) {
+  .yacht-extras .yacht-extras-name {
+    font-size: 20px;
+  }
+}
+
+.yacht-extras .yacht-extras-price {
+  flex-shrink: 0;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.26em;
+  color: var(--gold);
+}
+
+@media (width >= 900px) {
+  .yacht-extras .yacht-extras-price {
+    font-size: 13px;
+    letter-spacing: 0.28em;
+  }
+}

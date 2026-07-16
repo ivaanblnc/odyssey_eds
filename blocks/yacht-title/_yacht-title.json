@@ -1,0 +1,48 @@
+{
+  "definitions": [
+    {
+      "title": "Yacht Title",
+      "id": "yacht-title",
+      "plugins": {
+        "xwalk": {
+          "page": {
+            "resourceType": "core/franklin/components/block/v1/block",
+            "template": {
+              "name": "Yacht Title",
+              "model": "yacht-title"
+            }
+          }
+        }
+      }
+    }
+  ],
+  "models": [
+    {
+      "id": "yacht-title",
+      "fields": [
+        {
+          "component": "text",
+          "valueType": "string",
+          "name": "category",
+          "label": "Category",
+          "description": "e.g. Catamarán de lujo · 2023 · Signature"
+        },
+        {
+          "component": "text",
+          "valueType": "string",
+          "name": "title",
+          "label": "Title & Subtitle",
+          "description": "Main title row: col1=model name, col2=yacht name"
+        },
+        {
+          "component": "text",
+          "valueType": "string",
+          "name": "price",
+          "label": "Price & Base",
+          "description": "Price row: col1=price label, col2=base port"
+        }
+      ]
+    }
+  ],
+  "filters": []
+}

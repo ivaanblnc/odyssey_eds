@@ -128,6 +128,81 @@
           }
         },
         {
+          "title": "Concierge",
+          "id": "concierge",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "Concierge",
+                  "filter": "concierge"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Concierge Service",
+          "id": "concierge-service",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block/item",
+                "template": {
+                  "name": "Concierge Service",
+                  "model": "concierge-service"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Destinations",
+          "id": "destinations",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "Destinations",
+                  "filter": "destinations"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Destination",
+          "id": "destination",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block/item",
+                "template": {
+                  "name": "Destination",
+                  "model": "destination"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Dynamic Fleet Grid",
+          "id": "dynamic-fleet-grid",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "Dynamic Fleet Grid",
+                  "model": "dynamic-fleet-grid"
+                }
+              }
+            }
+          }
+        },
+        {
           "title": "Fragment",
           "id": "fragment",
           "plugins": {
@@ -152,6 +227,186 @@
                 "template": {
                   "name": "Hero",
                   "model": "hero"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Journal",
+          "id": "journal",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "Journal",
+                  "filter": "journal"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Journal Entry",
+          "id": "journal-entry",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block/item",
+                "template": {
+                  "name": "Journal Entry",
+                  "model": "journal-entry"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Manifesto",
+          "id": "manifesto",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "Manifesto",
+                  "model": "manifesto"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Pricing Calculator",
+          "id": "pricing-calculator",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "Pricing Calculator",
+                  "model": "pricing-calculator"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Yacht Extras",
+          "id": "yacht-extras",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "Yacht Extras",
+                  "filter": "yacht-extras"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Extra Service",
+          "id": "extra-service",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block/item",
+                "template": {
+                  "name": "Extra Service",
+                  "model": "extra-service"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Yacht Gallery",
+          "id": "yacht-gallery",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "Yacht Gallery",
+                  "filter": "yacht-gallery"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Gallery Image",
+          "id": "gallery-image",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block/item",
+                "template": {
+                  "name": "Gallery Image",
+                  "model": "gallery-image"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Yacht Overview",
+          "id": "yacht-overview",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "Yacht Overview",
+                  "model": "yacht-overview"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Yacht Specs",
+          "id": "yacht-specs",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "Yacht Specs",
+                  "filter": "yacht-specs"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Spec",
+          "id": "spec",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block/item",
+                "template": {
+                  "name": "Spec",
+                  "model": "spec"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Yacht Title",
+          "id": "yacht-title",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "Yacht Title",
+                  "model": "yacht-title"
                 }
               }
             }

@@ -1,0 +1,55 @@
+{
+  "definitions": [
+    {
+      "title": "Dynamic Fleet Grid",
+      "id": "dynamic-fleet-grid",
+      "plugins": {
+        "xwalk": {
+          "page": {
+            "resourceType": "core/franklin/components/block/v1/block",
+            "template": {
+              "name": "Dynamic Fleet Grid",
+              "model": "dynamic-fleet-grid"
+            }
+          }
+        }
+      }
+    }
+  ],
+  "models": [
+    {
+      "id": "dynamic-fleet-grid",
+      "fields": [
+        {
+          "component": "text",
+          "valueType": "string",
+          "name": "title",
+          "label": "Title",
+          "description": "Heading for the fleet grid"
+        },
+        {
+          "component": "text",
+          "valueType": "string",
+          "name": "region",
+          "label": "Default Region",
+          "description": "e.g., corfu, ibiza, mykonos"
+        },
+        {
+          "component": "text",
+          "valueType": "string",
+          "name": "maxItems",
+          "label": "Max Items",
+          "description": "Number of boats to display (e.g., 4)"
+        },
+        {
+          "component": "text",
+          "valueType": "string",
+          "name": "noResults",
+          "label": "No Results Message",
+          "description": "Text to show if no yachts are found"
+        }
+      ]
+    }
+  ],
+  "filters": []
+}

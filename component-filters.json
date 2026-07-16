@@ -15,7 +15,18 @@
       "hero",
       "cards",
       "columns",
-      "fragment"
+      "fragment",
+      "manifesto",
+      "destinations",
+      "concierge",
+      "journal",
+      "yacht-title",
+      "yacht-gallery",
+      "yacht-overview",
+      "yacht-specs",
+      "yacht-extras",
+      "pricing-calculator",
+      "dynamic-fleet-grid"
     ]
   },
   {
@@ -37,6 +48,42 @@
       "image",
       "button",
       "title"
+    ]
+  },
+  {
+    "id": "concierge",
+    "components": [
+      "concierge-service"
+    ]
+  },
+  {
+    "id": "destinations",
+    "components": [
+      "destination"
+    ]
+  },
+  {
+    "id": "journal",
+    "components": [
+      "journal-entry"
+    ]
+  },
+  {
+    "id": "yacht-extras",
+    "components": [
+      "extra-service"
+    ]
+  },
+  {
+    "id": "yacht-gallery",
+    "components": [
+      "gallery-image"
+    ]
+  },
+  {
+    "id": "yacht-specs",
+    "components": [
+      "spec"
     ]
   }
 ]

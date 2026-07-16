@@ -1,0 +1,73 @@
+/* Journal block */
+.journal {
+  max-width: var(--content-max-width);
+  margin: 0 auto;
+  padding: 64px 20px;
+}
+
+@media (width >= 900px) {
+  .journal {
+    padding: 128px 40px;
+  }
+}
+
+.journal .journal-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 32px;
+}
+
+@media (width >= 900px) {
+  .journal .journal-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+  }
+}
+
+.journal .journal-link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+.journal .journal-entry {
+  border-top: 1px solid var(--ocean);
+  padding-top: 20px;
+}
+
+@media (width >= 900px) {
+  .journal .journal-entry {
+    padding-top: 24px;
+  }
+}
+
+.journal .journal-meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+  color: var(--ocean-soft);
+}
+
+@media (width >= 900px) {
+  .journal .journal-meta {
+    font-size: 11px;
+  }
+}
+
+.journal .journal-title {
+  margin-top: 16px;
+  font-family: var(--heading-font-family);
+  font-size: 20px;
+  line-height: 1.3;
+  font-weight: 400;
+}
+
+@media (width >= 900px) {
+  .journal .journal-title {
+    margin-top: 24px;
+    font-size: 24px;
+  }
+}
