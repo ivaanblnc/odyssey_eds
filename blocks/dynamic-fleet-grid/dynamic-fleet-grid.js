@@ -110,8 +110,8 @@ export default async function decorate(block) {
     // Clear skeletons
     grid.innerHTML = '';
 
-    if (response?.data && response.data.length > 0) {
-      const boats = response.data.slice(0, maxItems);
+    if (response && response.length > 0) {
+      const boats = response.slice(0, maxItems);
       boats.forEach((boat) => {
         grid.append(createYachtCard(boat));
       });

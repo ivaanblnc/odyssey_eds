@@ -1,19 +1,14 @@
 {
   "odyssey-eds/flota/megayates/azimut-grande-27": {
-    "section-1": {
-      "yacht-header": {
+    "section": {
+      "yacht-header_1": {
         "eyebrow": "Megayate",
-        "title": "Azimut Grande 27",
+        "title": "<h1>Azimut Grande 27</h1>",
         "priceLabel": "Tarifa desde",
         "price": "65.000 € / semana",
         "location": "Mónaco, Costa Azul"
       },
-      "gallery": [
-        "https://images.unsplash.com/photo-1544551763-46a013bb70d5",
-        "https://images.unsplash.com/photo-1567899378494-47b22a2ae96a",
-        "https://images.unsplash.com/photo-1605281317010-fe5ffe798166"
-      ],
-      "yacht-overview": {
+      "yacht-overview_3": {
         "eyebrow": "Resumen",
         "title": "Diseño italiano de vanguardia",
         "description": "<p>El Azimut Grande 27 es la máxima expresión de lujo en el mar. Con un exterior agresivo y un interior bañado en luz natural, ofrece una experiencia de confort inigualable. Sus 4 camarotes con baño en suite garantizan privacidad absoluta.</p>",
@@ -22,15 +17,15 @@
         "bookingForm": "<h2>Reserva tu experiencia</h2><table><tr><th>Salida</th><th>Precio</th></tr><tr><td>Julio - Agosto</td><td>75.000 € / sem</td></tr><tr><td>Resto del año</td><td>65.000 € / sem</td></tr></table><br/><a href=\"#\">Solicitar Reserva</a>"
       }
     },
-    "section-2": {
-      "yacht-specs": {
+    "section_1": {
+      "yacht-specs_0": {
         "eyebrow": "Especificaciones",
         "title": "Ficha Técnica",
         "specs": "<table><tr><td>Eslora</td><td>26.78 m</td></tr><tr><td>Manga</td><td>6.59 m</td></tr><tr><td>Calado</td><td>1.93 m</td></tr><tr><td>Huéspedes</td><td>10 (5 camarotes)</td></tr><tr><td>Tripulación</td><td>4 personas</td></tr><tr><td>Velocidad de crucero</td><td>24 nudos</td></tr></table>"
       }
     },
-    "section-3": {
-      "yacht-extras": {
+    "section_2": {
+      "yacht-extras_0": {
         "eyebrow": "Complementos",
         "title": "Servicios Extra",
         "description": "<p>Personaliza tu viaje con nuestras exclusivas experiencias a bordo.</p>",
@@ -39,20 +34,15 @@
     }
   },
   "odyssey-eds/flota/catamaranes/sunreef-60-aeolus": {
-    "section-1": {
-      "yacht-header": {
+    "section": {
+      "yacht-header_1": {
         "eyebrow": "Catamarán Eco-Lujo",
-        "title": "Sunreef 60 Aeolus",
+        "title": "<h1>Sunreef 60 Aeolus</h1>",
         "priceLabel": "Tarifa desde",
         "price": "45.000 € / semana",
         "location": "Ibiza, Baleares"
       },
-      "gallery": [
-        "https://images.unsplash.com/photo-1540946485063-a40da27545f8",
-        "https://images.unsplash.com/photo-1621277227447-0e6fc8da0398",
-        "https://images.unsplash.com/photo-1599839619722-39751411ea63"
-      ],
-      "yacht-overview": {
+      "yacht-overview_3": {
         "eyebrow": "Resumen",
         "title": "Navegación silenciosa y espaciosa",
         "description": "<p>El Sunreef 60 Aeolus combina el rendimiento de la vela con el lujo de un hotel boutique. Su enorme manga proporciona un salón y terraza comparables a yates de mucho mayor tamaño.</p>",
@@ -61,15 +51,15 @@
         "bookingForm": "<h2>Reserva tu experiencia</h2><table><tr><th>Salida</th><th>Precio</th></tr><tr><td>Julio - Agosto</td><td>55.000 € / sem</td></tr><tr><td>Resto del año</td><td>45.000 € / sem</td></tr></table><br/><a href=\"#\">Solicitar Reserva</a>"
       }
     },
-    "section-2": {
-      "yacht-specs": {
+    "section_1": {
+      "yacht-specs_0": {
         "eyebrow": "Especificaciones",
         "title": "Ficha Técnica",
         "specs": "<table><tr><td>Eslora</td><td>18.3 m</td></tr><tr><td>Manga</td><td>10.2 m</td></tr><tr><td>Calado</td><td>1.9 m</td></tr><tr><td>Huéspedes</td><td>8 (4 camarotes)</td></tr><tr><td>Tripulación</td><td>3 personas</td></tr><tr><td>Velocidad de crucero</td><td>10 nudos</td></tr></table>"
       }
     },
-    "section-3": {
-      "yacht-extras": {
+    "section_2": {
+      "yacht-extras_0": {
         "eyebrow": "Complementos",
         "title": "Deportes Acuáticos",
         "description": "<p>Aprovecha la gran plataforma de baño del Sunreef.</p>",
