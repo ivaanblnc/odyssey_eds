@@ -1,0 +1,110 @@
+{
+  "jcr:primaryType": "dam:Asset",
+  "jcr:mixinTypes": [
+    "mix:referenceable"
+  ],
+  "jcr:createdBy": "idelllano@hiberus.com",
+  "jcr:created": "Thu Jul 16 2026 18:38:05 GMT+0000",
+  "jcr:uuid": "f5e59441-28a2-4068-8afd-2dae9e7a532d",
+  "jcr:content": {
+    "jcr:primaryType": "dam:AssetContent",
+    "jcr:lastModifiedBy": "workflow-process-service",
+    "dam:assetState": "processed",
+    "jcr:lastModified": "Wed Oct 18 2023 10:36:15 GMT+0200",
+    "renditions": {
+      "jcr:primaryType": "nt:folder",
+      "jcr:createdBy": "idelllano@hiberus.com",
+      "jcr:created": "Thu Jul 16 2026 18:38:05 GMT+0000",
+      "cq5dam.web.1280.1280.png": {
+        "jcr:primaryType": "nt:file",
+        "jcr:createdBy": "idelllano@hiberus.com",
+        "jcr:created": "Thu Jul 16 2026 18:38:05 GMT+0000",
+        "jcr:content": {
+          "jcr:primaryType": "oak:Resource",
+          "jcr:lastModifiedBy": "workflow-process-service",
+          "jcr:mimeType": "image/png",
+          "jcr:lastModified": "Thu Jul 16 2026 18:38:05 GMT+0000",
+          ":jcr:data": 574767
+        }
+      },
+      "cq5dam.thumbnail.48.48.png": {
+        "jcr:primaryType": "nt:file",
+        "jcr:createdBy": "idelllano@hiberus.com",
+        "jcr:created": "Thu Jul 16 2026 18:38:05 GMT+0000",
+        "jcr:content": {
+          "jcr:primaryType": "oak:Resource",
+          "jcr:lastModifiedBy": "workflow-process-service",
+          "jcr:mimeType": "image/png",
+          "jcr:lastModified": "Thu Jul 16 2026 18:38:05 GMT+0000",
+          ":jcr:data": 2349
+        }
+      },
+      "cq5dam.thumbnail.140.100.png": {
+        "jcr:primaryType": "nt:file",
+        "jcr:createdBy": "idelllano@hiberus.com",
+        "jcr:created": "Thu Jul 16 2026 18:38:05 GMT+0000",
+        "jcr:content": {
+          "jcr:primaryType": "oak:Resource",
+          "jcr:lastModifiedBy": "workflow-process-service",
+          "jcr:mimeType": "image/png",
+          "jcr:lastModified": "Thu Jul 16 2026 18:38:05 GMT+0000",
+          ":jcr:data": 14352
+        }
+      },
+      "original": {
+        "jcr:primaryType": "nt:file",
+        "jcr:createdBy": "idelllano@hiberus.com",
+        "jcr:created": "Thu Jul 16 2026 18:38:05 GMT+0000",
+        "jcr:content": {
+          "jcr:primaryType": "oak:Resource",
+          "jcr:lastModifiedBy": "admin",
+          "jcr:mimeType": "image/png",
+          "jcr:lastModified": "Thu Jul 16 2026 18:38:05 GMT+0000",
+          ":jcr:data": 692301
+        }
+      },
+      "cq5dam.thumbnail.319.319.png": {
+        "jcr:primaryType": "nt:file",
+        "jcr:createdBy": "idelllano@hiberus.com",
+        "jcr:created": "Thu Jul 16 2026 18:38:05 GMT+0000",
+        "jcr:content": {
+          "jcr:primaryType": "oak:Resource",
+          "jcr:lastModifiedBy": "workflow-process-service",
+          "jcr:mimeType": "image/png",
+          "jcr:lastModified": "Thu Jul 16 2026 18:38:05 GMT+0000",
+          ":jcr:data": 60060
+        }
+      }
+    },
+    "related": {
+      "jcr:primaryType": "nt:unstructured"
+    },
+    "metadata": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:mixinTypes": [
+        "cq:Taggable"
+      ],
+      "dam:Physicalheightininches": "-1.0",
+      "tiff:Compression": 1,
+      "dam:Physicalwidthininches": "-1.0",
+      "dam:Fileformat": "PNG",
+      "dam:Progressive": "no",
+      "tiff:ImageLength": 886,
+      "dam:extracted": "Wed Oct 18 2023 10:36:14 GMT+0200",
+      "dc:format": "image/png",
+      "dam:Bitsperpixel": 32,
+      "dam:MIMEtype": "image/png",
+      "tiff:Orientation": 1,
+      "dam:Comments": "XML:com.adobe.xmp: <x:xmpmeta xmlns:x=\"adobe:ns:meta/\" x:xmptk=\"XMP Core 6.0.0\">\n   <rdf:RDF xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\">\n      <rdf:Description rdf:about=\"\"\n            xmlns:tiff=\"http://ns.adobe.com/tiff/1.0/\">\n         <tiff:Compression>1</tiff:Compression>\n         <tiff:Orientation>1</tiff:Orientation>\n         <tiff:PhotometricInterpretation>2</tiff:PhotometricInterpretation>\n         <tiff:ResolutionUnit>2</tiff:ResolutionUnit>\n      </rdf:Description>\n   </rdf:RDF>\n</x:xmpmeta>\n\n",
+      "dam:Physicalwidthindpi": -1,
+      "dam:Physicalheightindpi": -1,
+      "tiff:ResolutionUnit": 2,
+      "dam:Numberofimages": 1,
+      "dam:Numberoftextualcomments": 1,
+      "tiff:ImageWidth": 1600,
+      "dam:sha1": "fafa72ab959b2147b0549dd35c592858122043d3",
+      "dam:size": 692301,
+      "tiff:PhotometricInterpretation": 2
+    }
+  }
+}

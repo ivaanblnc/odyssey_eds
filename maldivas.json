@@ -1,0 +1,44 @@
+{
+  "jcr:primaryType": "dam:Asset",
+  "jcr:createdBy": "idelllano@hiberus.com",
+  "jcr:created": "Thu Jul 23 2026 20:44:22 GMT+0000",
+  "jcr:content": {
+    "jcr:primaryType": "dam:AssetContent",
+    "renditions": {
+      "jcr:primaryType": "nt:folder",
+      "jcr:createdBy": "idelllano@hiberus.com",
+      "jcr:created": "Thu Jul 23 2026 20:44:22 GMT+0000",
+      "original": {
+        "jcr:primaryType": "nt:file",
+        "jcr:createdBy": "idelllano@hiberus.com",
+        "jcr:created": "Thu Jul 23 2026 20:44:22 GMT+0000",
+        "jcr:content": {
+          "jcr:primaryType": "oak:Resource",
+          "jcr:lastModifiedBy": "idelllano@hiberus.com",
+          "jcr:mimeType": "image/jpeg",
+          "jcr:lastModified": "Thu Jul 23 2026 20:44:22 GMT+0000",
+          ":jcr:data": 1100155
+        }
+      },
+      "cq5dam.thumbnail.319.319.png": {
+        "jcr:primaryType": "nt:file",
+        "jcr:createdBy": "idelllano@hiberus.com",
+        "jcr:created": "Thu Jul 23 2026 21:29:26 GMT+0000",
+        "jcr:content": {
+          "jcr:primaryType": "oak:Resource",
+          "jcr:lastModifiedBy": "idelllano@hiberus.com",
+          "jcr:mimeType": "image/png",
+          "jcr:lastModified": "Thu Jul 23 2026 21:30:47 GMT+0000",
+          ":jcr:data": 1100155
+        }
+      }
+    },
+    "related": {
+      "jcr:primaryType": "nt:unstructured"
+    },
+    "metadata": {
+      "jcr:primaryType": "nt:unstructured",
+      "dc:format": "image/jpeg"
+    }
+  }
+}

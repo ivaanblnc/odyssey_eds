@@ -137,3 +137,8 @@
   grid-template-columns: 1fr;
   max-width: 672px;
 }
+
+.manifesto .manifesto-num {
+  color: var(--gold);
+}
+

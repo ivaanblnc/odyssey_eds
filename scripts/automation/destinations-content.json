@@ -98,7 +98,7 @@
               "image@reference",
               "text@richtext"
             ],
-            "image": "/content/dam/odyssey-eds/ibiza.jpg",
+            "image": "/content/dam/odyssey-eds/ibiza.png",
             "text": "<h3>Privacidad Total</h3><p>Accede a calas secretas de Ibiza donde solo se puede llegar en yate.</p>"
           },
           {
@@ -107,7 +107,7 @@
               "image@reference",
               "text@richtext"
             ],
-            "image": "/content/dam/odyssey-eds/megayates.jpg",
+            "image": "/content/dam/odyssey-eds/megayates.png",
             "text": "<h3>Servicio 5 Estrellas</h3><p>Chef privado y tripulación a tu entera disposición durante todo el viaje.</p>"
           },
           {
@@ -116,7 +116,7 @@
               "image@reference",
               "text@richtext"
             ],
-            "image": "/content/dam/odyssey-eds/catamaranes.jpg",
+            "image": "/content/dam/odyssey-eds/catamaranes.png",
             "text": "<h3>Libertad Absoluta</h3><p>Diseña tu propio itinerario cada mañana al despertar con vistas al mar.</p>"
           }
         ]
@@ -222,7 +222,7 @@
               "image@reference",
               "text@richtext"
             ],
-            "image": "/content/dam/odyssey-eds/mallorca.jpg",
+            "image": "/content/dam/odyssey-eds/mallorca.png",
             "text": "<h3>Privacidad Total</h3><p>Accede a calas secretas de Mallorca donde solo se puede llegar en yate.</p>"
           },
           {
@@ -231,7 +231,7 @@
               "image@reference",
               "text@richtext"
             ],
-            "image": "/content/dam/odyssey-eds/megayates.jpg",
+            "image": "/content/dam/odyssey-eds/megayates.png",
             "text": "<h3>Servicio 5 Estrellas</h3><p>Chef privado y tripulación a tu entera disposición durante todo el viaje.</p>"
           },
           {
@@ -240,7 +240,7 @@
               "image@reference",
               "text@richtext"
             ],
-            "image": "/content/dam/odyssey-eds/catamaranes.jpg",
+            "image": "/content/dam/odyssey-eds/catamaranes.png",
             "text": "<h3>Libertad Absoluta</h3><p>Diseña tu propio itinerario cada mañana al despertar con vistas al mar.</p>"
           }
         ]
@@ -346,7 +346,7 @@
               "image@reference",
               "text@richtext"
             ],
-            "image": "/content/dam/odyssey-eds/costa-del-sol.jpg",
+            "image": "/content/dam/odyssey-eds/costa-del-sol.png",
             "text": "<h3>Privacidad Total</h3><p>Accede a calas secretas de Costa del Sol donde solo se puede llegar en yate.</p>"
           },
           {
@@ -355,7 +355,7 @@
               "image@reference",
               "text@richtext"
             ],
-            "image": "/content/dam/odyssey-eds/megayates.jpg",
+            "image": "/content/dam/odyssey-eds/megayates.png",
             "text": "<h3>Servicio 5 Estrellas</h3><p>Chef privado y tripulación a tu entera disposición durante todo el viaje.</p>"
           },
           {
@@ -364,7 +364,7 @@
               "image@reference",
               "text@richtext"
             ],
-            "image": "/content/dam/odyssey-eds/catamaranes.jpg",
+            "image": "/content/dam/odyssey-eds/catamaranes.png",
             "text": "<h3>Libertad Absoluta</h3><p>Diseña tu propio itinerario cada mañana al despertar con vistas al mar.</p>"
           }
         ]
@@ -470,7 +470,7 @@
               "image@reference",
               "text@richtext"
             ],
-            "image": "/content/dam/odyssey-eds/mykonos.jpg",
+            "image": "/content/dam/odyssey-eds/mykonos.png",
             "text": "<h3>Privacidad Total</h3><p>Accede a calas secretas de Mykonos donde solo se puede llegar en yate.</p>"
           },
           {
@@ -479,7 +479,7 @@
               "image@reference",
               "text@richtext"
             ],
-            "image": "/content/dam/odyssey-eds/megayates.jpg",
+            "image": "/content/dam/odyssey-eds/megayates.png",
             "text": "<h3>Servicio 5 Estrellas</h3><p>Chef privado y tripulación a tu entera disposición durante todo el viaje.</p>"
           },
           {
@@ -488,7 +488,7 @@
               "image@reference",
               "text@richtext"
             ],
-            "image": "/content/dam/odyssey-eds/catamaranes.jpg",
+            "image": "/content/dam/odyssey-eds/catamaranes.png",
             "text": "<h3>Libertad Absoluta</h3><p>Diseña tu propio itinerario cada mañana al despertar con vistas al mar.</p>"
           }
         ]
@@ -594,7 +594,7 @@
               "image@reference",
               "text@richtext"
             ],
-            "image": "/content/dam/odyssey-eds/corfu.jpg",
+            "image": "/content/dam/odyssey-eds/corfu.png",
             "text": "<h3>Privacidad Total</h3><p>Accede a calas secretas de Corfú donde solo se puede llegar en yate.</p>"
           },
           {
@@ -603,7 +603,7 @@
               "image@reference",
               "text@richtext"
             ],
-            "image": "/content/dam/odyssey-eds/megayates.jpg",
+            "image": "/content/dam/odyssey-eds/megayates.png",
             "text": "<h3>Servicio 5 Estrellas</h3><p>Chef privado y tripulación a tu entera disposición durante todo el viaje.</p>"
           },
           {
@@ -612,7 +612,7 @@
               "image@reference",
               "text@richtext"
             ],
-            "image": "/content/dam/odyssey-eds/catamaranes.jpg",
+            "image": "/content/dam/odyssey-eds/catamaranes.png",
             "text": "<h3>Libertad Absoluta</h3><p>Diseña tu propio itinerario cada mañana al despertar con vistas al mar.</p>"
           }
         ]
@@ -718,7 +718,7 @@
               "image@reference",
               "text@richtext"
             ],
-            "image": "/content/dam/odyssey-eds/monaco.jpg",
+            "image": "/content/dam/odyssey-eds/monaco.png",
             "text": "<h3>Privacidad Total</h3><p>Accede a calas secretas de Mónaco donde solo se puede llegar en yate.</p>"
           },
           {
@@ -727,7 +727,7 @@
               "image@reference",
               "text@richtext"
             ],
-            "image": "/content/dam/odyssey-eds/megayates.jpg",
+            "image": "/content/dam/odyssey-eds/megayates.png",
             "text": "<h3>Servicio 5 Estrellas</h3><p>Chef privado y tripulación a tu entera disposición durante todo el viaje.</p>"
           },
           {
@@ -736,7 +736,7 @@
               "image@reference",
               "text@richtext"
             ],
-            "image": "/content/dam/odyssey-eds/catamaranes.jpg",
+            "image": "/content/dam/odyssey-eds/catamaranes.png",
             "text": "<h3>Libertad Absoluta</h3><p>Diseña tu propio itinerario cada mañana al despertar con vistas al mar.</p>"
           }
         ]
@@ -842,7 +842,7 @@
               "image@reference",
               "text@richtext"
             ],
-            "image": "/content/dam/odyssey-eds/costa-amalfina.jpg",
+            "image": "/content/dam/odyssey-eds/costa-amalfina.png",
             "text": "<h3>Privacidad Total</h3><p>Accede a calas secretas de Costa Amalfitana donde solo se puede llegar en yate.</p>"
           },
           {
@@ -851,7 +851,7 @@
               "image@reference",
               "text@richtext"
             ],
-            "image": "/content/dam/odyssey-eds/megayates.jpg",
+            "image": "/content/dam/odyssey-eds/megayates.png",
             "text": "<h3>Servicio 5 Estrellas</h3><p>Chef privado y tripulación a tu entera disposición durante todo el viaje.</p>"
           },
           {
@@ -860,7 +860,7 @@
               "image@reference",
               "text@richtext"
             ],
-            "image": "/content/dam/odyssey-eds/catamaranes.jpg",
+            "image": "/content/dam/odyssey-eds/catamaranes.png",
             "text": "<h3>Libertad Absoluta</h3><p>Diseña tu propio itinerario cada mañana al despertar con vistas al mar.</p>"
           }
         ]
@@ -966,7 +966,7 @@
               "image@reference",
               "text@richtext"
             ],
-            "image": "/content/dam/odyssey-eds/cerdena.jpg",
+            "image": "/content/dam/odyssey-eds/cerdena.png",
             "text": "<h3>Privacidad Total</h3><p>Accede a calas secretas de Cerdeña donde solo se puede llegar en yate.</p>"
           },
           {
@@ -975,7 +975,7 @@
               "image@reference",
               "text@richtext"
             ],
-            "image": "/content/dam/odyssey-eds/megayates.jpg",
+            "image": "/content/dam/odyssey-eds/megayates.png",
             "text": "<h3>Servicio 5 Estrellas</h3><p>Chef privado y tripulación a tu entera disposición durante todo el viaje.</p>"
           },
           {
@@ -984,7 +984,7 @@
               "image@reference",
               "text@richtext"
             ],
-            "image": "/content/dam/odyssey-eds/catamaranes.jpg",
+            "image": "/content/dam/odyssey-eds/catamaranes.png",
             "text": "<h3>Libertad Absoluta</h3><p>Diseña tu propio itinerario cada mañana al despertar con vistas al mar.</p>"
           }
         ]
@@ -1090,7 +1090,7 @@
               "image@reference",
               "text@richtext"
             ],
-            "image": "/content/dam/odyssey-eds/corcega.jpg",
+            "image": "/content/dam/odyssey-eds/corcega.png",
             "text": "<h3>Privacidad Total</h3><p>Accede a calas secretas de Córcega donde solo se puede llegar en yate.</p>"
           },
           {
@@ -1099,7 +1099,7 @@
               "image@reference",
               "text@richtext"
             ],
-            "image": "/content/dam/odyssey-eds/megayates.jpg",
+            "image": "/content/dam/odyssey-eds/megayates.png",
             "text": "<h3>Servicio 5 Estrellas</h3><p>Chef privado y tripulación a tu entera disposición durante todo el viaje.</p>"
           },
           {
@@ -1108,7 +1108,7 @@
               "image@reference",
               "text@richtext"
             ],
-            "image": "/content/dam/odyssey-eds/catamaranes.jpg",
+            "image": "/content/dam/odyssey-eds/catamaranes.png",
             "text": "<h3>Libertad Absoluta</h3><p>Diseña tu propio itinerario cada mañana al despertar con vistas al mar.</p>"
           }
         ]
@@ -1214,7 +1214,7 @@
               "image@reference",
               "text@richtext"
             ],
-            "image": "/content/dam/odyssey-eds/bahamas.jpg",
+            "image": "/content/dam/odyssey-eds/bahamas.png",
             "text": "<h3>Privacidad Total</h3><p>Accede a calas secretas de Bahamas donde solo se puede llegar en yate.</p>"
           },
           {
@@ -1223,7 +1223,7 @@
               "image@reference",
               "text@richtext"
             ],
-            "image": "/content/dam/odyssey-eds/megayates.jpg",
+            "image": "/content/dam/odyssey-eds/megayates.png",
             "text": "<h3>Servicio 5 Estrellas</h3><p>Chef privado y tripulación a tu entera disposición durante todo el viaje.</p>"
           },
           {
@@ -1232,7 +1232,7 @@
               "image@reference",
               "text@richtext"
             ],
-            "image": "/content/dam/odyssey-eds/catamaranes.jpg",
+            "image": "/content/dam/odyssey-eds/catamaranes.png",
             "text": "<h3>Libertad Absoluta</h3><p>Diseña tu propio itinerario cada mañana al despertar con vistas al mar.</p>"
           }
         ]
@@ -1338,7 +1338,7 @@
               "image@reference",
               "text@richtext"
             ],
-            "image": "/content/dam/odyssey-eds/islas-virgenes-britanicas.jpg",
+            "image": "/content/dam/odyssey-eds/islas-virgenes-britanicas.png",
             "text": "<h3>Privacidad Total</h3><p>Accede a calas secretas de Islas Vírgenes Británicas donde solo se puede llegar en yate.</p>"
           },
           {
@@ -1347,7 +1347,7 @@
               "image@reference",
               "text@richtext"
             ],
-            "image": "/content/dam/odyssey-eds/megayates.jpg",
+            "image": "/content/dam/odyssey-eds/megayates.png",
             "text": "<h3>Servicio 5 Estrellas</h3><p>Chef privado y tripulación a tu entera disposición durante todo el viaje.</p>"
           },
           {
@@ -1356,7 +1356,7 @@
               "image@reference",
               "text@richtext"
             ],
-            "image": "/content/dam/odyssey-eds/catamaranes.jpg",
+            "image": "/content/dam/odyssey-eds/catamaranes.png",
             "text": "<h3>Libertad Absoluta</h3><p>Diseña tu propio itinerario cada mañana al despertar con vistas al mar.</p>"
           }
         ]
@@ -1462,7 +1462,7 @@
               "image@reference",
               "text@richtext"
             ],
-            "image": "/content/dam/odyssey-eds/san-bartolome.jpg",
+            "image": "/content/dam/odyssey-eds/san-bartolome.png",
             "text": "<h3>Privacidad Total</h3><p>Accede a calas secretas de San Bartolomé (St. Barths) donde solo se puede llegar en yate.</p>"
           },
           {
@@ -1471,7 +1471,7 @@
               "image@reference",
               "text@richtext"
             ],
-            "image": "/content/dam/odyssey-eds/megayates.jpg",
+            "image": "/content/dam/odyssey-eds/megayates.png",
             "text": "<h3>Servicio 5 Estrellas</h3><p>Chef privado y tripulación a tu entera disposición durante todo el viaje.</p>"
           },
           {
@@ -1480,7 +1480,7 @@
               "image@reference",
               "text@richtext"
             ],
-            "image": "/content/dam/odyssey-eds/catamaranes.jpg",
+            "image": "/content/dam/odyssey-eds/catamaranes.png",
             "text": "<h3>Libertad Absoluta</h3><p>Diseña tu propio itinerario cada mañana al despertar con vistas al mar.</p>"
           }
         ]
@@ -1586,7 +1586,7 @@
               "image@reference",
               "text@richtext"
             ],
-            "image": "/content/dam/odyssey-eds/islas-exumas.jpg",
+            "image": "/content/dam/odyssey-eds/islas-exumas.png",
             "text": "<h3>Privacidad Total</h3><p>Accede a calas secretas de Islas Exumas donde solo se puede llegar en yate.</p>"
           },
           {
@@ -1595,7 +1595,7 @@
               "image@reference",
               "text@richtext"
             ],
-            "image": "/content/dam/odyssey-eds/megayates.jpg",
+            "image": "/content/dam/odyssey-eds/megayates.png",
             "text": "<h3>Servicio 5 Estrellas</h3><p>Chef privado y tripulación a tu entera disposición durante todo el viaje.</p>"
           },
           {
@@ -1604,7 +1604,7 @@
               "image@reference",
               "text@richtext"
             ],
-            "image": "/content/dam/odyssey-eds/catamaranes.jpg",
+            "image": "/content/dam/odyssey-eds/catamaranes.png",
             "text": "<h3>Libertad Absoluta</h3><p>Diseña tu propio itinerario cada mañana al despertar con vistas al mar.</p>"
           }
         ]
@@ -1710,7 +1710,7 @@
               "image@reference",
               "text@richtext"
             ],
-            "image": "/content/dam/odyssey-eds/maldivas.jpg",
+            "image": "/content/dam/odyssey-eds/maldivas.png",
             "text": "<h3>Privacidad Total</h3><p>Accede a calas secretas de Maldivas donde solo se puede llegar en yate.</p>"
           },
           {
@@ -1719,7 +1719,7 @@
               "image@reference",
               "text@richtext"
             ],
-            "image": "/content/dam/odyssey-eds/megayates.jpg",
+            "image": "/content/dam/odyssey-eds/megayates.png",
             "text": "<h3>Servicio 5 Estrellas</h3><p>Chef privado y tripulación a tu entera disposición durante todo el viaje.</p>"
           },
           {
@@ -1728,7 +1728,7 @@
               "image@reference",
               "text@richtext"
             ],
-            "image": "/content/dam/odyssey-eds/catamaranes.jpg",
+            "image": "/content/dam/odyssey-eds/catamaranes.png",
             "text": "<h3>Libertad Absoluta</h3><p>Diseña tu propio itinerario cada mañana al despertar con vistas al mar.</p>"
           }
         ]
@@ -1834,7 +1834,7 @@
               "image@reference",
               "text@richtext"
             ],
-            "image": "/content/dam/odyssey-eds/seychelles.jpg",
+            "image": "/content/dam/odyssey-eds/seychelles.png",
             "text": "<h3>Privacidad Total</h3><p>Accede a calas secretas de Seychelles donde solo se puede llegar en yate.</p>"
           },
           {
@@ -1843,7 +1843,7 @@
               "image@reference",
               "text@richtext"
             ],
-            "image": "/content/dam/odyssey-eds/megayates.jpg",
+            "image": "/content/dam/odyssey-eds/megayates.png",
             "text": "<h3>Servicio 5 Estrellas</h3><p>Chef privado y tripulación a tu entera disposición durante todo el viaje.</p>"
           },
           {
@@ -1852,7 +1852,7 @@
               "image@reference",
               "text@richtext"
             ],
-            "image": "/content/dam/odyssey-eds/catamaranes.jpg",
+            "image": "/content/dam/odyssey-eds/catamaranes.png",
             "text": "<h3>Libertad Absoluta</h3><p>Diseña tu propio itinerario cada mañana al despertar con vistas al mar.</p>"
           }
         ]

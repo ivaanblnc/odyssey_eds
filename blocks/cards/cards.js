@@ -20,7 +20,8 @@ export default function decorate(block) {
         div.className = 'cards-card-image';
 
         if (isRawImage) {
-          const pic = createOptimizedPicture(textContent, '', false, [{ width: '750' }]);
+          const imgSrc = textContent.startsWith('/content/dam') ? `https://author-p34633-e913315.adobeaemcloud.com${textContent}` : textContent;
+          const pic = createOptimizedPicture(imgSrc, '', false, [{ width: '750' }]);
           div.textContent = '';
           div.append(pic);
         }

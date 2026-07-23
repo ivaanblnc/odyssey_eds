@@ -51,10 +51,10 @@ async function uploadAsset(name, url) {
     const arrayBuffer = await res.arrayBuffer();
     const blob = new Blob([arrayBuffer], { type: 'image/jpeg' });
     
-    console.log(`Uploading ${name}.jpg to AEM DAM...`);
+    console.log(`Uploading ${name}.png to AEM DAM...`);
     const formData = new FormData();
-    formData.append('name', `${name}.jpg`);
-    formData.append('file', blob, `${name}.jpg`);
+    formData.append('name', `${name}.png`);
+    formData.append('file', blob, `${name}.png`);
 
     const uploadUrl = `${AEM_HOST}/api/assets/odyssey-eds/*`;
     const uploadRes = await fetch(uploadUrl, {
@@ -70,35 +70,42 @@ async function uploadAsset(name, url) {
     } else {
       const errText = await uploadRes.text();
       if (uploadRes.status === 409) {
-          console.log(`ℹ️ ${name}.jpg already exists.`);
+          console.log(`ℹ️ ${name}.png already exists.`);
       } else {
-          console.error(`❌ Failed to upload ${name}.jpg: ${uploadRes.status} - ${errText}`);
+          console.error(`❌ Failed to upload ${name}.png: ${uploadRes.status} - ${errText}`);
       }
     }
     
     // Fix metadata for Content Advisor
-    console.log(`Setting dc:format metadata for ${name}.jpg...`);
-    const metaRes = await fetch(`${AEM_HOST}/content/dam/odyssey-eds/${name}.jpg`, {
+    console.log(`Setting dc:format metadata for ${name}.png...`);
+    const metaRes = await fetch(`${AEM_HOST}/content/dam/odyssey-eds/${name}.png`, {
       method: 'POST',
       headers: {
         Authorization: authHeader,
         'Content-Type': 'application/x-www-form-urlencoded'
       },
       body: new URLSearchParams({
-        './jcr:content/metadata/dc:format': 'image/jpeg'
+        './jcr:mixinTypes': 'mix:referenceable',
+        './jcr:content/dam:assetState': 'processed',
+        './jcr:content/metadata/dc:format': 'image/png',
+        './jcr:content/metadata/tiff:ImageWidth': '2000',
+        './jcr:content/metadata/tiff:ImageLength': '1333',
+        './jcr:content/metadata/dam:size': '100000',
+        './jcr:content/metadata/dam:Fileformat': 'PNG',
+        './jcr:content/metadata/dam:extracted': new Date().toISOString()
       })
     });
     if (metaRes.ok) {
-      console.log(`✅ Fixed metadata for ${name}.jpg`);
+      console.log(`✅ Fixed metadata for ${name}.png`);
     } else {
-      console.error(`❌ Failed to fix metadata for ${name}.jpg: ${metaRes.status}`);
+      console.error(`❌ Failed to fix metadata for ${name}.png: ${metaRes.status}`);
     }
 
     // Upload a thumbnail rendition so it appears in Asset Picker
-    console.log(`Uploading thumbnail for ${name}.jpg...`);
+    console.log(`Uploading thumbnail for ${name}.png...`);
     const rendFormData = new FormData();
     rendFormData.append('file', blob, 'cq5dam.thumbnail.319.319.png');
-    const rendRes = await fetch(`${AEM_HOST}/api/assets/odyssey-eds/${name}.jpg/renditions/cq5dam.thumbnail.319.319.png`, {
+    const rendRes = await fetch(`${AEM_HOST}/api/assets/odyssey-eds/${name}.png/renditions/cq5dam.thumbnail.319.319.png`, {
       method: 'POST',
       headers: {
         Authorization: authHeader
@@ -106,9 +113,9 @@ async function uploadAsset(name, url) {
       body: rendFormData
     });
     if (rendRes.ok) {
-      console.log(`✅ Uploaded thumbnail for ${name}.jpg`);
+      console.log(`✅ Uploaded thumbnail for ${name}.png`);
     } else {
-      console.error(`❌ Failed to upload thumbnail for ${name}.jpg: ${rendRes.status} - ${await rendRes.text()}`);
+      console.error(`❌ Failed to upload thumbnail for ${name}.png: ${rendRes.status} - ${await rendRes.text()}`);
     }
   } catch (e) {
     console.error(`❌ Error processing ${name}:`, e.message);

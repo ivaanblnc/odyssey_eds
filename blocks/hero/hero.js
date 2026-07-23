@@ -47,7 +47,8 @@ export default function decorate(block) {
     block.append(pic);
   } else if (textContent && (textContent.endsWith('.jpg') || textContent.endsWith('.png') || textContent.endsWith('.jpeg') || textContent.endsWith('.webp'))) {
     // Universal Editor provides raw string for internal DAM references
-    const pic = createOptimizedPicture(textContent, '', false);
+    const imgSrc = textContent.startsWith('/content/dam') ? `https://author-p34633-e913315.adobeaemcloud.com${textContent}` : textContent;
+    const pic = createOptimizedPicture(imgSrc, '', false);
     pic.classList.add('hero-bg');
     const img = pic.querySelector('img');
     if (img) img.className = 'hero-bg';

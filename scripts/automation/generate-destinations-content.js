@@ -106,19 +106,19 @@ function processDestinations(regionName, children) {
             {
               "model": "card",
               "modelFields": ["image@reference", "text@richtext"],
-              "image": `/content/dam/odyssey-eds/${dest.name}.jpg`,
+              "image": `/content/dam/odyssey-eds/${dest.name}.png`,
               "text": `<h3>Privacidad Total</h3><p>Accede a calas secretas de ${dest.title} donde solo se puede llegar en yate.</p>`
             },
             {
               "model": "card",
               "modelFields": ["image@reference", "text@richtext"],
-              "image": `/content/dam/odyssey-eds/megayates.jpg`,
+              "image": `/content/dam/odyssey-eds/megayates.png`,
               "text": `<h3>Servicio 5 Estrellas</h3><p>Chef privado y tripulación a tu entera disposición durante todo el viaje.</p>`
             },
             {
               "model": "card",
               "modelFields": ["image@reference", "text@richtext"],
-              "image": `/content/dam/odyssey-eds/catamaranes.jpg`,
+              "image": `/content/dam/odyssey-eds/catamaranes.png`,
               "text": `<h3>Libertad Absoluta</h3><p>Diseña tu propio itinerario cada mañana al despertar con vistas al mar.</p>`
             }
           ]
