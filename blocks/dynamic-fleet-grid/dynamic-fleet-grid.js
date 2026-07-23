@@ -71,7 +71,7 @@ export default async function decorate(block) {
   const getValue = (row) => row?.querySelector('div:last-child')?.textContent?.trim() || '';
 
   const title = getValue(rows[0]) || 'Explora nuestra flota';
-  const region = getValue(rows[1]) || 'corfu';
+  const region = getValue(rows[1]) || 'mediterraneo';
   const maxItemsStr = getValue(rows[2]) || '4';
   const maxItems = parseInt(maxItemsStr, 10) || 4;
   const noResultsText = getValue(rows[3]) || 'No hay embarcaciones disponibles.';

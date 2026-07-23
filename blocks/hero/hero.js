@@ -61,10 +61,11 @@ export default function decorate(block) {
       const stats = document.createElement('div');
       stats.className = 'hero-stats';
 
+      // Use rows to extract stats dynamically, or default if missing
       const statFields = [
-        { label: 'Embarcaciones', value: '42' },
-        { label: 'Rutas', value: '18' },
-        { label: 'Días alta', value: '07' },
+        { label: rows[2]?.textContent?.trim() || 'Embarcaciones', value: rows[3]?.textContent?.trim() || '42' },
+        { label: rows[4]?.textContent?.trim() || 'Rutas', value: rows[5]?.textContent?.trim() || '18' },
+        { label: rows[6]?.textContent?.trim() || 'Días alta', value: rows[7]?.textContent?.trim() || '07' },
       ];
 
       statFields.forEach((f) => {
@@ -82,10 +83,10 @@ export default function decorate(block) {
       widget.className = 'hero-booking-widget';
 
       const fields = [
-        { label: 'Destino', value: 'Corfú' },
-        { label: 'Embarque', value: '20 Jul' },
-        { label: 'Regreso', value: '27 Jul' },
-        { label: 'Huéspedes', value: '8 pax' },
+        { label: rows[2]?.textContent?.trim() || 'Destino', value: rows[3]?.textContent?.trim() || 'A medida' },
+        { label: rows[4]?.textContent?.trim() || 'Embarque', value: rows[5]?.textContent?.trim() || 'Flexible' },
+        { label: rows[6]?.textContent?.trim() || 'Regreso', value: rows[7]?.textContent?.trim() || 'Flexible' },
+        { label: rows[8]?.textContent?.trim() || 'Huéspedes', value: rows[9]?.textContent?.trim() || 'A convenir' },
       ];
 
       fields.forEach((f) => {
@@ -104,7 +105,7 @@ export default function decorate(block) {
       const actions = document.createElement('div');
       actions.className = 'hero-actions';
       actions.innerHTML = `
-        <a href="#" class="btn-search">Buscar flota</a>
+        <a href="/flota" class="btn-search">Buscar flota</a>
         <a href="#" class="btn-link">Hablar con un concierge →</a>
       `;
       content.append(actions);
