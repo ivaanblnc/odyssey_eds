@@ -24,9 +24,16 @@ export default function decorate(block) {
   const grid = document.createElement('div');
   grid.className = 'yacht-specs-grid';
 
-  // Process spec items (remaining rows)
-  for (let i = 2; i < rows.length; i += 1) {
-    const row = rows[i];
+  let specsRows = [];
+  if (rows.length === 3 && rows[2].querySelector('table')) {
+    specsRows = Array.from(rows[2].querySelectorAll('tr'));
+  } else {
+    specsRows = rows.slice(2);
+  }
+
+  // Process spec items
+  for (let i = 0; i < specsRows.length; i += 1) {
+    const row = specsRows[i];
     const cols = Array.from(row.children);
     if (cols.length >= 2) {
       const item = document.createElement('div');
@@ -34,7 +41,6 @@ export default function decorate(block) {
 
       const label = document.createElement('span');
       label.className = 'yacht-specs-label';
-      // keep inner elements if there are spans/strongs, else text
       label.append(...cols[0].childNodes);
 
       const value = document.createElement('span');

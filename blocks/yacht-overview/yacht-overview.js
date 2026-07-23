@@ -53,7 +53,7 @@ export default function decorate(block) {
       <div class="yacht-alert-header">
         <span class="yacht-alert-dot"></span> Alerta de inventario
       </div>
-      <p class="yacht-alert-text">\${alertText}</p>
+      <p class="yacht-alert-text">${alertText}</p>
     `;
     right.append(alertBox);
   }
