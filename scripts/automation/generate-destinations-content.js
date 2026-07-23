@@ -67,27 +67,57 @@ function processDestinations(regionName, children) {
           "name": "manifesto",
           "model": "manifesto",
           "modelFields": ["eyebrow@text","headline@richtext","leftCol@richtext","rightCol@richtext","subtitle@text"],
-          "eyebrow": "01 — El Paraíso",
+          "eyebrow": "01 — Privacidad Absoluta",
           "headline": `<h2>Descubre ${dest.title}</h2>`,
-          "leftCol": `<p>${dest.title} es uno de los destinos más codiciados del mundo para el chárter de yates de lujo. Disfruta de un clima perfecto, gastronomía excepcional y la libertad de navegar a tu propio ritmo.</p><p>Ya sea buscando rincones secretos o vida social, aquí encontrarás la máxima exclusividad.</p>`,
+          "leftCol": `<p>${dest.title} es uno de los destinos más codiciados del mundo para el chárter de yates de lujo. Disfruta de un clima perfecto, gastronomía excepcional y la libertad de navegar a tu propio ritmo.</p>`,
           "rightCol": `<p><a href="/flota">Ver Flota Disponible</a></p><p><img src="${img}" alt="Vista de ${dest.title}" width="100%" style="border-radius:12px;"/></p>`,
           "subtitle": "Curated Charters"
         },
-        "cards_3": {
+        "manifesto_3": {
+          "jcr:primaryType": "nt:unstructured",
+          "sling:resourceType": "core/franklin/components/block/v1/block",
+          "name": "manifesto",
+          "model": "manifesto",
+          "modelFields": ["eyebrow@text","headline@richtext","leftCol@richtext","rightCol@richtext","subtitle@text"],
+          "eyebrow": "02 — Exclusividad y Lujo",
+          "headline": "",
+          "leftCol": `<p>Ya sea buscando rincones secretos o vida social, aquí encontrarás la máxima exclusividad en cada rincón.</p>`,
+          "rightCol": `<p><img src="/content/dam/odyssey-eds/ibiza.jpg" alt="Exclusividad" width="100%" style="border-radius:12px;"/></p>`,
+          "subtitle": ""
+        },
+        "manifesto_4": {
+          "jcr:primaryType": "nt:unstructured",
+          "sling:resourceType": "core/franklin/components/block/v1/block",
+          "name": "manifesto",
+          "model": "manifesto",
+          "modelFields": ["eyebrow@text","headline@richtext","leftCol@richtext","rightCol@richtext","subtitle@text"],
+          "eyebrow": "03 — Experiencias a Medida",
+          "headline": "",
+          "leftCol": `<p>Una tripulación dedicada a ti las 24 horas del día asegurará que cada detalle de tu viaje sea simplemente perfecto, superando todas tus expectativas.</p>`,
+          "rightCol": `<p><img src="/content/dam/odyssey-eds/bahamas.jpg" alt="Experiencias" width="100%" style="border-radius:12px;"/></p>`,
+          "subtitle": ""
+        },
+        "cards_5": {
           "jcr:primaryType": "nt:unstructured",
           "sling:resourceType": "core/franklin/components/block/v1/block",
           "name": "cards",
           "filter": "cards",
           "_items": [
             {
+              "model": "card",
+              "modelFields": ["image@reference", "text@richtext"],
               "image": `/content/dam/odyssey-eds/${dest.name}.jpg`,
               "text": `<h3>Privacidad Total</h3><p>Accede a calas secretas de ${dest.title} donde solo se puede llegar en yate.</p>`
             },
             {
+              "model": "card",
+              "modelFields": ["image@reference", "text@richtext"],
               "image": `/content/dam/odyssey-eds/megayates.jpg`,
               "text": `<h3>Servicio 5 Estrellas</h3><p>Chef privado y tripulación a tu entera disposición durante todo el viaje.</p>`
             },
             {
+              "model": "card",
+              "modelFields": ["image@reference", "text@richtext"],
               "image": `/content/dam/odyssey-eds/catamaranes.jpg`,
               "text": `<h3>Libertad Absoluta</h3><p>Diseña tu propio itinerario cada mañana al despertar con vistas al mar.</p>`
             }

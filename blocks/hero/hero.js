@@ -14,23 +14,18 @@ export default function decorate(block) {
   if (rows.length >= 10) {
     if (rows[3]?.querySelector('h1')) {
       // Universal Editor format with imageAlt field (12 fields)
-      imageRow = rows[0];
-      eyebrowRow = rows[2];
-      contentRow = rows[3];
+      [imageRow, , eyebrowRow, contentRow] = rows;
       statStartIndex = 4;
     } else if (rows[2]?.querySelector('h1')) {
       // Universal Editor format without imageAlt field (11 fields)
-      imageRow = rows[0];
-      eyebrowRow = rows[1];
-      contentRow = rows[2];
+      [imageRow, eyebrowRow, contentRow] = rows;
       statStartIndex = 3;
     }
   }
 
   if (statStartIndex === -1) {
     // Standard format
-    imageRow = rows[0];
-    contentRow = rows[1];
+    [imageRow, contentRow] = rows;
   }
 
   const picture = imageRow?.querySelector('picture');
@@ -106,9 +101,9 @@ export default function decorate(block) {
 
       // Use rows to extract stats dynamically, or default if missing
       const statFields = [
-        { label: rows[statStartIndex]?.textContent?.trim() || 'Embarcaciones', value: rows[statStartIndex+1]?.textContent?.trim() || '42' },
-        { label: rows[statStartIndex+2]?.textContent?.trim() || 'Rutas', value: rows[statStartIndex+3]?.textContent?.trim() || '18' },
-        { label: rows[statStartIndex+4]?.textContent?.trim() || 'Días alta', value: rows[statStartIndex+5]?.textContent?.trim() || '07' },
+        { label: rows[statStartIndex]?.textContent?.trim() || 'Embarcaciones', value: rows[statStartIndex + 1]?.textContent?.trim() || '42' },
+        { label: rows[statStartIndex + 2]?.textContent?.trim() || 'Rutas', value: rows[statStartIndex + 3]?.textContent?.trim() || '18' },
+        { label: rows[statStartIndex + 4]?.textContent?.trim() || 'Días alta', value: rows[statStartIndex + 5]?.textContent?.trim() || '07' },
       ];
 
       statFields.forEach((f) => {
@@ -126,10 +121,10 @@ export default function decorate(block) {
       widget.className = 'hero-booking-widget';
 
       const fields = [
-        { label: rows[statStartIndex]?.textContent?.trim() || 'Destino', value: rows[statStartIndex+1]?.textContent?.trim() || 'A medida' },
-        { label: rows[statStartIndex+2]?.textContent?.trim() || 'Embarque', value: rows[statStartIndex+3]?.textContent?.trim() || 'Flexible' },
-        { label: rows[statStartIndex+4]?.textContent?.trim() || 'Regreso', value: rows[statStartIndex+5]?.textContent?.trim() || 'Flexible' },
-        { label: rows[statStartIndex+6]?.textContent?.trim() || 'Huéspedes', value: rows[statStartIndex+7]?.textContent?.trim() || 'A convenir' },
+        { label: rows[statStartIndex]?.textContent?.trim() || 'Destino', value: rows[statStartIndex + 1]?.textContent?.trim() || 'A medida' },
+        { label: rows[statStartIndex + 2]?.textContent?.trim() || 'Embarque', value: rows[statStartIndex + 3]?.textContent?.trim() || 'Flexible' },
+        { label: rows[statStartIndex + 4]?.textContent?.trim() || 'Regreso', value: rows[statStartIndex + 5]?.textContent?.trim() || 'Flexible' },
+        { label: rows[statStartIndex + 6]?.textContent?.trim() || 'Huéspedes', value: rows[statStartIndex + 7]?.textContent?.trim() || 'A convenir' },
       ];
 
       fields.forEach((f) => {

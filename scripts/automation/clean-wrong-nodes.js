@@ -36,9 +36,13 @@ async function run() {
       const basePath = `/content/odyssey-eds/destinos/${region.name}/${dest.name}/jcr:content/root`;
       await deleteNode(`${basePath}/section/hero`);
       await deleteNode(`${basePath}/section/manifesto`);
+      await deleteNode(`${basePath}/section/cards`);
       await deleteNode(`${basePath}/section/hero_1`);
       await deleteNode(`${basePath}/section/manifesto_2`);
+      await deleteNode(`${basePath}/section/manifesto_3`);
+      await deleteNode(`${basePath}/section/manifesto_4`);
       await deleteNode(`${basePath}/section/cards_3`);
+      await deleteNode(`${basePath}/section/cards_5`);
     }
   }
 }

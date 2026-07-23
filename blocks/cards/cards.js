@@ -15,7 +15,7 @@ export default function decorate(block) {
     [...li.children].forEach((div) => {
       const textContent = div.textContent?.trim();
       const isRawImage = textContent && (textContent.endsWith('.jpg') || textContent.endsWith('.png') || textContent.endsWith('.jpeg') || textContent.endsWith('.webp'));
-      
+
       if ((div.children.length === 1 && div.querySelector('picture')) || isRawImage) {
         div.className = 'cards-card-image';
 

@@ -46,7 +46,7 @@
         ],
         "eyebrow": "01 — El Paraíso",
         "headline": "<h2>Descubre Ibiza</h2>",
-        "leftCol": "<p>Ibiza es uno de los destinos más codiciados del mundo para el chárter de yates de lujo. Disfruta de un clima perfecto, gastronomía excepcional y la libertad de navegar a tu propio ritmo.</p><p>Ya sea buscando rincones secretos o vida social, aquí encontrarás la máxima exclusividad.</p>",
+        "leftCol": "<h3>Privacidad Absoluta</h3><p>Ibiza es uno de los destinos más codiciados del mundo para el chárter de yates de lujo. Disfruta de un clima perfecto, gastronomía excepcional y la libertad de navegar a tu propio ritmo.</p><h3>Exclusividad y Lujo</h3><p>Ya sea buscando rincones secretos o vida social, aquí encontrarás la máxima exclusividad en cada rincón.</p><h3>Experiencias a Medida</h3><p>Una tripulación dedicada a ti las 24 horas del día asegurará que cada detalle de tu viaje sea simplemente perfecto, superando todas tus expectativas.</p>",
         "rightCol": "<p><a href=\"/flota\">Ver Flota Disponible</a></p><p><img src=\"/content/dam/odyssey-eds/ibiza.jpg\" alt=\"Vista de Ibiza\" width=\"100%\" style=\"border-radius:12px;\"/></p>",
         "subtitle": "Curated Charters"
       },
@@ -57,14 +57,29 @@
         "filter": "cards",
         "_items": [
           {
+            "model": "card",
+            "modelFields": [
+              "image@reference",
+              "text@richtext"
+            ],
             "image": "/content/dam/odyssey-eds/ibiza.jpg",
             "text": "<h3>Privacidad Total</h3><p>Accede a calas secretas de Ibiza donde solo se puede llegar en yate.</p>"
           },
           {
+            "model": "card",
+            "modelFields": [
+              "image@reference",
+              "text@richtext"
+            ],
             "image": "/content/dam/odyssey-eds/megayates.jpg",
             "text": "<h3>Servicio 5 Estrellas</h3><p>Chef privado y tripulación a tu entera disposición durante todo el viaje.</p>"
           },
           {
+            "model": "card",
+            "modelFields": [
+              "image@reference",
+              "text@richtext"
+            ],
             "image": "/content/dam/odyssey-eds/catamaranes.jpg",
             "text": "<h3>Libertad Absoluta</h3><p>Diseña tu propio itinerario cada mañana al despertar con vistas al mar.</p>"
           }
@@ -119,7 +134,7 @@
         ],
         "eyebrow": "01 — El Paraíso",
         "headline": "<h2>Descubre Mallorca</h2>",
-        "leftCol": "<p>Mallorca es uno de los destinos más codiciados del mundo para el chárter de yates de lujo. Disfruta de un clima perfecto, gastronomía excepcional y la libertad de navegar a tu propio ritmo.</p><p>Ya sea buscando rincones secretos o vida social, aquí encontrarás la máxima exclusividad.</p>",
+        "leftCol": "<h3>Privacidad Absoluta</h3><p>Mallorca es uno de los destinos más codiciados del mundo para el chárter de yates de lujo. Disfruta de un clima perfecto, gastronomía excepcional y la libertad de navegar a tu propio ritmo.</p><h3>Exclusividad y Lujo</h3><p>Ya sea buscando rincones secretos o vida social, aquí encontrarás la máxima exclusividad en cada rincón.</p><h3>Experiencias a Medida</h3><p>Una tripulación dedicada a ti las 24 horas del día asegurará que cada detalle de tu viaje sea simplemente perfecto, superando todas tus expectativas.</p>",
         "rightCol": "<p><a href=\"/flota\">Ver Flota Disponible</a></p><p><img src=\"/content/dam/odyssey-eds/mallorca.jpg\" alt=\"Vista de Mallorca\" width=\"100%\" style=\"border-radius:12px;\"/></p>",
         "subtitle": "Curated Charters"
       },
@@ -130,14 +145,29 @@
         "filter": "cards",
         "_items": [
           {
+            "model": "card",
+            "modelFields": [
+              "image@reference",
+              "text@richtext"
+            ],
             "image": "/content/dam/odyssey-eds/mallorca.jpg",
             "text": "<h3>Privacidad Total</h3><p>Accede a calas secretas de Mallorca donde solo se puede llegar en yate.</p>"
           },
           {
+            "model": "card",
+            "modelFields": [
+              "image@reference",
+              "text@richtext"
+            ],
             "image": "/content/dam/odyssey-eds/megayates.jpg",
             "text": "<h3>Servicio 5 Estrellas</h3><p>Chef privado y tripulación a tu entera disposición durante todo el viaje.</p>"
           },
           {
+            "model": "card",
+            "modelFields": [
+              "image@reference",
+              "text@richtext"
+            ],
             "image": "/content/dam/odyssey-eds/catamaranes.jpg",
             "text": "<h3>Libertad Absoluta</h3><p>Diseña tu propio itinerario cada mañana al despertar con vistas al mar.</p>"
           }
@@ -192,7 +222,7 @@
         ],
         "eyebrow": "01 — El Paraíso",
         "headline": "<h2>Descubre Costa del Sol</h2>",
-        "leftCol": "<p>Costa del Sol es uno de los destinos más codiciados del mundo para el chárter de yates de lujo. Disfruta de un clima perfecto, gastronomía excepcional y la libertad de navegar a tu propio ritmo.</p><p>Ya sea buscando rincones secretos o vida social, aquí encontrarás la máxima exclusividad.</p>",
+        "leftCol": "<h3>Privacidad Absoluta</h3><p>Costa del Sol es uno de los destinos más codiciados del mundo para el chárter de yates de lujo. Disfruta de un clima perfecto, gastronomía excepcional y la libertad de navegar a tu propio ritmo.</p><h3>Exclusividad y Lujo</h3><p>Ya sea buscando rincones secretos o vida social, aquí encontrarás la máxima exclusividad en cada rincón.</p><h3>Experiencias a Medida</h3><p>Una tripulación dedicada a ti las 24 horas del día asegurará que cada detalle de tu viaje sea simplemente perfecto, superando todas tus expectativas.</p>",
         "rightCol": "<p><a href=\"/flota\">Ver Flota Disponible</a></p><p><img src=\"/content/dam/odyssey-eds/costa-del-sol.jpg\" alt=\"Vista de Costa del Sol\" width=\"100%\" style=\"border-radius:12px;\"/></p>",
         "subtitle": "Curated Charters"
       },
@@ -203,14 +233,29 @@
         "filter": "cards",
         "_items": [
           {
+            "model": "card",
+            "modelFields": [
+              "image@reference",
+              "text@richtext"
+            ],
             "image": "/content/dam/odyssey-eds/costa-del-sol.jpg",
             "text": "<h3>Privacidad Total</h3><p>Accede a calas secretas de Costa del Sol donde solo se puede llegar en yate.</p>"
           },
           {
+            "model": "card",
+            "modelFields": [
+              "image@reference",
+              "text@richtext"
+            ],
             "image": "/content/dam/odyssey-eds/megayates.jpg",
             "text": "<h3>Servicio 5 Estrellas</h3><p>Chef privado y tripulación a tu entera disposición durante todo el viaje.</p>"
           },
           {
+            "model": "card",
+            "modelFields": [
+              "image@reference",
+              "text@richtext"
+            ],
             "image": "/content/dam/odyssey-eds/catamaranes.jpg",
             "text": "<h3>Libertad Absoluta</h3><p>Diseña tu propio itinerario cada mañana al despertar con vistas al mar.</p>"
           }
@@ -265,7 +310,7 @@
         ],
         "eyebrow": "01 — El Paraíso",
         "headline": "<h2>Descubre Mykonos</h2>",
-        "leftCol": "<p>Mykonos es uno de los destinos más codiciados del mundo para el chárter de yates de lujo. Disfruta de un clima perfecto, gastronomía excepcional y la libertad de navegar a tu propio ritmo.</p><p>Ya sea buscando rincones secretos o vida social, aquí encontrarás la máxima exclusividad.</p>",
+        "leftCol": "<h3>Privacidad Absoluta</h3><p>Mykonos es uno de los destinos más codiciados del mundo para el chárter de yates de lujo. Disfruta de un clima perfecto, gastronomía excepcional y la libertad de navegar a tu propio ritmo.</p><h3>Exclusividad y Lujo</h3><p>Ya sea buscando rincones secretos o vida social, aquí encontrarás la máxima exclusividad en cada rincón.</p><h3>Experiencias a Medida</h3><p>Una tripulación dedicada a ti las 24 horas del día asegurará que cada detalle de tu viaje sea simplemente perfecto, superando todas tus expectativas.</p>",
         "rightCol": "<p><a href=\"/flota\">Ver Flota Disponible</a></p><p><img src=\"/content/dam/odyssey-eds/mykonos.jpg\" alt=\"Vista de Mykonos\" width=\"100%\" style=\"border-radius:12px;\"/></p>",
         "subtitle": "Curated Charters"
       },
@@ -276,14 +321,29 @@
         "filter": "cards",
         "_items": [
           {
+            "model": "card",
+            "modelFields": [
+              "image@reference",
+              "text@richtext"
+            ],
             "image": "/content/dam/odyssey-eds/mykonos.jpg",
             "text": "<h3>Privacidad Total</h3><p>Accede a calas secretas de Mykonos donde solo se puede llegar en yate.</p>"
           },
           {
+            "model": "card",
+            "modelFields": [
+              "image@reference",
+              "text@richtext"
+            ],
             "image": "/content/dam/odyssey-eds/megayates.jpg",
             "text": "<h3>Servicio 5 Estrellas</h3><p>Chef privado y tripulación a tu entera disposición durante todo el viaje.</p>"
           },
           {
+            "model": "card",
+            "modelFields": [
+              "image@reference",
+              "text@richtext"
+            ],
             "image": "/content/dam/odyssey-eds/catamaranes.jpg",
             "text": "<h3>Libertad Absoluta</h3><p>Diseña tu propio itinerario cada mañana al despertar con vistas al mar.</p>"
           }
@@ -338,7 +398,7 @@
         ],
         "eyebrow": "01 — El Paraíso",
         "headline": "<h2>Descubre Corfú</h2>",
-        "leftCol": "<p>Corfú es uno de los destinos más codiciados del mundo para el chárter de yates de lujo. Disfruta de un clima perfecto, gastronomía excepcional y la libertad de navegar a tu propio ritmo.</p><p>Ya sea buscando rincones secretos o vida social, aquí encontrarás la máxima exclusividad.</p>",
+        "leftCol": "<h3>Privacidad Absoluta</h3><p>Corfú es uno de los destinos más codiciados del mundo para el chárter de yates de lujo. Disfruta de un clima perfecto, gastronomía excepcional y la libertad de navegar a tu propio ritmo.</p><h3>Exclusividad y Lujo</h3><p>Ya sea buscando rincones secretos o vida social, aquí encontrarás la máxima exclusividad en cada rincón.</p><h3>Experiencias a Medida</h3><p>Una tripulación dedicada a ti las 24 horas del día asegurará que cada detalle de tu viaje sea simplemente perfecto, superando todas tus expectativas.</p>",
         "rightCol": "<p><a href=\"/flota\">Ver Flota Disponible</a></p><p><img src=\"/content/dam/odyssey-eds/corfu.jpg\" alt=\"Vista de Corfú\" width=\"100%\" style=\"border-radius:12px;\"/></p>",
         "subtitle": "Curated Charters"
       },
@@ -349,14 +409,29 @@
         "filter": "cards",
         "_items": [
           {
+            "model": "card",
+            "modelFields": [
+              "image@reference",
+              "text@richtext"
+            ],
             "image": "/content/dam/odyssey-eds/corfu.jpg",
             "text": "<h3>Privacidad Total</h3><p>Accede a calas secretas de Corfú donde solo se puede llegar en yate.</p>"
           },
           {
+            "model": "card",
+            "modelFields": [
+              "image@reference",
+              "text@richtext"
+            ],
             "image": "/content/dam/odyssey-eds/megayates.jpg",
             "text": "<h3>Servicio 5 Estrellas</h3><p>Chef privado y tripulación a tu entera disposición durante todo el viaje.</p>"
           },
           {
+            "model": "card",
+            "modelFields": [
+              "image@reference",
+              "text@richtext"
+            ],
             "image": "/content/dam/odyssey-eds/catamaranes.jpg",
             "text": "<h3>Libertad Absoluta</h3><p>Diseña tu propio itinerario cada mañana al despertar con vistas al mar.</p>"
           }
@@ -411,7 +486,7 @@
         ],
         "eyebrow": "01 — El Paraíso",
         "headline": "<h2>Descubre Mónaco</h2>",
-        "leftCol": "<p>Mónaco es uno de los destinos más codiciados del mundo para el chárter de yates de lujo. Disfruta de un clima perfecto, gastronomía excepcional y la libertad de navegar a tu propio ritmo.</p><p>Ya sea buscando rincones secretos o vida social, aquí encontrarás la máxima exclusividad.</p>",
+        "leftCol": "<h3>Privacidad Absoluta</h3><p>Mónaco es uno de los destinos más codiciados del mundo para el chárter de yates de lujo. Disfruta de un clima perfecto, gastronomía excepcional y la libertad de navegar a tu propio ritmo.</p><h3>Exclusividad y Lujo</h3><p>Ya sea buscando rincones secretos o vida social, aquí encontrarás la máxima exclusividad en cada rincón.</p><h3>Experiencias a Medida</h3><p>Una tripulación dedicada a ti las 24 horas del día asegurará que cada detalle de tu viaje sea simplemente perfecto, superando todas tus expectativas.</p>",
         "rightCol": "<p><a href=\"/flota\">Ver Flota Disponible</a></p><p><img src=\"/content/dam/odyssey-eds/monaco.jpg\" alt=\"Vista de Mónaco\" width=\"100%\" style=\"border-radius:12px;\"/></p>",
         "subtitle": "Curated Charters"
       },
@@ -422,14 +497,29 @@
         "filter": "cards",
         "_items": [
           {
+            "model": "card",
+            "modelFields": [
+              "image@reference",
+              "text@richtext"
+            ],
             "image": "/content/dam/odyssey-eds/monaco.jpg",
             "text": "<h3>Privacidad Total</h3><p>Accede a calas secretas de Mónaco donde solo se puede llegar en yate.</p>"
           },
           {
+            "model": "card",
+            "modelFields": [
+              "image@reference",
+              "text@richtext"
+            ],
             "image": "/content/dam/odyssey-eds/megayates.jpg",
             "text": "<h3>Servicio 5 Estrellas</h3><p>Chef privado y tripulación a tu entera disposición durante todo el viaje.</p>"
           },
           {
+            "model": "card",
+            "modelFields": [
+              "image@reference",
+              "text@richtext"
+            ],
             "image": "/content/dam/odyssey-eds/catamaranes.jpg",
             "text": "<h3>Libertad Absoluta</h3><p>Diseña tu propio itinerario cada mañana al despertar con vistas al mar.</p>"
           }
@@ -484,7 +574,7 @@
         ],
         "eyebrow": "01 — El Paraíso",
         "headline": "<h2>Descubre Costa Amalfitana</h2>",
-        "leftCol": "<p>Costa Amalfitana es uno de los destinos más codiciados del mundo para el chárter de yates de lujo. Disfruta de un clima perfecto, gastronomía excepcional y la libertad de navegar a tu propio ritmo.</p><p>Ya sea buscando rincones secretos o vida social, aquí encontrarás la máxima exclusividad.</p>",
+        "leftCol": "<h3>Privacidad Absoluta</h3><p>Costa Amalfitana es uno de los destinos más codiciados del mundo para el chárter de yates de lujo. Disfruta de un clima perfecto, gastronomía excepcional y la libertad de navegar a tu propio ritmo.</p><h3>Exclusividad y Lujo</h3><p>Ya sea buscando rincones secretos o vida social, aquí encontrarás la máxima exclusividad en cada rincón.</p><h3>Experiencias a Medida</h3><p>Una tripulación dedicada a ti las 24 horas del día asegurará que cada detalle de tu viaje sea simplemente perfecto, superando todas tus expectativas.</p>",
         "rightCol": "<p><a href=\"/flota\">Ver Flota Disponible</a></p><p><img src=\"/content/dam/odyssey-eds/costa-amalfina.jpg\" alt=\"Vista de Costa Amalfitana\" width=\"100%\" style=\"border-radius:12px;\"/></p>",
         "subtitle": "Curated Charters"
       },
@@ -495,14 +585,29 @@
         "filter": "cards",
         "_items": [
           {
+            "model": "card",
+            "modelFields": [
+              "image@reference",
+              "text@richtext"
+            ],
             "image": "/content/dam/odyssey-eds/costa-amalfina.jpg",
             "text": "<h3>Privacidad Total</h3><p>Accede a calas secretas de Costa Amalfitana donde solo se puede llegar en yate.</p>"
           },
           {
+            "model": "card",
+            "modelFields": [
+              "image@reference",
+              "text@richtext"
+            ],
             "image": "/content/dam/odyssey-eds/megayates.jpg",
             "text": "<h3>Servicio 5 Estrellas</h3><p>Chef privado y tripulación a tu entera disposición durante todo el viaje.</p>"
           },
           {
+            "model": "card",
+            "modelFields": [
+              "image@reference",
+              "text@richtext"
+            ],
             "image": "/content/dam/odyssey-eds/catamaranes.jpg",
             "text": "<h3>Libertad Absoluta</h3><p>Diseña tu propio itinerario cada mañana al despertar con vistas al mar.</p>"
           }
@@ -557,7 +662,7 @@
         ],
         "eyebrow": "01 — El Paraíso",
         "headline": "<h2>Descubre Cerdeña</h2>",
-        "leftCol": "<p>Cerdeña es uno de los destinos más codiciados del mundo para el chárter de yates de lujo. Disfruta de un clima perfecto, gastronomía excepcional y la libertad de navegar a tu propio ritmo.</p><p>Ya sea buscando rincones secretos o vida social, aquí encontrarás la máxima exclusividad.</p>",
+        "leftCol": "<h3>Privacidad Absoluta</h3><p>Cerdeña es uno de los destinos más codiciados del mundo para el chárter de yates de lujo. Disfruta de un clima perfecto, gastronomía excepcional y la libertad de navegar a tu propio ritmo.</p><h3>Exclusividad y Lujo</h3><p>Ya sea buscando rincones secretos o vida social, aquí encontrarás la máxima exclusividad en cada rincón.</p><h3>Experiencias a Medida</h3><p>Una tripulación dedicada a ti las 24 horas del día asegurará que cada detalle de tu viaje sea simplemente perfecto, superando todas tus expectativas.</p>",
         "rightCol": "<p><a href=\"/flota\">Ver Flota Disponible</a></p><p><img src=\"/content/dam/odyssey-eds/cerdena.jpg\" alt=\"Vista de Cerdeña\" width=\"100%\" style=\"border-radius:12px;\"/></p>",
         "subtitle": "Curated Charters"
       },
@@ -568,14 +673,29 @@
         "filter": "cards",
         "_items": [
           {
+            "model": "card",
+            "modelFields": [
+              "image@reference",
+              "text@richtext"
+            ],
             "image": "/content/dam/odyssey-eds/cerdena.jpg",
             "text": "<h3>Privacidad Total</h3><p>Accede a calas secretas de Cerdeña donde solo se puede llegar en yate.</p>"
           },
           {
+            "model": "card",
+            "modelFields": [
+              "image@reference",
+              "text@richtext"
+            ],
             "image": "/content/dam/odyssey-eds/megayates.jpg",
             "text": "<h3>Servicio 5 Estrellas</h3><p>Chef privado y tripulación a tu entera disposición durante todo el viaje.</p>"
           },
           {
+            "model": "card",
+            "modelFields": [
+              "image@reference",
+              "text@richtext"
+            ],
             "image": "/content/dam/odyssey-eds/catamaranes.jpg",
             "text": "<h3>Libertad Absoluta</h3><p>Diseña tu propio itinerario cada mañana al despertar con vistas al mar.</p>"
           }
@@ -630,7 +750,7 @@
         ],
         "eyebrow": "01 — El Paraíso",
         "headline": "<h2>Descubre Córcega</h2>",
-        "leftCol": "<p>Córcega es uno de los destinos más codiciados del mundo para el chárter de yates de lujo. Disfruta de un clima perfecto, gastronomía excepcional y la libertad de navegar a tu propio ritmo.</p><p>Ya sea buscando rincones secretos o vida social, aquí encontrarás la máxima exclusividad.</p>",
+        "leftCol": "<h3>Privacidad Absoluta</h3><p>Córcega es uno de los destinos más codiciados del mundo para el chárter de yates de lujo. Disfruta de un clima perfecto, gastronomía excepcional y la libertad de navegar a tu propio ritmo.</p><h3>Exclusividad y Lujo</h3><p>Ya sea buscando rincones secretos o vida social, aquí encontrarás la máxima exclusividad en cada rincón.</p><h3>Experiencias a Medida</h3><p>Una tripulación dedicada a ti las 24 horas del día asegurará que cada detalle de tu viaje sea simplemente perfecto, superando todas tus expectativas.</p>",
         "rightCol": "<p><a href=\"/flota\">Ver Flota Disponible</a></p><p><img src=\"/content/dam/odyssey-eds/corcega.jpg\" alt=\"Vista de Córcega\" width=\"100%\" style=\"border-radius:12px;\"/></p>",
         "subtitle": "Curated Charters"
       },
@@ -641,14 +761,29 @@
         "filter": "cards",
         "_items": [
           {
+            "model": "card",
+            "modelFields": [
+              "image@reference",
+              "text@richtext"
+            ],
             "image": "/content/dam/odyssey-eds/corcega.jpg",
             "text": "<h3>Privacidad Total</h3><p>Accede a calas secretas de Córcega donde solo se puede llegar en yate.</p>"
           },
           {
+            "model": "card",
+            "modelFields": [
+              "image@reference",
+              "text@richtext"
+            ],
             "image": "/content/dam/odyssey-eds/megayates.jpg",
             "text": "<h3>Servicio 5 Estrellas</h3><p>Chef privado y tripulación a tu entera disposición durante todo el viaje.</p>"
           },
           {
+            "model": "card",
+            "modelFields": [
+              "image@reference",
+              "text@richtext"
+            ],
             "image": "/content/dam/odyssey-eds/catamaranes.jpg",
             "text": "<h3>Libertad Absoluta</h3><p>Diseña tu propio itinerario cada mañana al despertar con vistas al mar.</p>"
           }
@@ -703,7 +838,7 @@
         ],
         "eyebrow": "01 — El Paraíso",
         "headline": "<h2>Descubre Bahamas</h2>",
-        "leftCol": "<p>Bahamas es uno de los destinos más codiciados del mundo para el chárter de yates de lujo. Disfruta de un clima perfecto, gastronomía excepcional y la libertad de navegar a tu propio ritmo.</p><p>Ya sea buscando rincones secretos o vida social, aquí encontrarás la máxima exclusividad.</p>",
+        "leftCol": "<h3>Privacidad Absoluta</h3><p>Bahamas es uno de los destinos más codiciados del mundo para el chárter de yates de lujo. Disfruta de un clima perfecto, gastronomía excepcional y la libertad de navegar a tu propio ritmo.</p><h3>Exclusividad y Lujo</h3><p>Ya sea buscando rincones secretos o vida social, aquí encontrarás la máxima exclusividad en cada rincón.</p><h3>Experiencias a Medida</h3><p>Una tripulación dedicada a ti las 24 horas del día asegurará que cada detalle de tu viaje sea simplemente perfecto, superando todas tus expectativas.</p>",
         "rightCol": "<p><a href=\"/flota\">Ver Flota Disponible</a></p><p><img src=\"/content/dam/odyssey-eds/bahamas.jpg\" alt=\"Vista de Bahamas\" width=\"100%\" style=\"border-radius:12px;\"/></p>",
         "subtitle": "Curated Charters"
       },
@@ -714,14 +849,29 @@
         "filter": "cards",
         "_items": [
           {
+            "model": "card",
+            "modelFields": [
+              "image@reference",
+              "text@richtext"
+            ],
             "image": "/content/dam/odyssey-eds/bahamas.jpg",
             "text": "<h3>Privacidad Total</h3><p>Accede a calas secretas de Bahamas donde solo se puede llegar en yate.</p>"
           },
           {
+            "model": "card",
+            "modelFields": [
+              "image@reference",
+              "text@richtext"
+            ],
             "image": "/content/dam/odyssey-eds/megayates.jpg",
             "text": "<h3>Servicio 5 Estrellas</h3><p>Chef privado y tripulación a tu entera disposición durante todo el viaje.</p>"
           },
           {
+            "model": "card",
+            "modelFields": [
+              "image@reference",
+              "text@richtext"
+            ],
             "image": "/content/dam/odyssey-eds/catamaranes.jpg",
             "text": "<h3>Libertad Absoluta</h3><p>Diseña tu propio itinerario cada mañana al despertar con vistas al mar.</p>"
           }
@@ -776,7 +926,7 @@
         ],
         "eyebrow": "01 — El Paraíso",
         "headline": "<h2>Descubre Islas Vírgenes Británicas</h2>",
-        "leftCol": "<p>Islas Vírgenes Británicas es uno de los destinos más codiciados del mundo para el chárter de yates de lujo. Disfruta de un clima perfecto, gastronomía excepcional y la libertad de navegar a tu propio ritmo.</p><p>Ya sea buscando rincones secretos o vida social, aquí encontrarás la máxima exclusividad.</p>",
+        "leftCol": "<h3>Privacidad Absoluta</h3><p>Islas Vírgenes Británicas es uno de los destinos más codiciados del mundo para el chárter de yates de lujo. Disfruta de un clima perfecto, gastronomía excepcional y la libertad de navegar a tu propio ritmo.</p><h3>Exclusividad y Lujo</h3><p>Ya sea buscando rincones secretos o vida social, aquí encontrarás la máxima exclusividad en cada rincón.</p><h3>Experiencias a Medida</h3><p>Una tripulación dedicada a ti las 24 horas del día asegurará que cada detalle de tu viaje sea simplemente perfecto, superando todas tus expectativas.</p>",
         "rightCol": "<p><a href=\"/flota\">Ver Flota Disponible</a></p><p><img src=\"/content/dam/odyssey-eds/islas-virgenes-britanicas.jpg\" alt=\"Vista de Islas Vírgenes Británicas\" width=\"100%\" style=\"border-radius:12px;\"/></p>",
         "subtitle": "Curated Charters"
       },
@@ -787,14 +937,29 @@
         "filter": "cards",
         "_items": [
           {
+            "model": "card",
+            "modelFields": [
+              "image@reference",
+              "text@richtext"
+            ],
             "image": "/content/dam/odyssey-eds/islas-virgenes-britanicas.jpg",
             "text": "<h3>Privacidad Total</h3><p>Accede a calas secretas de Islas Vírgenes Británicas donde solo se puede llegar en yate.</p>"
           },
           {
+            "model": "card",
+            "modelFields": [
+              "image@reference",
+              "text@richtext"
+            ],
             "image": "/content/dam/odyssey-eds/megayates.jpg",
             "text": "<h3>Servicio 5 Estrellas</h3><p>Chef privado y tripulación a tu entera disposición durante todo el viaje.</p>"
           },
           {
+            "model": "card",
+            "modelFields": [
+              "image@reference",
+              "text@richtext"
+            ],
             "image": "/content/dam/odyssey-eds/catamaranes.jpg",
             "text": "<h3>Libertad Absoluta</h3><p>Diseña tu propio itinerario cada mañana al despertar con vistas al mar.</p>"
           }
@@ -849,7 +1014,7 @@
         ],
         "eyebrow": "01 — El Paraíso",
         "headline": "<h2>Descubre San Bartolomé (St. Barths)</h2>",
-        "leftCol": "<p>San Bartolomé (St. Barths) es uno de los destinos más codiciados del mundo para el chárter de yates de lujo. Disfruta de un clima perfecto, gastronomía excepcional y la libertad de navegar a tu propio ritmo.</p><p>Ya sea buscando rincones secretos o vida social, aquí encontrarás la máxima exclusividad.</p>",
+        "leftCol": "<h3>Privacidad Absoluta</h3><p>San Bartolomé (St. Barths) es uno de los destinos más codiciados del mundo para el chárter de yates de lujo. Disfruta de un clima perfecto, gastronomía excepcional y la libertad de navegar a tu propio ritmo.</p><h3>Exclusividad y Lujo</h3><p>Ya sea buscando rincones secretos o vida social, aquí encontrarás la máxima exclusividad en cada rincón.</p><h3>Experiencias a Medida</h3><p>Una tripulación dedicada a ti las 24 horas del día asegurará que cada detalle de tu viaje sea simplemente perfecto, superando todas tus expectativas.</p>",
         "rightCol": "<p><a href=\"/flota\">Ver Flota Disponible</a></p><p><img src=\"/content/dam/odyssey-eds/san-bartolome.jpg\" alt=\"Vista de San Bartolomé (St. Barths)\" width=\"100%\" style=\"border-radius:12px;\"/></p>",
         "subtitle": "Curated Charters"
       },
@@ -860,14 +1025,29 @@
         "filter": "cards",
         "_items": [
           {
+            "model": "card",
+            "modelFields": [
+              "image@reference",
+              "text@richtext"
+            ],
             "image": "/content/dam/odyssey-eds/san-bartolome.jpg",
             "text": "<h3>Privacidad Total</h3><p>Accede a calas secretas de San Bartolomé (St. Barths) donde solo se puede llegar en yate.</p>"
           },
           {
+            "model": "card",
+            "modelFields": [
+              "image@reference",
+              "text@richtext"
+            ],
             "image": "/content/dam/odyssey-eds/megayates.jpg",
             "text": "<h3>Servicio 5 Estrellas</h3><p>Chef privado y tripulación a tu entera disposición durante todo el viaje.</p>"
           },
           {
+            "model": "card",
+            "modelFields": [
+              "image@reference",
+              "text@richtext"
+            ],
             "image": "/content/dam/odyssey-eds/catamaranes.jpg",
             "text": "<h3>Libertad Absoluta</h3><p>Diseña tu propio itinerario cada mañana al despertar con vistas al mar.</p>"
           }
@@ -922,7 +1102,7 @@
         ],
         "eyebrow": "01 — El Paraíso",
         "headline": "<h2>Descubre Islas Exumas</h2>",
-        "leftCol": "<p>Islas Exumas es uno de los destinos más codiciados del mundo para el chárter de yates de lujo. Disfruta de un clima perfecto, gastronomía excepcional y la libertad de navegar a tu propio ritmo.</p><p>Ya sea buscando rincones secretos o vida social, aquí encontrarás la máxima exclusividad.</p>",
+        "leftCol": "<h3>Privacidad Absoluta</h3><p>Islas Exumas es uno de los destinos más codiciados del mundo para el chárter de yates de lujo. Disfruta de un clima perfecto, gastronomía excepcional y la libertad de navegar a tu propio ritmo.</p><h3>Exclusividad y Lujo</h3><p>Ya sea buscando rincones secretos o vida social, aquí encontrarás la máxima exclusividad en cada rincón.</p><h3>Experiencias a Medida</h3><p>Una tripulación dedicada a ti las 24 horas del día asegurará que cada detalle de tu viaje sea simplemente perfecto, superando todas tus expectativas.</p>",
         "rightCol": "<p><a href=\"/flota\">Ver Flota Disponible</a></p><p><img src=\"/content/dam/odyssey-eds/islas-exumas.jpg\" alt=\"Vista de Islas Exumas\" width=\"100%\" style=\"border-radius:12px;\"/></p>",
         "subtitle": "Curated Charters"
       },
@@ -933,14 +1113,29 @@
         "filter": "cards",
         "_items": [
           {
+            "model": "card",
+            "modelFields": [
+              "image@reference",
+              "text@richtext"
+            ],
             "image": "/content/dam/odyssey-eds/islas-exumas.jpg",
             "text": "<h3>Privacidad Total</h3><p>Accede a calas secretas de Islas Exumas donde solo se puede llegar en yate.</p>"
           },
           {
+            "model": "card",
+            "modelFields": [
+              "image@reference",
+              "text@richtext"
+            ],
             "image": "/content/dam/odyssey-eds/megayates.jpg",
             "text": "<h3>Servicio 5 Estrellas</h3><p>Chef privado y tripulación a tu entera disposición durante todo el viaje.</p>"
           },
           {
+            "model": "card",
+            "modelFields": [
+              "image@reference",
+              "text@richtext"
+            ],
             "image": "/content/dam/odyssey-eds/catamaranes.jpg",
             "text": "<h3>Libertad Absoluta</h3><p>Diseña tu propio itinerario cada mañana al despertar con vistas al mar.</p>"
           }
@@ -995,7 +1190,7 @@
         ],
         "eyebrow": "01 — El Paraíso",
         "headline": "<h2>Descubre Maldivas</h2>",
-        "leftCol": "<p>Maldivas es uno de los destinos más codiciados del mundo para el chárter de yates de lujo. Disfruta de un clima perfecto, gastronomía excepcional y la libertad de navegar a tu propio ritmo.</p><p>Ya sea buscando rincones secretos o vida social, aquí encontrarás la máxima exclusividad.</p>",
+        "leftCol": "<h3>Privacidad Absoluta</h3><p>Maldivas es uno de los destinos más codiciados del mundo para el chárter de yates de lujo. Disfruta de un clima perfecto, gastronomía excepcional y la libertad de navegar a tu propio ritmo.</p><h3>Exclusividad y Lujo</h3><p>Ya sea buscando rincones secretos o vida social, aquí encontrarás la máxima exclusividad en cada rincón.</p><h3>Experiencias a Medida</h3><p>Una tripulación dedicada a ti las 24 horas del día asegurará que cada detalle de tu viaje sea simplemente perfecto, superando todas tus expectativas.</p>",
         "rightCol": "<p><a href=\"/flota\">Ver Flota Disponible</a></p><p><img src=\"/content/dam/odyssey-eds/maldivas.jpg\" alt=\"Vista de Maldivas\" width=\"100%\" style=\"border-radius:12px;\"/></p>",
         "subtitle": "Curated Charters"
       },
@@ -1006,14 +1201,29 @@
         "filter": "cards",
         "_items": [
           {
+            "model": "card",
+            "modelFields": [
+              "image@reference",
+              "text@richtext"
+            ],
             "image": "/content/dam/odyssey-eds/maldivas.jpg",
             "text": "<h3>Privacidad Total</h3><p>Accede a calas secretas de Maldivas donde solo se puede llegar en yate.</p>"
           },
           {
+            "model": "card",
+            "modelFields": [
+              "image@reference",
+              "text@richtext"
+            ],
             "image": "/content/dam/odyssey-eds/megayates.jpg",
             "text": "<h3>Servicio 5 Estrellas</h3><p>Chef privado y tripulación a tu entera disposición durante todo el viaje.</p>"
           },
           {
+            "model": "card",
+            "modelFields": [
+              "image@reference",
+              "text@richtext"
+            ],
             "image": "/content/dam/odyssey-eds/catamaranes.jpg",
             "text": "<h3>Libertad Absoluta</h3><p>Diseña tu propio itinerario cada mañana al despertar con vistas al mar.</p>"
           }
@@ -1068,7 +1278,7 @@
         ],
         "eyebrow": "01 — El Paraíso",
         "headline": "<h2>Descubre Seychelles</h2>",
-        "leftCol": "<p>Seychelles es uno de los destinos más codiciados del mundo para el chárter de yates de lujo. Disfruta de un clima perfecto, gastronomía excepcional y la libertad de navegar a tu propio ritmo.</p><p>Ya sea buscando rincones secretos o vida social, aquí encontrarás la máxima exclusividad.</p>",
+        "leftCol": "<h3>Privacidad Absoluta</h3><p>Seychelles es uno de los destinos más codiciados del mundo para el chárter de yates de lujo. Disfruta de un clima perfecto, gastronomía excepcional y la libertad de navegar a tu propio ritmo.</p><h3>Exclusividad y Lujo</h3><p>Ya sea buscando rincones secretos o vida social, aquí encontrarás la máxima exclusividad en cada rincón.</p><h3>Experiencias a Medida</h3><p>Una tripulación dedicada a ti las 24 horas del día asegurará que cada detalle de tu viaje sea simplemente perfecto, superando todas tus expectativas.</p>",
         "rightCol": "<p><a href=\"/flota\">Ver Flota Disponible</a></p><p><img src=\"/content/dam/odyssey-eds/seychelles.jpg\" alt=\"Vista de Seychelles\" width=\"100%\" style=\"border-radius:12px;\"/></p>",
         "subtitle": "Curated Charters"
       },
@@ -1079,14 +1289,29 @@
         "filter": "cards",
         "_items": [
           {
+            "model": "card",
+            "modelFields": [
+              "image@reference",
+              "text@richtext"
+            ],
             "image": "/content/dam/odyssey-eds/seychelles.jpg",
             "text": "<h3>Privacidad Total</h3><p>Accede a calas secretas de Seychelles donde solo se puede llegar en yate.</p>"
           },
           {
+            "model": "card",
+            "modelFields": [
+              "image@reference",
+              "text@richtext"
+            ],
             "image": "/content/dam/odyssey-eds/megayates.jpg",
             "text": "<h3>Servicio 5 Estrellas</h3><p>Chef privado y tripulación a tu entera disposición durante todo el viaje.</p>"
           },
           {
+            "model": "card",
+            "modelFields": [
+              "image@reference",
+              "text@richtext"
+            ],
             "image": "/content/dam/odyssey-eds/catamaranes.jpg",
             "text": "<h3>Libertad Absoluta</h3><p>Diseña tu propio itinerario cada mañana al despertar con vistas al mar.</p>"
           }
