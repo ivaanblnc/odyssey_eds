@@ -104,7 +104,8 @@ async function run() {
   console.log(`🌐 Target AEM: ${AEM_HOST}`);
   console.log('=============================================\n');
 
-  const contentPath = path.join(dirname, 'yachts-content.json');
+  const inputFile = process.argv[2] || 'yachts-content.json';
+  const contentPath = path.join(dirname, inputFile);
   const yachtsContent = JSON.parse(fs.readFileSync(contentPath, 'utf8'));
 
   for (const [yachtPath, sections] of Object.entries(yachtsContent)) {

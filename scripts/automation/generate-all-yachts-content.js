@@ -22,11 +22,19 @@ const prices = {
   'clasicos': '35.000 € / semana'
 };
 
+const locations = {
+  'megayates': 'Mónaco, Francia',
+  'catamaranes': 'Ibiza, Baleares',
+  'deportivos': 'Mallorca, Baleares',
+  'clasicos': 'Corfú, Grecia'
+};
+
 function processCategory(catName, children) {
   children.forEach(yacht => {
     const yachtPath = `odyssey-eds/flota/${catName}/${yacht.name}`;
     const img = images[catName] || images['megayates'];
     const price = prices[catName] || '20.000 € / semana';
+    const loc = locations[catName] || 'Ibiza, Baleares';
     
     content[yachtPath] = {
       "section": {
@@ -35,7 +43,7 @@ function processCategory(catName, children) {
           "title": `<h1>${yacht.title}</h1>`,
           "priceLabel": "Tarifa desde",
           "price": price,
-          "location": "Ibiza, Baleares"
+          "location": loc
         },
         "yacht-overview_3": {
           "eyebrow": "Resumen",

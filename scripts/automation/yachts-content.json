@@ -2,68 +2,338 @@
   "odyssey-eds/flota/megayates/azimut-grande-27": {
     "section": {
       "yacht-header_1": {
-        "eyebrow": "Megayate",
+        "eyebrow": "MEGAYATES",
         "title": "<h1>Azimut Grande 27</h1>",
         "priceLabel": "Tarifa desde",
         "price": "65.000 € / semana",
-        "location": "Mónaco, Costa Azul"
+        "location": "Mónaco, Francia"
       },
       "yacht-overview_3": {
         "eyebrow": "Resumen",
-        "title": "Diseño italiano de vanguardia",
-        "description": "<p>El Azimut Grande 27 es la máxima expresión de lujo en el mar. Con un exterior agresivo y un interior bañado en luz natural, ofrece una experiencia de confort inigualable. Sus 4 camarotes con baño en suite garantizan privacidad absoluta.</p>",
-        "tags": "Chef Estrellado, Jacuzzi, 5 Camarotes, Estabilizadores",
-        "alertText": "Alta demanda: Última disponibilidad en Julio.",
-        "bookingForm": "<h2>Reserva tu experiencia</h2><table><tr><th>Salida</th><th>Precio</th></tr><tr><td>Julio - Agosto</td><td>75.000 € / sem</td></tr><tr><td>Resto del año</td><td>65.000 € / sem</td></tr></table><br/><a href=\"#\">Solicitar Reserva</a>"
+        "title": "Descubre el Azimut Grande 27",
+        "description": "<p><img src=\"https://images.unsplash.com/photo-1567899378494-47b22a2ae96a?q=80&w=2070&auto=format&fit=crop\" alt=\"Azimut Grande 27\" width=\"100%\" style=\"border-radius:12px; margin-bottom:20px;\"/></p><p>El Azimut Grande 27 es una maravilla de la ingeniería naval moderna, ofreciendo la máxima expresión de lujo en el mar. Experimenta un confort sin igual y atención al detalle en cada rincón.</p>",
+        "tags": "Luxury, Crew, Chef, Jacuzzi",
+        "alertText": "Disponible esta temporada.",
+        "bookingForm": "<h2>Reserva tu experiencia</h2><table><tr><th>Salida</th><th>Precio</th></tr><tr><td>Semana</td><td>65.000 € / semana</td></tr></table><br/><a href=\"#\">Solicitar Reserva</a>"
       }
     },
     "section_1": {
       "yacht-specs_0": {
         "eyebrow": "Especificaciones",
         "title": "Ficha Técnica",
-        "specs": "<table><tr><td>Eslora</td><td>26.78 m</td></tr><tr><td>Manga</td><td>6.59 m</td></tr><tr><td>Calado</td><td>1.93 m</td></tr><tr><td>Huéspedes</td><td>10 (5 camarotes)</td></tr><tr><td>Tripulación</td><td>4 personas</td></tr><tr><td>Velocidad de crucero</td><td>24 nudos</td></tr></table>"
+        "specs": "<table><tr><td>Eslora</td><td>35m</td></tr><tr><td>Huéspedes</td><td>10-12</td></tr><tr><td>Categoría</td><td>megayates</td></tr></table>"
+      }
+    }
+  },
+  "odyssey-eds/flota/megayates/oasis-40m": {
+    "section": {
+      "yacht-header_1": {
+        "eyebrow": "MEGAYATES",
+        "title": "<h1>Oasis 40M</h1>",
+        "priceLabel": "Tarifa desde",
+        "price": "65.000 € / semana",
+        "location": "Mónaco, Francia"
+      },
+      "yacht-overview_3": {
+        "eyebrow": "Resumen",
+        "title": "Descubre el Oasis 40M",
+        "description": "<p><img src=\"https://images.unsplash.com/photo-1567899378494-47b22a2ae96a?q=80&w=2070&auto=format&fit=crop\" alt=\"Oasis 40M\" width=\"100%\" style=\"border-radius:12px; margin-bottom:20px;\"/></p><p>El Oasis 40M es una maravilla de la ingeniería naval moderna, ofreciendo la máxima expresión de lujo en el mar. Experimenta un confort sin igual y atención al detalle en cada rincón.</p>",
+        "tags": "Luxury, Crew, Chef, Jacuzzi",
+        "alertText": "Disponible esta temporada.",
+        "bookingForm": "<h2>Reserva tu experiencia</h2><table><tr><th>Salida</th><th>Precio</th></tr><tr><td>Semana</td><td>65.000 € / semana</td></tr></table><br/><a href=\"#\">Solicitar Reserva</a>"
       }
     },
-    "section_2": {
-      "yacht-extras_0": {
-        "eyebrow": "Complementos",
-        "title": "Servicios Extra",
-        "description": "<p>Personaliza tu viaje con nuestras exclusivas experiencias a bordo.</p>",
-        "extras": "<table><tr><td>Chef Privado 24h</td><td>1.500 € / sem</td></tr><tr><td>Equipo de Buceo</td><td>500 € / sem</td></tr><tr><td>Motos de agua (x2)</td><td>1.000 € / sem</td></tr></table>"
+    "section_1": {
+      "yacht-specs_0": {
+        "eyebrow": "Especificaciones",
+        "title": "Ficha Técnica",
+        "specs": "<table><tr><td>Eslora</td><td>35m</td></tr><tr><td>Huéspedes</td><td>10-12</td></tr><tr><td>Categoría</td><td>megayates</td></tr></table>"
+      }
+    }
+  },
+  "odyssey-eds/flota/megayates/riva-corsaro": {
+    "section": {
+      "yacht-header_1": {
+        "eyebrow": "MEGAYATES",
+        "title": "<h1>Riva Corsaro</h1>",
+        "priceLabel": "Tarifa desde",
+        "price": "65.000 € / semana",
+        "location": "Mónaco, Francia"
+      },
+      "yacht-overview_3": {
+        "eyebrow": "Resumen",
+        "title": "Descubre el Riva Corsaro",
+        "description": "<p><img src=\"https://images.unsplash.com/photo-1567899378494-47b22a2ae96a?q=80&w=2070&auto=format&fit=crop\" alt=\"Riva Corsaro\" width=\"100%\" style=\"border-radius:12px; margin-bottom:20px;\"/></p><p>El Riva Corsaro es una maravilla de la ingeniería naval moderna, ofreciendo la máxima expresión de lujo en el mar. Experimenta un confort sin igual y atención al detalle en cada rincón.</p>",
+        "tags": "Luxury, Crew, Chef, Jacuzzi",
+        "alertText": "Disponible esta temporada.",
+        "bookingForm": "<h2>Reserva tu experiencia</h2><table><tr><th>Salida</th><th>Precio</th></tr><tr><td>Semana</td><td>65.000 € / semana</td></tr></table><br/><a href=\"#\">Solicitar Reserva</a>"
+      }
+    },
+    "section_1": {
+      "yacht-specs_0": {
+        "eyebrow": "Especificaciones",
+        "title": "Ficha Técnica",
+        "specs": "<table><tr><td>Eslora</td><td>35m</td></tr><tr><td>Huéspedes</td><td>10-12</td></tr><tr><td>Categoría</td><td>megayates</td></tr></table>"
+      }
+    }
+  },
+  "odyssey-eds/flota/megayates/lursen-ahs": {
+    "section": {
+      "yacht-header_1": {
+        "eyebrow": "MEGAYATES",
+        "title": "<h1>Lürssen AHS</h1>",
+        "priceLabel": "Tarifa desde",
+        "price": "65.000 € / semana",
+        "location": "Mónaco, Francia"
+      },
+      "yacht-overview_3": {
+        "eyebrow": "Resumen",
+        "title": "Descubre el Lürssen AHS",
+        "description": "<p><img src=\"https://images.unsplash.com/photo-1567899378494-47b22a2ae96a?q=80&w=2070&auto=format&fit=crop\" alt=\"Lürssen AHS\" width=\"100%\" style=\"border-radius:12px; margin-bottom:20px;\"/></p><p>El Lürssen AHS es una maravilla de la ingeniería naval moderna, ofreciendo la máxima expresión de lujo en el mar. Experimenta un confort sin igual y atención al detalle en cada rincón.</p>",
+        "tags": "Luxury, Crew, Chef, Jacuzzi",
+        "alertText": "Disponible esta temporada.",
+        "bookingForm": "<h2>Reserva tu experiencia</h2><table><tr><th>Salida</th><th>Precio</th></tr><tr><td>Semana</td><td>65.000 € / semana</td></tr></table><br/><a href=\"#\">Solicitar Reserva</a>"
+      }
+    },
+    "section_1": {
+      "yacht-specs_0": {
+        "eyebrow": "Especificaciones",
+        "title": "Ficha Técnica",
+        "specs": "<table><tr><td>Eslora</td><td>35m</td></tr><tr><td>Huéspedes</td><td>10-12</td></tr><tr><td>Categoría</td><td>megayates</td></tr></table>"
+      }
+    }
+  },
+  "odyssey-eds/flota/megayates/feadship-savannah": {
+    "section": {
+      "yacht-header_1": {
+        "eyebrow": "MEGAYATES",
+        "title": "<h1>Feadship Savannah</h1>",
+        "priceLabel": "Tarifa desde",
+        "price": "65.000 € / semana",
+        "location": "Mónaco, Francia"
+      },
+      "yacht-overview_3": {
+        "eyebrow": "Resumen",
+        "title": "Descubre el Feadship Savannah",
+        "description": "<p><img src=\"https://images.unsplash.com/photo-1567899378494-47b22a2ae96a?q=80&w=2070&auto=format&fit=crop\" alt=\"Feadship Savannah\" width=\"100%\" style=\"border-radius:12px; margin-bottom:20px;\"/></p><p>El Feadship Savannah es una maravilla de la ingeniería naval moderna, ofreciendo la máxima expresión de lujo en el mar. Experimenta un confort sin igual y atención al detalle en cada rincón.</p>",
+        "tags": "Luxury, Crew, Chef, Jacuzzi",
+        "alertText": "Disponible esta temporada.",
+        "bookingForm": "<h2>Reserva tu experiencia</h2><table><tr><th>Salida</th><th>Precio</th></tr><tr><td>Semana</td><td>65.000 € / semana</td></tr></table><br/><a href=\"#\">Solicitar Reserva</a>"
+      }
+    },
+    "section_1": {
+      "yacht-specs_0": {
+        "eyebrow": "Especificaciones",
+        "title": "Ficha Técnica",
+        "specs": "<table><tr><td>Eslora</td><td>35m</td></tr><tr><td>Huéspedes</td><td>10-12</td></tr><tr><td>Categoría</td><td>megayates</td></tr></table>"
       }
     }
   },
   "odyssey-eds/flota/catamaranes/sunreef-60-aeolus": {
     "section": {
       "yacht-header_1": {
-        "eyebrow": "Catamarán Eco-Lujo",
+        "eyebrow": "CATAMARANES",
         "title": "<h1>Sunreef 60 Aeolus</h1>",
         "priceLabel": "Tarifa desde",
-        "price": "45.000 € / semana",
+        "price": "25.000 € / semana",
         "location": "Ibiza, Baleares"
       },
       "yacht-overview_3": {
         "eyebrow": "Resumen",
-        "title": "Navegación silenciosa y espaciosa",
-        "description": "<p>El Sunreef 60 Aeolus combina el rendimiento de la vela con el lujo de un hotel boutique. Su enorme manga proporciona un salón y terraza comparables a yates de mucho mayor tamaño.</p>",
-        "tags": "Vela, 4 Camarotes, Cero Emisiones",
-        "alertText": "Disponible en Septiembre.",
-        "bookingForm": "<h2>Reserva tu experiencia</h2><table><tr><th>Salida</th><th>Precio</th></tr><tr><td>Julio - Agosto</td><td>55.000 € / sem</td></tr><tr><td>Resto del año</td><td>45.000 € / sem</td></tr></table><br/><a href=\"#\">Solicitar Reserva</a>"
+        "title": "Descubre el Sunreef 60 Aeolus",
+        "description": "<p><img src=\"https://images.unsplash.com/photo-1544551763-46a013bb70d5?q=80&w=2070&auto=format&fit=crop\" alt=\"Sunreef 60 Aeolus\" width=\"100%\" style=\"border-radius:12px; margin-bottom:20px;\"/></p><p>El Sunreef 60 Aeolus es una maravilla de la ingeniería naval moderna, ofreciendo la máxima expresión de lujo en el mar. Experimenta un confort sin igual y atención al detalle en cada rincón.</p>",
+        "tags": "Luxury, Crew, Chef, Jacuzzi",
+        "alertText": "Disponible esta temporada.",
+        "bookingForm": "<h2>Reserva tu experiencia</h2><table><tr><th>Salida</th><th>Precio</th></tr><tr><td>Semana</td><td>25.000 € / semana</td></tr></table><br/><a href=\"#\">Solicitar Reserva</a>"
       }
     },
     "section_1": {
       "yacht-specs_0": {
         "eyebrow": "Especificaciones",
         "title": "Ficha Técnica",
-        "specs": "<table><tr><td>Eslora</td><td>18.3 m</td></tr><tr><td>Manga</td><td>10.2 m</td></tr><tr><td>Calado</td><td>1.9 m</td></tr><tr><td>Huéspedes</td><td>8 (4 camarotes)</td></tr><tr><td>Tripulación</td><td>3 personas</td></tr><tr><td>Velocidad de crucero</td><td>10 nudos</td></tr></table>"
+        "specs": "<table><tr><td>Eslora</td><td>35m</td></tr><tr><td>Huéspedes</td><td>10-12</td></tr><tr><td>Categoría</td><td>catamaranes</td></tr></table>"
+      }
+    }
+  },
+  "odyssey-eds/flota/catamaranes/sunreef-80": {
+    "section": {
+      "yacht-header_1": {
+        "eyebrow": "CATAMARANES",
+        "title": "<h1>Sunreef 80</h1>",
+        "priceLabel": "Tarifa desde",
+        "price": "25.000 € / semana",
+        "location": "Ibiza, Baleares"
+      },
+      "yacht-overview_3": {
+        "eyebrow": "Resumen",
+        "title": "Descubre el Sunreef 80",
+        "description": "<p><img src=\"https://images.unsplash.com/photo-1544551763-46a013bb70d5?q=80&w=2070&auto=format&fit=crop\" alt=\"Sunreef 80\" width=\"100%\" style=\"border-radius:12px; margin-bottom:20px;\"/></p><p>El Sunreef 80 es una maravilla de la ingeniería naval moderna, ofreciendo la máxima expresión de lujo en el mar. Experimenta un confort sin igual y atención al detalle en cada rincón.</p>",
+        "tags": "Luxury, Crew, Chef, Jacuzzi",
+        "alertText": "Disponible esta temporada.",
+        "bookingForm": "<h2>Reserva tu experiencia</h2><table><tr><th>Salida</th><th>Precio</th></tr><tr><td>Semana</td><td>25.000 € / semana</td></tr></table><br/><a href=\"#\">Solicitar Reserva</a>"
       }
     },
-    "section_2": {
-      "yacht-extras_0": {
-        "eyebrow": "Complementos",
-        "title": "Deportes Acuáticos",
-        "description": "<p>Aprovecha la gran plataforma de baño del Sunreef.</p>",
-        "extras": "<table><tr><td>Instructor de Kite Surf</td><td>800 € / sem</td></tr><tr><td>Seabob F5</td><td>900 € / sem</td></tr><tr><td>Chef Vegano</td><td>1.200 € / sem</td></tr></table>"
+    "section_1": {
+      "yacht-specs_0": {
+        "eyebrow": "Especificaciones",
+        "title": "Ficha Técnica",
+        "specs": "<table><tr><td>Eslora</td><td>35m</td></tr><tr><td>Huéspedes</td><td>10-12</td></tr><tr><td>Categoría</td><td>catamaranes</td></tr></table>"
+      }
+    }
+  },
+  "odyssey-eds/flota/catamaranes/lagoon-seventy-7": {
+    "section": {
+      "yacht-header_1": {
+        "eyebrow": "CATAMARANES",
+        "title": "<h1>Lagoon Seventy 7</h1>",
+        "priceLabel": "Tarifa desde",
+        "price": "25.000 € / semana",
+        "location": "Ibiza, Baleares"
+      },
+      "yacht-overview_3": {
+        "eyebrow": "Resumen",
+        "title": "Descubre el Lagoon Seventy 7",
+        "description": "<p><img src=\"https://images.unsplash.com/photo-1544551763-46a013bb70d5?q=80&w=2070&auto=format&fit=crop\" alt=\"Lagoon Seventy 7\" width=\"100%\" style=\"border-radius:12px; margin-bottom:20px;\"/></p><p>El Lagoon Seventy 7 es una maravilla de la ingeniería naval moderna, ofreciendo la máxima expresión de lujo en el mar. Experimenta un confort sin igual y atención al detalle en cada rincón.</p>",
+        "tags": "Luxury, Crew, Chef, Jacuzzi",
+        "alertText": "Disponible esta temporada.",
+        "bookingForm": "<h2>Reserva tu experiencia</h2><table><tr><th>Salida</th><th>Precio</th></tr><tr><td>Semana</td><td>25.000 € / semana</td></tr></table><br/><a href=\"#\">Solicitar Reserva</a>"
+      }
+    },
+    "section_1": {
+      "yacht-specs_0": {
+        "eyebrow": "Especificaciones",
+        "title": "Ficha Técnica",
+        "specs": "<table><tr><td>Eslora</td><td>35m</td></tr><tr><td>Huéspedes</td><td>10-12</td></tr><tr><td>Categoría</td><td>catamaranes</td></tr></table>"
+      }
+    }
+  },
+  "odyssey-eds/flota/catamaranes/fountaine-pajot-alegria-67": {
+    "section": {
+      "yacht-header_1": {
+        "eyebrow": "CATAMARANES",
+        "title": "<h1>Fountaine Pajot Alegria 67</h1>",
+        "priceLabel": "Tarifa desde",
+        "price": "25.000 € / semana",
+        "location": "Ibiza, Baleares"
+      },
+      "yacht-overview_3": {
+        "eyebrow": "Resumen",
+        "title": "Descubre el Fountaine Pajot Alegria 67",
+        "description": "<p><img src=\"https://images.unsplash.com/photo-1544551763-46a013bb70d5?q=80&w=2070&auto=format&fit=crop\" alt=\"Fountaine Pajot Alegria 67\" width=\"100%\" style=\"border-radius:12px; margin-bottom:20px;\"/></p><p>El Fountaine Pajot Alegria 67 es una maravilla de la ingeniería naval moderna, ofreciendo la máxima expresión de lujo en el mar. Experimenta un confort sin igual y atención al detalle en cada rincón.</p>",
+        "tags": "Luxury, Crew, Chef, Jacuzzi",
+        "alertText": "Disponible esta temporada.",
+        "bookingForm": "<h2>Reserva tu experiencia</h2><table><tr><th>Salida</th><th>Precio</th></tr><tr><td>Semana</td><td>25.000 € / semana</td></tr></table><br/><a href=\"#\">Solicitar Reserva</a>"
+      }
+    },
+    "section_1": {
+      "yacht-specs_0": {
+        "eyebrow": "Especificaciones",
+        "title": "Ficha Técnica",
+        "specs": "<table><tr><td>Eslora</td><td>35m</td></tr><tr><td>Huéspedes</td><td>10-12</td></tr><tr><td>Categoría</td><td>catamaranes</td></tr></table>"
+      }
+    }
+  },
+  "odyssey-eds/flota/deportivos/sunseeker-95": {
+    "section": {
+      "yacht-header_1": {
+        "eyebrow": "DEPORTIVOS",
+        "title": "<h1>Sunseeker 95</h1>",
+        "priceLabel": "Tarifa desde",
+        "price": "14.000 € / semana",
+        "location": "Mallorca, Baleares"
+      },
+      "yacht-overview_3": {
+        "eyebrow": "Resumen",
+        "title": "Descubre el Sunseeker 95",
+        "description": "<p><img src=\"https://images.unsplash.com/photo-1588667610660-f43cce1121d4?q=80&w=2070&auto=format&fit=crop\" alt=\"Sunseeker 95\" width=\"100%\" style=\"border-radius:12px; margin-bottom:20px;\"/></p><p>El Sunseeker 95 es una maravilla de la ingeniería naval moderna, ofreciendo la máxima expresión de lujo en el mar. Experimenta un confort sin igual y atención al detalle en cada rincón.</p>",
+        "tags": "Luxury, Crew, Chef, Jacuzzi",
+        "alertText": "Disponible esta temporada.",
+        "bookingForm": "<h2>Reserva tu experiencia</h2><table><tr><th>Salida</th><th>Precio</th></tr><tr><td>Semana</td><td>14.000 € / semana</td></tr></table><br/><a href=\"#\">Solicitar Reserva</a>"
+      }
+    },
+    "section_1": {
+      "yacht-specs_0": {
+        "eyebrow": "Especificaciones",
+        "title": "Ficha Técnica",
+        "specs": "<table><tr><td>Eslora</td><td>35m</td></tr><tr><td>Huéspedes</td><td>10-12</td></tr><tr><td>Categoría</td><td>deportivos</td></tr></table>"
+      }
+    }
+  },
+  "odyssey-eds/flota/deportivos/pershing-9x": {
+    "section": {
+      "yacht-header_1": {
+        "eyebrow": "DEPORTIVOS",
+        "title": "<h1>Pershing 9X</h1>",
+        "priceLabel": "Tarifa desde",
+        "price": "14.000 € / semana",
+        "location": "Mallorca, Baleares"
+      },
+      "yacht-overview_3": {
+        "eyebrow": "Resumen",
+        "title": "Descubre el Pershing 9X",
+        "description": "<p><img src=\"https://images.unsplash.com/photo-1588667610660-f43cce1121d4?q=80&w=2070&auto=format&fit=crop\" alt=\"Pershing 9X\" width=\"100%\" style=\"border-radius:12px; margin-bottom:20px;\"/></p><p>El Pershing 9X es una maravilla de la ingeniería naval moderna, ofreciendo la máxima expresión de lujo en el mar. Experimenta un confort sin igual y atención al detalle en cada rincón.</p>",
+        "tags": "Luxury, Crew, Chef, Jacuzzi",
+        "alertText": "Disponible esta temporada.",
+        "bookingForm": "<h2>Reserva tu experiencia</h2><table><tr><th>Salida</th><th>Precio</th></tr><tr><td>Semana</td><td>14.000 € / semana</td></tr></table><br/><a href=\"#\">Solicitar Reserva</a>"
+      }
+    },
+    "section_1": {
+      "yacht-specs_0": {
+        "eyebrow": "Especificaciones",
+        "title": "Ficha Técnica",
+        "specs": "<table><tr><td>Eslora</td><td>35m</td></tr><tr><td>Huéspedes</td><td>10-12</td></tr><tr><td>Categoría</td><td>deportivos</td></tr></table>"
+      }
+    }
+  },
+  "odyssey-eds/flota/deportivos/wally-101": {
+    "section": {
+      "yacht-header_1": {
+        "eyebrow": "DEPORTIVOS",
+        "title": "<h1>Wally 101</h1>",
+        "priceLabel": "Tarifa desde",
+        "price": "14.000 € / semana",
+        "location": "Mallorca, Baleares"
+      },
+      "yacht-overview_3": {
+        "eyebrow": "Resumen",
+        "title": "Descubre el Wally 101",
+        "description": "<p><img src=\"https://images.unsplash.com/photo-1588667610660-f43cce1121d4?q=80&w=2070&auto=format&fit=crop\" alt=\"Wally 101\" width=\"100%\" style=\"border-radius:12px; margin-bottom:20px;\"/></p><p>El Wally 101 es una maravilla de la ingeniería naval moderna, ofreciendo la máxima expresión de lujo en el mar. Experimenta un confort sin igual y atención al detalle en cada rincón.</p>",
+        "tags": "Luxury, Crew, Chef, Jacuzzi",
+        "alertText": "Disponible esta temporada.",
+        "bookingForm": "<h2>Reserva tu experiencia</h2><table><tr><th>Salida</th><th>Precio</th></tr><tr><td>Semana</td><td>14.000 € / semana</td></tr></table><br/><a href=\"#\">Solicitar Reserva</a>"
+      }
+    },
+    "section_1": {
+      "yacht-specs_0": {
+        "eyebrow": "Especificaciones",
+        "title": "Ficha Técnica",
+        "specs": "<table><tr><td>Eslora</td><td>35m</td></tr><tr><td>Huéspedes</td><td>10-12</td></tr><tr><td>Categoría</td><td>deportivos</td></tr></table>"
+      }
+    }
+  },
+  "odyssey-eds/flota/clasicos/schooner-eleonora": {
+    "section": {
+      "yacht-header_1": {
+        "eyebrow": "CLASICOS",
+        "title": "<h1>Schooner Eleonora</h1>",
+        "priceLabel": "Tarifa desde",
+        "price": "35.000 € / semana",
+        "location": "Corfú, Grecia"
+      },
+      "yacht-overview_3": {
+        "eyebrow": "Resumen",
+        "title": "Descubre el Schooner Eleonora",
+        "description": "<p><img src=\"https://images.unsplash.com/photo-1500462006325-17730e23da91?q=80&w=2070&auto=format&fit=crop\" alt=\"Schooner Eleonora\" width=\"100%\" style=\"border-radius:12px; margin-bottom:20px;\"/></p><p>El Schooner Eleonora es una maravilla de la ingeniería naval moderna, ofreciendo la máxima expresión de lujo en el mar. Experimenta un confort sin igual y atención al detalle en cada rincón.</p>",
+        "tags": "Luxury, Crew, Chef, Jacuzzi",
+        "alertText": "Disponible esta temporada.",
+        "bookingForm": "<h2>Reserva tu experiencia</h2><table><tr><th>Salida</th><th>Precio</th></tr><tr><td>Semana</td><td>35.000 € / semana</td></tr></table><br/><a href=\"#\">Solicitar Reserva</a>"
+      }
+    },
+    "section_1": {
+      "yacht-specs_0": {
+        "eyebrow": "Especificaciones",
+        "title": "Ficha Técnica",
+        "specs": "<table><tr><td>Eslora</td><td>35m</td></tr><tr><td>Huéspedes</td><td>10-12</td></tr><tr><td>Categoría</td><td>clasicos</td></tr></table>"
       }
     }
   }

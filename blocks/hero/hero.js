@@ -5,10 +5,24 @@
 export default function decorate(block) {
   // Clear block DOM completely and rebuild
   const rows = [...block.children];
-  const imageRow = rows[0];
-  const contentRow = rows[1];
+  // Detect if we have Universal Editor rows (11 rows) or standard rows
+  let imageRow, eyebrowRow, contentRow;
+  let statStartIndex = 2;
+  
+  if (rows.length >= 10 && rows[2]?.querySelector('h1')) {
+    // Universal Editor format
+    imageRow = rows[0];
+    eyebrowRow = rows[1];
+    contentRow = rows[2];
+    statStartIndex = 3;
+  } else {
+    // Standard format
+    imageRow = rows[0];
+    contentRow = rows[1];
+  }
 
   const picture = imageRow?.querySelector('picture');
+  const imageLink = imageRow?.querySelector('a');
 
   block.textContent = '';
 
@@ -16,6 +30,13 @@ export default function decorate(block) {
   if (picture) {
     picture.classList.add('hero-bg');
     block.append(picture);
+  } else if (imageLink) {
+    // Universal Editor provides a link to the image if it's external or not processed
+    const img = document.createElement('img');
+    img.src = imageLink.href;
+    img.alt = imageLink.textContent || '';
+    img.className = 'hero-bg';
+    block.append(img);
   }
 
   // 2. Gradient overlay
@@ -31,16 +52,18 @@ export default function decorate(block) {
     const val = contentRow.querySelector('div:last-child') || contentRow;
 
     // Eyebrow
-    const eyebrow = document.createElement('div');
-    eyebrow.className = 'hero-eyebrow';
-    eyebrow.innerHTML = '<span class="hero-eyebrow-line"></span><span>Chárters privados · 2026</span>';
-    content.append(eyebrow);
+    const eyebrowText = eyebrowRow ? eyebrowRow.textContent.trim() : 'Chárters privados · 2026';
+    if (eyebrowText) {
+      const eyebrow = document.createElement('div');
+      eyebrow.className = 'hero-eyebrow';
+      eyebrow.innerHTML = `<span class="hero-eyebrow-line"></span><span>${eyebrowText}</span>`;
+      content.append(eyebrow);
+    }
 
     // Title (H1)
     const h1 = val.querySelector('h1');
     if (h1) {
       h1.className = 'hero-title';
-      // Basic logic to replace italic if needed, we'll let authors use <em> in AEM rich text
       content.append(h1);
     } else {
       const h1Fallback = document.createElement('h1');
@@ -63,9 +86,9 @@ export default function decorate(block) {
 
       // Use rows to extract stats dynamically, or default if missing
       const statFields = [
-        { label: rows[2]?.textContent?.trim() || 'Embarcaciones', value: rows[3]?.textContent?.trim() || '42' },
-        { label: rows[4]?.textContent?.trim() || 'Rutas', value: rows[5]?.textContent?.trim() || '18' },
-        { label: rows[6]?.textContent?.trim() || 'Días alta', value: rows[7]?.textContent?.trim() || '07' },
+        { label: rows[statStartIndex]?.textContent?.trim() || 'Embarcaciones', value: rows[statStartIndex+1]?.textContent?.trim() || '42' },
+        { label: rows[statStartIndex+2]?.textContent?.trim() || 'Rutas', value: rows[statStartIndex+3]?.textContent?.trim() || '18' },
+        { label: rows[statStartIndex+4]?.textContent?.trim() || 'Días alta', value: rows[statStartIndex+5]?.textContent?.trim() || '07' },
       ];
 
       statFields.forEach((f) => {
@@ -83,10 +106,10 @@ export default function decorate(block) {
       widget.className = 'hero-booking-widget';
 
       const fields = [
-        { label: rows[2]?.textContent?.trim() || 'Destino', value: rows[3]?.textContent?.trim() || 'A medida' },
-        { label: rows[4]?.textContent?.trim() || 'Embarque', value: rows[5]?.textContent?.trim() || 'Flexible' },
-        { label: rows[6]?.textContent?.trim() || 'Regreso', value: rows[7]?.textContent?.trim() || 'Flexible' },
-        { label: rows[8]?.textContent?.trim() || 'Huéspedes', value: rows[9]?.textContent?.trim() || 'A convenir' },
+        { label: rows[statStartIndex]?.textContent?.trim() || 'Destino', value: rows[statStartIndex+1]?.textContent?.trim() || 'A medida' },
+        { label: rows[statStartIndex+2]?.textContent?.trim() || 'Embarque', value: rows[statStartIndex+3]?.textContent?.trim() || 'Flexible' },
+        { label: rows[statStartIndex+4]?.textContent?.trim() || 'Regreso', value: rows[statStartIndex+5]?.textContent?.trim() || 'Flexible' },
+        { label: rows[statStartIndex+6]?.textContent?.trim() || 'Huéspedes', value: rows[statStartIndex+7]?.textContent?.trim() || 'A convenir' },
       ];
 
       fields.forEach((f) => {
