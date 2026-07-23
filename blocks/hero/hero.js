@@ -27,6 +27,7 @@ export default function decorate(block) {
   block.textContent = '';
 
   // 1. Background image
+  const textContent = imageRow?.textContent?.trim();
   if (picture) {
     picture.classList.add('hero-bg');
     block.append(picture);
@@ -35,6 +36,13 @@ export default function decorate(block) {
     const img = document.createElement('img');
     img.src = imageLink.href;
     img.alt = imageLink.textContent || '';
+    img.className = 'hero-bg';
+    block.append(img);
+  } else if (textContent && (textContent.endsWith('.jpg') || textContent.endsWith('.png') || textContent.endsWith('.jpeg') || textContent.endsWith('.webp'))) {
+    // Universal Editor provides raw string for internal DAM references
+    const img = document.createElement('img');
+    img.src = textContent;
+    img.alt = '';
     img.className = 'hero-bg';
     block.append(img);
   }

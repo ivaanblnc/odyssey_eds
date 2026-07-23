@@ -5,59 +5,56 @@
 export default function decorate(block) {
   const rows = [...block.children];
 
-  // Row 0: eyebrow
-  // Row 1: headline
-  // Row 2: subtitle
-  // Row 3: image1, Row 4: text1
-  // Row 5: image2, Row 6: text2
-  // Row 7: image3, Row 8: text3
+  // We expect:
+  // Row 1: Eyebrow text
+  // Row 2: Headline
+  // Row 3: Left paragraph
+  // Row 4: Right paragraph
+
+  // Row 5: Subtitle (optional)
   const eyebrowText = rows[0]?.textContent?.trim() || '';
   const headlineHtml = rows[1]?.querySelector('div')?.innerHTML || '';
-  const subtitleText = rows[2]?.textContent?.trim() || '';
-
-  // Extract pairs of image/text
-  const slides = [];
-  for (let i = 3; i < rows.length; i += 2) {
-    if (rows[i] && rows[i+1]) {
-      const picture = rows[i].querySelector('picture');
-      const textHtml = rows[i+1].querySelector('div')?.innerHTML || '';
-      if (picture && textHtml) {
-        slides.push({ picture, textHtml });
-      }
-    }
-  }
+  const leftColHtml = rows[2]?.querySelector('div')?.innerHTML || '';
+  const rightColHtml = rows[3]?.querySelector('div')?.innerHTML || '';
+  const subtitleText = rows[4]?.textContent?.trim() || '';
 
   block.textContent = '';
 
-  const header = document.createElement('div');
-  header.className = 'manifesto-header';
-  
-  if (eyebrowText) header.innerHTML += `<div class="manifesto-eyebrow">${eyebrowText}</div>`;
-  if (headlineHtml) header.innerHTML += `<h2 class="manifesto-title">${headlineHtml}</h2>`;
-  if (subtitleText) header.innerHTML += `<div class="manifesto-subtitle">${subtitleText}</div>`;
-  
-  block.append(header);
+  const grid = document.createElement('div');
+  grid.className = 'manifesto-grid';
 
-  if (slides.length > 0) {
-    const carousel = document.createElement('div');
-    carousel.className = 'manifesto-carousel';
-
-    slides.forEach((slide) => {
-      const card = document.createElement('div');
-      card.className = 'manifesto-card';
-      
-      const imgWrapper = document.createElement('div');
-      imgWrapper.className = 'manifesto-card-image';
-      imgWrapper.append(slide.picture);
-
-      const textWrapper = document.createElement('div');
-      textWrapper.className = 'manifesto-card-text';
-      textWrapper.innerHTML = slide.textHtml;
-
-      card.append(imgWrapper, textWrapper);
-      carousel.append(card);
-    });
-
-    block.append(carousel);
+  // Left side (eyebrow & optional subtitle)
+  const left = document.createElement('div');
+  left.className = 'manifesto-left';
+  left.innerHTML = `<div class="manifesto-eyebrow">${eyebrowText}</div>`;
+  if (subtitleText) {
+    left.innerHTML += `<div class="manifesto-subtitle">${subtitleText}</div>`;
   }
+  grid.append(left);
+
+  // Right side (content)
+  const right = document.createElement('div');
+  right.className = 'manifesto-right';
+
+  const h2 = document.createElement('h2');
+  h2.className = 'manifesto-title';
+  h2.innerHTML = headlineHtml;
+  right.append(h2);
+
+  const columns = document.createElement('div');
+  columns.className = 'manifesto-columns';
+
+  if (block.classList.contains('bay')) {
+    columns.classList.add('bay-variant');
+    columns.innerHTML = `<div>${leftColHtml}</div>`;
+  } else {
+    columns.innerHTML = `
+      <div>${leftColHtml}</div>
+      <div>${rightColHtml}</div>
+    `;
+  }
+  right.append(columns);
+
+  grid.append(right);
+  block.append(grid);
 }

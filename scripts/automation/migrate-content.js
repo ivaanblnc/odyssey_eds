@@ -123,7 +123,21 @@ async function run() {
           await createGalleryItems(blockPath, blockData);
         } else {
           console.log(`-> Updating block ${blockName}`);
-          await updateNode(blockPath, blockData);
+          const { _items, ...blockProps } = blockData;
+          await updateNode(blockPath, blockProps);
+          
+          if (_items && Array.isArray(_items)) {
+            console.log(`   -> Creating ${_items.length} items for ${blockName}`);
+            for (let i = 0; i < _items.length; i++) {
+              const itemNode = `item_${i + 1}`;
+              const itemPath = `${blockPath}/${itemNode}`;
+              const itemProps = _items[i];
+              itemProps['jcr:primaryType'] = 'nt:unstructured';
+              itemProps['sling:resourceType'] = 'core/franklin/components/block/v1/block/item';
+              await updateNode(itemPath, itemProps);
+              await delay(100);
+            }
+          }
         }
         await delay(200);
       }
