@@ -13,8 +13,15 @@ export default function decorate(block) {
     while (row.firstElementChild) li.append(row.firstElementChild);
 
     [...li.children].forEach((div) => {
-      if (div.children.length === 1 && div.querySelector('picture')) {
+      const textContent = div.textContent?.trim();
+      const isRawImage = textContent && (textContent.endsWith('.jpg') || textContent.endsWith('.png') || textContent.endsWith('.jpeg') || textContent.endsWith('.webp'));
+      
+      if ((div.children.length === 1 && div.querySelector('picture')) || isRawImage) {
         div.className = 'cards-card-image';
+
+        if (isRawImage) {
+          div.innerHTML = `<picture><img src="${textContent}" alt=""></picture>`;
+        }
 
         if (isDestinations || isFleet) {
           const num = document.createElement('div');

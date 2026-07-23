@@ -38,6 +38,7 @@ async function run() {
       await deleteNode(`${basePath}/section/manifesto`);
       await deleteNode(`${basePath}/section/hero_1`);
       await deleteNode(`${basePath}/section/manifesto_2`);
+      await deleteNode(`${basePath}/section/cards_3`);
     }
   }
 }

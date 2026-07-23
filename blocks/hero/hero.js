@@ -6,16 +6,28 @@ export default function decorate(block) {
   // Clear block DOM completely and rebuild
   const rows = [...block.children];
   // Detect if we have Universal Editor rows (11 rows) or standard rows
-  let imageRow, eyebrowRow, contentRow;
-  let statStartIndex = 2;
-  
-  if (rows.length >= 10 && rows[2]?.querySelector('h1')) {
-    // Universal Editor format
-    imageRow = rows[0];
-    eyebrowRow = rows[1];
-    contentRow = rows[2];
-    statStartIndex = 3;
-  } else {
+  let imageRow;
+  let eyebrowRow;
+  let contentRow;
+  let statStartIndex = -1;
+
+  if (rows.length >= 10) {
+    if (rows[3]?.querySelector('h1')) {
+      // Universal Editor format with imageAlt field (12 fields)
+      imageRow = rows[0];
+      eyebrowRow = rows[2];
+      contentRow = rows[3];
+      statStartIndex = 4;
+    } else if (rows[2]?.querySelector('h1')) {
+      // Universal Editor format without imageAlt field (11 fields)
+      imageRow = rows[0];
+      eyebrowRow = rows[1];
+      contentRow = rows[2];
+      statStartIndex = 3;
+    }
+  }
+
+  if (statStartIndex === -1) {
     // Standard format
     imageRow = rows[0];
     contentRow = rows[1];
