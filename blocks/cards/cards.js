@@ -48,6 +48,9 @@ export default function decorate(block) {
             const region = elements[0]?.textContent || '';
             const nameEl = elements.find((el) => el.tagName.match(/^H[1-6]$/)) || elements[1];
             const name = nameEl?.textContent || '';
+            const linkEl = nameEl?.querySelector('a') || div.querySelector('a');
+            const href = linkEl ? linkEl.getAttribute('href') : '';
+            const titleHtml = href ? `<a href="${href}" class="dest-link">${name}</a>` : name;
 
             let priceLabel = 'Desde';
             let price = '';
@@ -64,7 +67,7 @@ export default function decorate(block) {
               <div class="dest-top">
                 <div class="dest-left">
                   <div class="dest-region">${region}</div>
-                  <h3 class="dest-title">${name}</h3>
+                  <h3 class="dest-title">${titleHtml}</h3>
                 </div>
                 <div class="dest-right">
                   <div class="dest-price-label">${priceLabel}</div>

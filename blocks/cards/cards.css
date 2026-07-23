@@ -46,6 +46,19 @@
 .cards.destinations > ul > li {
   border: none;
   margin: 0;
+  position: relative;
+}
+
+.cards.destinations .dest-link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.cards.destinations .dest-link::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 10;
 }
 
 .cards.destinations .cards-card-image {
