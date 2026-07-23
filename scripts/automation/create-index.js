@@ -1,4 +1,3 @@
-
 import * as dotenv from 'dotenv';
 import path from 'path';
 import { fileURLToPath } from 'url';
@@ -12,7 +11,7 @@ const authHeader = `Bearer ${AEM_ACCESS_TOKEN}`;
 
 async function run() {
   const url = `${AEM_HOST}/content/odyssey-eds/index/jcr:content/root`;
-  
+
   // Create Section 1 for Hero
   const section1Url = `${url}/section-1`;
   const s1Params = new URLSearchParams();

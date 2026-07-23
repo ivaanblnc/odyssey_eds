@@ -9,7 +9,7 @@ const dirname = path.dirname(filename);
 dotenv.config({ path: path.join(dirname, '../../.env') });
 
 const AEM_HOST = process.env.AEM_HOST || 'http://localhost:4502';
-const AEM_ACCESS_TOKEN = process.env.AEM_ACCESS_TOKEN;
+const { AEM_ACCESS_TOKEN } = process.env;
 
 if (!AEM_ACCESS_TOKEN) {
   console.error('❌ ERROR CRÍTICO: La variable de entorno AEM_ACCESS_TOKEN no está definida.');
@@ -30,7 +30,7 @@ async function updateNode(nodePath, data) {
     if (Array.isArray(value)) {
       // Handle multifields or item lists (e.g. Gallery)
       // This logic will be handled outside if it requires child nodes, but if it's a simple array property:
-      value.forEach(v => params.append(key, v));
+      value.forEach((v) => params.append(key, v));
     } else if (typeof value === 'object') {
       // It's a block. We don't POST block objects directly, handled by caller
     } else {
@@ -41,7 +41,7 @@ async function updateNode(nodePath, data) {
 
   // Force update
   params.append(':cq:action', 'default');
-  
+
   try {
     const response = await fetch(url, {
       method: 'POST',
@@ -71,11 +71,11 @@ async function createGalleryItems(blockPath, images) {
     const itemNode = `item_${i + 1}`;
     const url = `${AEM_HOST}${blockPath}/${itemNode}`;
     const params = new URLSearchParams();
-    
+
     params.append('jcr:primaryType', 'nt:unstructured');
     params.append('sling:resourceType', 'core/franklin/components/block/v1/block/item');
     params.append('image', images[i]);
-    
+
     try {
       const response = await fetch(url, {
         method: 'POST',
@@ -92,7 +92,7 @@ async function createGalleryItems(blockPath, images) {
         console.error(`[ERROR] Failed to add gallery item. Status: ${response.status}`);
       }
     } catch (error) {
-      console.error(`[NETWORK ERROR] Could not add gallery item:`, error.message);
+      console.error('[NETWORK ERROR] Could not add gallery item:', error.message);
     }
     await delay(100);
   }
@@ -109,14 +109,14 @@ async function run() {
 
   for (const [yachtPath, sections] of Object.entries(yachtsContent)) {
     console.log(`\nMigrating content for: /content/${yachtPath}`);
-    
+
     // The base path to the page's jcr:content
     const basePath = `/content/${yachtPath}/jcr:content/root`;
 
     for (const [sectionName, blocks] of Object.entries(sections)) {
       for (const [blockName, blockData] of Object.entries(blocks)) {
         const blockPath = `${basePath}/${sectionName}/${blockName}`;
-        
+
         if (blockName === 'gallery' && Array.isArray(blockData)) {
           console.log(`-> Processing gallery for ${yachtPath}`);
           await createGalleryItems(blockPath, blockData);
@@ -128,7 +128,7 @@ async function run() {
       }
     }
   }
-  
+
   console.log('\n✅ Content Migration completed successfully!');
 }
 
