@@ -1,5 +1,2 @@
 mountpoints:
-  /:
-    url: "https://author-p34633-e913315.adobeaemcloud.com/bin/franklin.delivery/ivaanblnc/odyssey_eds/main"
-    type: "markup"
-    suffix: ".html"
+  /: "https://author-p34633-e913315.adobeaemcloud.com/bin/franklin.delivery/ivaanblnc/odyssey_eds/main"
