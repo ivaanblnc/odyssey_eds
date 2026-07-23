@@ -32,7 +32,7 @@ const locations = {
 function processCategory(catName, children) {
   children.forEach(yacht => {
     const yachtPath = `odyssey-eds/flota/${catName}/${yacht.name}`;
-    const img = images[catName] || images['megayates'];
+    const img = `/content/dam/odyssey-eds/${catName}.jpg`;
     const price = prices[catName] || '20.000 € / semana';
     const loc = locations[catName] || 'Ibiza, Baleares';
     

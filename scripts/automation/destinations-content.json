@@ -1,5 +1,5 @@
 {
-  "odyssey-eds/destinos/mediterraneo/ibiza": {
+  "/content/odyssey-eds/destinos/mediterraneo/ibiza": {
     "section": {
       "hero_1": {
         "jcr:primaryType": "nt:unstructured",
@@ -20,7 +20,7 @@
           "guestsLabel@text",
           "guestsValue@text"
         ],
-        "image": "https://images.unsplash.com/photo-1533271440058-20cb528247df?q=80&w=2070&auto=format&fit=crop",
+        "image": "/content/dam/odyssey-eds/ibiza.jpg",
         "imageAlt": "Ibiza",
         "eyebrow": "Odyssey Destinations",
         "text": "<h1>Ibiza</h1><p>Explora aguas cristalinas y paisajes inolvidables en el corazón de MEDITERRANEO.</p>",
@@ -47,12 +47,12 @@
         "eyebrow": "01 — El Paraíso",
         "headline": "<h2>Descubre Ibiza</h2>",
         "leftCol": "<p>Ibiza es uno de los destinos más codiciados del mundo para el chárter de yates de lujo. Disfruta de un clima perfecto, gastronomía excepcional y la libertad de navegar a tu propio ritmo.</p>",
-        "rightCol": "<p><a href=\"/flota\">Ver Flota Disponible</a></p><p><img src=\"https://images.unsplash.com/photo-1533271440058-20cb528247df?q=80&w=2070&auto=format&fit=crop\" alt=\"Vista de Ibiza\" width=\"100%\" style=\"border-radius:12px;\"/></p>",
+        "rightCol": "<p><a href=\"/flota\">Ver Flota Disponible</a></p><p><img src=\"/content/dam/odyssey-eds/ibiza.jpg\" alt=\"Vista de Ibiza\" width=\"100%\" style=\"border-radius:12px;\"/></p>",
         "subtitle": "Curated Charters"
       }
     }
   },
-  "odyssey-eds/destinos/mediterraneo/mallorca": {
+  "/content/odyssey-eds/destinos/mediterraneo/mallorca": {
     "section": {
       "hero_1": {
         "jcr:primaryType": "nt:unstructured",
@@ -73,7 +73,7 @@
           "guestsLabel@text",
           "guestsValue@text"
         ],
-        "image": "https://images.unsplash.com/photo-1520630737402-bc3e6c0c279d?q=80&w=2070&auto=format&fit=crop",
+        "image": "/content/dam/odyssey-eds/mallorca.jpg",
         "imageAlt": "Mallorca",
         "eyebrow": "Odyssey Destinations",
         "text": "<h1>Mallorca</h1><p>Explora aguas cristalinas y paisajes inolvidables en el corazón de MEDITERRANEO.</p>",
@@ -100,12 +100,12 @@
         "eyebrow": "01 — El Paraíso",
         "headline": "<h2>Descubre Mallorca</h2>",
         "leftCol": "<p>Mallorca es uno de los destinos más codiciados del mundo para el chárter de yates de lujo. Disfruta de un clima perfecto, gastronomía excepcional y la libertad de navegar a tu propio ritmo.</p>",
-        "rightCol": "<p><a href=\"/flota\">Ver Flota Disponible</a></p><p><img src=\"https://images.unsplash.com/photo-1520630737402-bc3e6c0c279d?q=80&w=2070&auto=format&fit=crop\" alt=\"Vista de Mallorca\" width=\"100%\" style=\"border-radius:12px;\"/></p>",
+        "rightCol": "<p><a href=\"/flota\">Ver Flota Disponible</a></p><p><img src=\"/content/dam/odyssey-eds/mallorca.jpg\" alt=\"Vista de Mallorca\" width=\"100%\" style=\"border-radius:12px;\"/></p>",
         "subtitle": "Curated Charters"
       }
     }
   },
-  "odyssey-eds/destinos/mediterraneo/costa-del-sol": {
+  "/content/odyssey-eds/destinos/mediterraneo/costa-del-sol": {
     "section": {
       "hero_1": {
         "jcr:primaryType": "nt:unstructured",
@@ -126,7 +126,7 @@
           "guestsLabel@text",
           "guestsValue@text"
         ],
-        "image": "https://images.unsplash.com/photo-1549419131-7e8cddb5e434?q=80&w=2070&auto=format&fit=crop",
+        "image": "/content/dam/odyssey-eds/costa-del-sol.jpg",
         "imageAlt": "Costa del Sol",
         "eyebrow": "Odyssey Destinations",
         "text": "<h1>Costa del Sol</h1><p>Explora aguas cristalinas y paisajes inolvidables en el corazón de MEDITERRANEO.</p>",
@@ -153,12 +153,12 @@
         "eyebrow": "01 — El Paraíso",
         "headline": "<h2>Descubre Costa del Sol</h2>",
         "leftCol": "<p>Costa del Sol es uno de los destinos más codiciados del mundo para el chárter de yates de lujo. Disfruta de un clima perfecto, gastronomía excepcional y la libertad de navegar a tu propio ritmo.</p>",
-        "rightCol": "<p><a href=\"/flota\">Ver Flota Disponible</a></p><p><img src=\"https://images.unsplash.com/photo-1549419131-7e8cddb5e434?q=80&w=2070&auto=format&fit=crop\" alt=\"Vista de Costa del Sol\" width=\"100%\" style=\"border-radius:12px;\"/></p>",
+        "rightCol": "<p><a href=\"/flota\">Ver Flota Disponible</a></p><p><img src=\"/content/dam/odyssey-eds/costa-del-sol.jpg\" alt=\"Vista de Costa del Sol\" width=\"100%\" style=\"border-radius:12px;\"/></p>",
         "subtitle": "Curated Charters"
       }
     }
   },
-  "odyssey-eds/destinos/mediterraneo/mykonos": {
+  "/content/odyssey-eds/destinos/mediterraneo/mykonos": {
     "section": {
       "hero_1": {
         "jcr:primaryType": "nt:unstructured",
@@ -179,7 +179,7 @@
           "guestsLabel@text",
           "guestsValue@text"
         ],
-        "image": "https://images.unsplash.com/photo-1601581875309-fafbf2d3ed3a?q=80&w=2070&auto=format&fit=crop",
+        "image": "/content/dam/odyssey-eds/mykonos.jpg",
         "imageAlt": "Mykonos",
         "eyebrow": "Odyssey Destinations",
         "text": "<h1>Mykonos</h1><p>Explora aguas cristalinas y paisajes inolvidables en el corazón de MEDITERRANEO.</p>",
@@ -206,12 +206,12 @@
         "eyebrow": "01 — El Paraíso",
         "headline": "<h2>Descubre Mykonos</h2>",
         "leftCol": "<p>Mykonos es uno de los destinos más codiciados del mundo para el chárter de yates de lujo. Disfruta de un clima perfecto, gastronomía excepcional y la libertad de navegar a tu propio ritmo.</p>",
-        "rightCol": "<p><a href=\"/flota\">Ver Flota Disponible</a></p><p><img src=\"https://images.unsplash.com/photo-1601581875309-fafbf2d3ed3a?q=80&w=2070&auto=format&fit=crop\" alt=\"Vista de Mykonos\" width=\"100%\" style=\"border-radius:12px;\"/></p>",
+        "rightCol": "<p><a href=\"/flota\">Ver Flota Disponible</a></p><p><img src=\"/content/dam/odyssey-eds/mykonos.jpg\" alt=\"Vista de Mykonos\" width=\"100%\" style=\"border-radius:12px;\"/></p>",
         "subtitle": "Curated Charters"
       }
     }
   },
-  "odyssey-eds/destinos/mediterraneo/corfu": {
+  "/content/odyssey-eds/destinos/mediterraneo/corfu": {
     "section": {
       "hero_1": {
         "jcr:primaryType": "nt:unstructured",
@@ -232,7 +232,7 @@
           "guestsLabel@text",
           "guestsValue@text"
         ],
-        "image": "https://images.unsplash.com/photo-1563853153676-4d7a8d3e9112?q=80&w=2070&auto=format&fit=crop",
+        "image": "/content/dam/odyssey-eds/corfu.jpg",
         "imageAlt": "Corfú",
         "eyebrow": "Odyssey Destinations",
         "text": "<h1>Corfú</h1><p>Explora aguas cristalinas y paisajes inolvidables en el corazón de MEDITERRANEO.</p>",
@@ -259,12 +259,12 @@
         "eyebrow": "01 — El Paraíso",
         "headline": "<h2>Descubre Corfú</h2>",
         "leftCol": "<p>Corfú es uno de los destinos más codiciados del mundo para el chárter de yates de lujo. Disfruta de un clima perfecto, gastronomía excepcional y la libertad de navegar a tu propio ritmo.</p>",
-        "rightCol": "<p><a href=\"/flota\">Ver Flota Disponible</a></p><p><img src=\"https://images.unsplash.com/photo-1563853153676-4d7a8d3e9112?q=80&w=2070&auto=format&fit=crop\" alt=\"Vista de Corfú\" width=\"100%\" style=\"border-radius:12px;\"/></p>",
+        "rightCol": "<p><a href=\"/flota\">Ver Flota Disponible</a></p><p><img src=\"/content/dam/odyssey-eds/corfu.jpg\" alt=\"Vista de Corfú\" width=\"100%\" style=\"border-radius:12px;\"/></p>",
         "subtitle": "Curated Charters"
       }
     }
   },
-  "odyssey-eds/destinos/mediterraneo/monaco": {
+  "/content/odyssey-eds/destinos/mediterraneo/monaco": {
     "section": {
       "hero_1": {
         "jcr:primaryType": "nt:unstructured",
@@ -285,7 +285,7 @@
           "guestsLabel@text",
           "guestsValue@text"
         ],
-        "image": "https://images.unsplash.com/photo-1579965416298-b99b50dbba0d?q=80&w=2070&auto=format&fit=crop",
+        "image": "/content/dam/odyssey-eds/monaco.jpg",
         "imageAlt": "Mónaco",
         "eyebrow": "Odyssey Destinations",
         "text": "<h1>Mónaco</h1><p>Explora aguas cristalinas y paisajes inolvidables en el corazón de MEDITERRANEO.</p>",
@@ -312,12 +312,12 @@
         "eyebrow": "01 — El Paraíso",
         "headline": "<h2>Descubre Mónaco</h2>",
         "leftCol": "<p>Mónaco es uno de los destinos más codiciados del mundo para el chárter de yates de lujo. Disfruta de un clima perfecto, gastronomía excepcional y la libertad de navegar a tu propio ritmo.</p>",
-        "rightCol": "<p><a href=\"/flota\">Ver Flota Disponible</a></p><p><img src=\"https://images.unsplash.com/photo-1579965416298-b99b50dbba0d?q=80&w=2070&auto=format&fit=crop\" alt=\"Vista de Mónaco\" width=\"100%\" style=\"border-radius:12px;\"/></p>",
+        "rightCol": "<p><a href=\"/flota\">Ver Flota Disponible</a></p><p><img src=\"/content/dam/odyssey-eds/monaco.jpg\" alt=\"Vista de Mónaco\" width=\"100%\" style=\"border-radius:12px;\"/></p>",
         "subtitle": "Curated Charters"
       }
     }
   },
-  "odyssey-eds/destinos/mediterraneo/costa-amalfina": {
+  "/content/odyssey-eds/destinos/mediterraneo/costa-amalfina": {
     "section": {
       "hero_1": {
         "jcr:primaryType": "nt:unstructured",
@@ -338,7 +338,7 @@
           "guestsLabel@text",
           "guestsValue@text"
         ],
-        "image": "https://images.unsplash.com/photo-1533090161767-e6ffed986c88?q=80&w=2070&auto=format&fit=crop",
+        "image": "/content/dam/odyssey-eds/costa-amalfina.jpg",
         "imageAlt": "Costa Amalfitana",
         "eyebrow": "Odyssey Destinations",
         "text": "<h1>Costa Amalfitana</h1><p>Explora aguas cristalinas y paisajes inolvidables en el corazón de MEDITERRANEO.</p>",
@@ -365,12 +365,12 @@
         "eyebrow": "01 — El Paraíso",
         "headline": "<h2>Descubre Costa Amalfitana</h2>",
         "leftCol": "<p>Costa Amalfitana es uno de los destinos más codiciados del mundo para el chárter de yates de lujo. Disfruta de un clima perfecto, gastronomía excepcional y la libertad de navegar a tu propio ritmo.</p>",
-        "rightCol": "<p><a href=\"/flota\">Ver Flota Disponible</a></p><p><img src=\"https://images.unsplash.com/photo-1533090161767-e6ffed986c88?q=80&w=2070&auto=format&fit=crop\" alt=\"Vista de Costa Amalfitana\" width=\"100%\" style=\"border-radius:12px;\"/></p>",
+        "rightCol": "<p><a href=\"/flota\">Ver Flota Disponible</a></p><p><img src=\"/content/dam/odyssey-eds/costa-amalfina.jpg\" alt=\"Vista de Costa Amalfitana\" width=\"100%\" style=\"border-radius:12px;\"/></p>",
         "subtitle": "Curated Charters"
       }
     }
   },
-  "odyssey-eds/destinos/mediterraneo/cerdena": {
+  "/content/odyssey-eds/destinos/mediterraneo/cerdena": {
     "section": {
       "hero_1": {
         "jcr:primaryType": "nt:unstructured",
@@ -391,7 +391,7 @@
           "guestsLabel@text",
           "guestsValue@text"
         ],
-        "image": "https://images.unsplash.com/photo-1594954714157-e62a1b1fc8bd?q=80&w=2070&auto=format&fit=crop",
+        "image": "/content/dam/odyssey-eds/cerdena.jpg",
         "imageAlt": "Cerdeña",
         "eyebrow": "Odyssey Destinations",
         "text": "<h1>Cerdeña</h1><p>Explora aguas cristalinas y paisajes inolvidables en el corazón de MEDITERRANEO.</p>",
@@ -418,12 +418,12 @@
         "eyebrow": "01 — El Paraíso",
         "headline": "<h2>Descubre Cerdeña</h2>",
         "leftCol": "<p>Cerdeña es uno de los destinos más codiciados del mundo para el chárter de yates de lujo. Disfruta de un clima perfecto, gastronomía excepcional y la libertad de navegar a tu propio ritmo.</p>",
-        "rightCol": "<p><a href=\"/flota\">Ver Flota Disponible</a></p><p><img src=\"https://images.unsplash.com/photo-1594954714157-e62a1b1fc8bd?q=80&w=2070&auto=format&fit=crop\" alt=\"Vista de Cerdeña\" width=\"100%\" style=\"border-radius:12px;\"/></p>",
+        "rightCol": "<p><a href=\"/flota\">Ver Flota Disponible</a></p><p><img src=\"/content/dam/odyssey-eds/cerdena.jpg\" alt=\"Vista de Cerdeña\" width=\"100%\" style=\"border-radius:12px;\"/></p>",
         "subtitle": "Curated Charters"
       }
     }
   },
-  "odyssey-eds/destinos/mediterraneo/corcega": {
+  "/content/odyssey-eds/destinos/mediterraneo/corcega": {
     "section": {
       "hero_1": {
         "jcr:primaryType": "nt:unstructured",
@@ -444,7 +444,7 @@
           "guestsLabel@text",
           "guestsValue@text"
         ],
-        "image": "https://images.unsplash.com/photo-1563330232-5711470ce238?q=80&w=2070&auto=format&fit=crop",
+        "image": "/content/dam/odyssey-eds/corcega.jpg",
         "imageAlt": "Córcega",
         "eyebrow": "Odyssey Destinations",
         "text": "<h1>Córcega</h1><p>Explora aguas cristalinas y paisajes inolvidables en el corazón de MEDITERRANEO.</p>",
@@ -471,12 +471,12 @@
         "eyebrow": "01 — El Paraíso",
         "headline": "<h2>Descubre Córcega</h2>",
         "leftCol": "<p>Córcega es uno de los destinos más codiciados del mundo para el chárter de yates de lujo. Disfruta de un clima perfecto, gastronomía excepcional y la libertad de navegar a tu propio ritmo.</p>",
-        "rightCol": "<p><a href=\"/flota\">Ver Flota Disponible</a></p><p><img src=\"https://images.unsplash.com/photo-1563330232-5711470ce238?q=80&w=2070&auto=format&fit=crop\" alt=\"Vista de Córcega\" width=\"100%\" style=\"border-radius:12px;\"/></p>",
+        "rightCol": "<p><a href=\"/flota\">Ver Flota Disponible</a></p><p><img src=\"/content/dam/odyssey-eds/corcega.jpg\" alt=\"Vista de Córcega\" width=\"100%\" style=\"border-radius:12px;\"/></p>",
         "subtitle": "Curated Charters"
       }
     }
   },
-  "odyssey-eds/destinos/caribe/bahamas": {
+  "/content/odyssey-eds/destinos/caribe/bahamas": {
     "section": {
       "hero_1": {
         "jcr:primaryType": "nt:unstructured",
@@ -497,7 +497,7 @@
           "guestsLabel@text",
           "guestsValue@text"
         ],
-        "image": "https://images.unsplash.com/photo-1548574505-12caf0050b5b?q=80&w=2070&auto=format&fit=crop",
+        "image": "/content/dam/odyssey-eds/bahamas.jpg",
         "imageAlt": "Bahamas",
         "eyebrow": "Odyssey Destinations",
         "text": "<h1>Bahamas</h1><p>Explora aguas cristalinas y paisajes inolvidables en el corazón de CARIBE.</p>",
@@ -524,12 +524,12 @@
         "eyebrow": "01 — El Paraíso",
         "headline": "<h2>Descubre Bahamas</h2>",
         "leftCol": "<p>Bahamas es uno de los destinos más codiciados del mundo para el chárter de yates de lujo. Disfruta de un clima perfecto, gastronomía excepcional y la libertad de navegar a tu propio ritmo.</p>",
-        "rightCol": "<p><a href=\"/flota\">Ver Flota Disponible</a></p><p><img src=\"https://images.unsplash.com/photo-1548574505-12caf0050b5b?q=80&w=2070&auto=format&fit=crop\" alt=\"Vista de Bahamas\" width=\"100%\" style=\"border-radius:12px;\"/></p>",
+        "rightCol": "<p><a href=\"/flota\">Ver Flota Disponible</a></p><p><img src=\"/content/dam/odyssey-eds/bahamas.jpg\" alt=\"Vista de Bahamas\" width=\"100%\" style=\"border-radius:12px;\"/></p>",
         "subtitle": "Curated Charters"
       }
     }
   },
-  "odyssey-eds/destinos/caribe/islas-virgenes-britanicas": {
+  "/content/odyssey-eds/destinos/caribe/islas-virgenes-britanicas": {
     "section": {
       "hero_1": {
         "jcr:primaryType": "nt:unstructured",
@@ -550,7 +550,7 @@
           "guestsLabel@text",
           "guestsValue@text"
         ],
-        "image": "https://images.unsplash.com/photo-1590523741831-ab7e8b8f9c7f?q=80&w=2070&auto=format&fit=crop",
+        "image": "/content/dam/odyssey-eds/islas-virgenes-britanicas.jpg",
         "imageAlt": "Islas Vírgenes Británicas",
         "eyebrow": "Odyssey Destinations",
         "text": "<h1>Islas Vírgenes Británicas</h1><p>Explora aguas cristalinas y paisajes inolvidables en el corazón de CARIBE.</p>",
@@ -577,12 +577,12 @@
         "eyebrow": "01 — El Paraíso",
         "headline": "<h2>Descubre Islas Vírgenes Británicas</h2>",
         "leftCol": "<p>Islas Vírgenes Británicas es uno de los destinos más codiciados del mundo para el chárter de yates de lujo. Disfruta de un clima perfecto, gastronomía excepcional y la libertad de navegar a tu propio ritmo.</p>",
-        "rightCol": "<p><a href=\"/flota\">Ver Flota Disponible</a></p><p><img src=\"https://images.unsplash.com/photo-1590523741831-ab7e8b8f9c7f?q=80&w=2070&auto=format&fit=crop\" alt=\"Vista de Islas Vírgenes Británicas\" width=\"100%\" style=\"border-radius:12px;\"/></p>",
+        "rightCol": "<p><a href=\"/flota\">Ver Flota Disponible</a></p><p><img src=\"/content/dam/odyssey-eds/islas-virgenes-britanicas.jpg\" alt=\"Vista de Islas Vírgenes Británicas\" width=\"100%\" style=\"border-radius:12px;\"/></p>",
         "subtitle": "Curated Charters"
       }
     }
   },
-  "odyssey-eds/destinos/caribe/san-bartolome": {
+  "/content/odyssey-eds/destinos/caribe/san-bartolome": {
     "section": {
       "hero_1": {
         "jcr:primaryType": "nt:unstructured",
@@ -603,7 +603,7 @@
           "guestsLabel@text",
           "guestsValue@text"
         ],
-        "image": "https://images.unsplash.com/photo-1566904666324-4f85e5cb1594?q=80&w=2070&auto=format&fit=crop",
+        "image": "/content/dam/odyssey-eds/san-bartolome.jpg",
         "imageAlt": "San Bartolomé (St. Barths)",
         "eyebrow": "Odyssey Destinations",
         "text": "<h1>San Bartolomé (St. Barths)</h1><p>Explora aguas cristalinas y paisajes inolvidables en el corazón de CARIBE.</p>",
@@ -630,12 +630,12 @@
         "eyebrow": "01 — El Paraíso",
         "headline": "<h2>Descubre San Bartolomé (St. Barths)</h2>",
         "leftCol": "<p>San Bartolomé (St. Barths) es uno de los destinos más codiciados del mundo para el chárter de yates de lujo. Disfruta de un clima perfecto, gastronomía excepcional y la libertad de navegar a tu propio ritmo.</p>",
-        "rightCol": "<p><a href=\"/flota\">Ver Flota Disponible</a></p><p><img src=\"https://images.unsplash.com/photo-1566904666324-4f85e5cb1594?q=80&w=2070&auto=format&fit=crop\" alt=\"Vista de San Bartolomé (St. Barths)\" width=\"100%\" style=\"border-radius:12px;\"/></p>",
+        "rightCol": "<p><a href=\"/flota\">Ver Flota Disponible</a></p><p><img src=\"/content/dam/odyssey-eds/san-bartolome.jpg\" alt=\"Vista de San Bartolomé (St. Barths)\" width=\"100%\" style=\"border-radius:12px;\"/></p>",
         "subtitle": "Curated Charters"
       }
     }
   },
-  "odyssey-eds/destinos/caribe/islas-exumas": {
+  "/content/odyssey-eds/destinos/caribe/islas-exumas": {
     "section": {
       "hero_1": {
         "jcr:primaryType": "nt:unstructured",
@@ -656,7 +656,7 @@
           "guestsLabel@text",
           "guestsValue@text"
         ],
-        "image": "https://images.unsplash.com/photo-1604169542031-bb698cc25fce?q=80&w=2070&auto=format&fit=crop",
+        "image": "/content/dam/odyssey-eds/islas-exumas.jpg",
         "imageAlt": "Islas Exumas",
         "eyebrow": "Odyssey Destinations",
         "text": "<h1>Islas Exumas</h1><p>Explora aguas cristalinas y paisajes inolvidables en el corazón de CARIBE.</p>",
@@ -683,12 +683,12 @@
         "eyebrow": "01 — El Paraíso",
         "headline": "<h2>Descubre Islas Exumas</h2>",
         "leftCol": "<p>Islas Exumas es uno de los destinos más codiciados del mundo para el chárter de yates de lujo. Disfruta de un clima perfecto, gastronomía excepcional y la libertad de navegar a tu propio ritmo.</p>",
-        "rightCol": "<p><a href=\"/flota\">Ver Flota Disponible</a></p><p><img src=\"https://images.unsplash.com/photo-1604169542031-bb698cc25fce?q=80&w=2070&auto=format&fit=crop\" alt=\"Vista de Islas Exumas\" width=\"100%\" style=\"border-radius:12px;\"/></p>",
+        "rightCol": "<p><a href=\"/flota\">Ver Flota Disponible</a></p><p><img src=\"/content/dam/odyssey-eds/islas-exumas.jpg\" alt=\"Vista de Islas Exumas\" width=\"100%\" style=\"border-radius:12px;\"/></p>",
         "subtitle": "Curated Charters"
       }
     }
   },
-  "odyssey-eds/destinos/indico/maldivas": {
+  "/content/odyssey-eds/destinos/indico/maldivas": {
     "section": {
       "hero_1": {
         "jcr:primaryType": "nt:unstructured",
@@ -709,7 +709,7 @@
           "guestsLabel@text",
           "guestsValue@text"
         ],
-        "image": "https://images.unsplash.com/photo-1514282401047-d79a71a590e8?q=80&w=2070&auto=format&fit=crop",
+        "image": "/content/dam/odyssey-eds/maldivas.jpg",
         "imageAlt": "Maldivas",
         "eyebrow": "Odyssey Destinations",
         "text": "<h1>Maldivas</h1><p>Explora aguas cristalinas y paisajes inolvidables en el corazón de INDICO.</p>",
@@ -736,12 +736,12 @@
         "eyebrow": "01 — El Paraíso",
         "headline": "<h2>Descubre Maldivas</h2>",
         "leftCol": "<p>Maldivas es uno de los destinos más codiciados del mundo para el chárter de yates de lujo. Disfruta de un clima perfecto, gastronomía excepcional y la libertad de navegar a tu propio ritmo.</p>",
-        "rightCol": "<p><a href=\"/flota\">Ver Flota Disponible</a></p><p><img src=\"https://images.unsplash.com/photo-1514282401047-d79a71a590e8?q=80&w=2070&auto=format&fit=crop\" alt=\"Vista de Maldivas\" width=\"100%\" style=\"border-radius:12px;\"/></p>",
+        "rightCol": "<p><a href=\"/flota\">Ver Flota Disponible</a></p><p><img src=\"/content/dam/odyssey-eds/maldivas.jpg\" alt=\"Vista de Maldivas\" width=\"100%\" style=\"border-radius:12px;\"/></p>",
         "subtitle": "Curated Charters"
       }
     }
   },
-  "odyssey-eds/destinos/indico/seychelles": {
+  "/content/odyssey-eds/destinos/indico/seychelles": {
     "section": {
       "hero_1": {
         "jcr:primaryType": "nt:unstructured",
@@ -762,7 +762,7 @@
           "guestsLabel@text",
           "guestsValue@text"
         ],
-        "image": "https://images.unsplash.com/photo-1588698188168-3351d38890db?q=80&w=2070&auto=format&fit=crop",
+        "image": "/content/dam/odyssey-eds/seychelles.jpg",
         "imageAlt": "Seychelles",
         "eyebrow": "Odyssey Destinations",
         "text": "<h1>Seychelles</h1><p>Explora aguas cristalinas y paisajes inolvidables en el corazón de INDICO.</p>",
@@ -789,7 +789,7 @@
         "eyebrow": "01 — El Paraíso",
         "headline": "<h2>Descubre Seychelles</h2>",
         "leftCol": "<p>Seychelles es uno de los destinos más codiciados del mundo para el chárter de yates de lujo. Disfruta de un clima perfecto, gastronomía excepcional y la libertad de navegar a tu propio ritmo.</p>",
-        "rightCol": "<p><a href=\"/flota\">Ver Flota Disponible</a></p><p><img src=\"https://images.unsplash.com/photo-1588698188168-3351d38890db?q=80&w=2070&auto=format&fit=crop\" alt=\"Vista de Seychelles\" width=\"100%\" style=\"border-radius:12px;\"/></p>",
+        "rightCol": "<p><a href=\"/flota\">Ver Flota Disponible</a></p><p><img src=\"/content/dam/odyssey-eds/seychelles.jpg\" alt=\"Vista de Seychelles\" width=\"100%\" style=\"border-radius:12px;\"/></p>",
         "subtitle": "Curated Charters"
       }
     }

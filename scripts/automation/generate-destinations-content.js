@@ -37,8 +37,8 @@ const destinationStats = {
 
 function processDestinations(regionName, children) {
   children.forEach(dest => {
-    const destPath = `odyssey-eds/destinos/${regionName}/${dest.name}`;
-    const img = destinationImages[dest.name] || 'https://images.unsplash.com/photo-1500462006325-17730e23da91?q=80&w=2070&auto=format&fit=crop';
+    const destPath = `/content/odyssey-eds/destinos/${regionName}/${dest.name}`;
+    const img = `/content/dam/odyssey-eds/${dest.name}.jpg`;
     const stats = destinationStats[regionName] || { rutas: '10', barcos: '20', dias: '07' };
     
     content[destPath] = {
@@ -66,12 +66,16 @@ function processDestinations(regionName, children) {
           "sling:resourceType": "core/franklin/components/block/v1/block",
           "name": "manifesto",
           "model": "manifesto",
-          "modelFields": ["eyebrow@text","headline@richtext","leftCol@richtext","rightCol@richtext","subtitle@text"],
-          "eyebrow": "01 — El Paraíso",
-          "headline": `<h2>Descubre ${dest.title}</h2>`,
-          "leftCol": `<p>${dest.title} es uno de los destinos más codiciados del mundo para el chárter de yates de lujo. Disfruta de un clima perfecto, gastronomía excepcional y la libertad de navegar a tu propio ritmo.</p>`,
-          "rightCol": `<p><a href="/flota">Ver Flota Disponible</a></p><p><img src="${img}" alt="Vista de ${dest.title}" width="100%" style="border-radius:12px;"/></p>`,
-          "subtitle": "Curated Charters"
+          "modelFields": ["eyebrow@text","headline@richtext","subtitle@text","image1@reference","text1@richtext","image2@reference","text2@richtext","image3@reference","text3@richtext"],
+          "eyebrow": "01 — Manifiesto",
+          "headline": `<h2>Descubre la verdadera libertad en ${dest.title}</h2>`,
+          "subtitle": "Un viaje inigualable donde el tiempo se detiene y la exclusividad es la norma.",
+          "image1": `/content/dam/odyssey-eds/${dest.name}.jpg`,
+          "text1": `<p>Navega por las aguas de ${dest.title} con total privacidad. Nuestro servicio a bordo garantiza que cada momento sea excepcional.</p>`,
+          "image2": `/content/dam/odyssey-eds/ibiza.jpg`,
+          "text2": `<p>Disfruta de una gastronomía exquisita y un servicio 5 estrellas mientras contemplas los atardeceres más impresionantes del Mediterráneo.</p>`,
+          "image3": `/content/dam/odyssey-eds/bahamas.jpg`,
+          "text3": `<p>Explora rincones escondidos y calas secretas a las que solo se puede acceder por mar. Tu aventura soñada empieza aquí.</p>`
         }
       }
     };

@@ -508,21 +508,45 @@
         "valueType": "string"
       },
       {
-        "component": "richtext",
-        "name": "leftCol",
-        "label": "Left Column",
-        "valueType": "string"
-      },
-      {
-        "component": "richtext",
-        "name": "rightCol",
-        "label": "Right Column",
-        "valueType": "string"
-      },
-      {
         "component": "text",
         "name": "subtitle",
         "label": "Subtitle",
+        "valueType": "string"
+      },
+      {
+        "component": "reference",
+        "name": "image1",
+        "label": "Image 1",
+        "valueType": "string"
+      },
+      {
+        "component": "richtext",
+        "name": "text1",
+        "label": "Text 1",
+        "valueType": "string"
+      },
+      {
+        "component": "reference",
+        "name": "image2",
+        "label": "Image 2",
+        "valueType": "string"
+      },
+      {
+        "component": "richtext",
+        "name": "text2",
+        "label": "Text 2",
+        "valueType": "string"
+      },
+      {
+        "component": "reference",
+        "name": "image3",
+        "label": "Image 3",
+        "valueType": "string"
+      },
+      {
+        "component": "richtext",
+        "name": "text3",
+        "label": "Text 3",
         "valueType": "string"
       }
     ]
