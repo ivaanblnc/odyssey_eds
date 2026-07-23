@@ -5,8 +5,8 @@
 
 // Configure base URL based on environment (development vs production)
 
-// Go BFF URL (Local Development)
-const BFF_URL = 'https://cc2d3bed892b7ab6-185-202-163-198.serveousercontent.com/api/v1';
+// Go BFF URL (Production on Google Cloud Run)
+const BFF_URL = 'https://odyssey-bff-634298340538.us-central1.run.app/api/v1';
 
 /**
  * Gets the JWT auth token from localStorage
