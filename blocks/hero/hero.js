@@ -1,3 +1,5 @@
+import { createOptimizedPicture } from '../../scripts/aem.js';
+
 /**
  * loads and decorates the hero block
  * @param {Element} block The hero block element
@@ -40,18 +42,16 @@ export default function decorate(block) {
     block.append(picture);
   } else if (imageLink) {
     // Universal Editor provides a link to the image if it's external or not processed
-    const img = document.createElement('img');
-    img.src = imageLink.href;
-    img.alt = imageLink.textContent || '';
-    img.className = 'hero-bg';
-    block.append(img);
+    const pic = createOptimizedPicture(imageLink.href, imageLink.textContent || '', false);
+    pic.classList.add('hero-bg');
+    block.append(pic);
   } else if (textContent && (textContent.endsWith('.jpg') || textContent.endsWith('.png') || textContent.endsWith('.jpeg') || textContent.endsWith('.webp'))) {
     // Universal Editor provides raw string for internal DAM references
-    const img = document.createElement('img');
-    img.src = textContent;
-    img.alt = '';
-    img.className = 'hero-bg';
-    block.append(img);
+    const pic = createOptimizedPicture(textContent, '', false);
+    pic.classList.add('hero-bg');
+    const img = pic.querySelector('img');
+    if (img) img.className = 'hero-bg';
+    block.append(pic);
   }
 
   // 2. Gradient overlay

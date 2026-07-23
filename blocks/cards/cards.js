@@ -20,7 +20,9 @@ export default function decorate(block) {
         div.className = 'cards-card-image';
 
         if (isRawImage) {
-          div.innerHTML = `<picture><img src="${textContent}" alt=""></picture>`;
+          const pic = createOptimizedPicture(textContent, '', false, [{ width: '750' }]);
+          div.textContent = '';
+          div.append(pic);
         }
 
         if (isDestinations || isFleet) {

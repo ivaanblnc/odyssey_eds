@@ -93,6 +93,23 @@ async function uploadAsset(name, url) {
     } else {
       console.error(`❌ Failed to fix metadata for ${name}.jpg: ${metaRes.status}`);
     }
+
+    // Upload a thumbnail rendition so it appears in Asset Picker
+    console.log(`Uploading thumbnail for ${name}.jpg...`);
+    const rendFormData = new FormData();
+    rendFormData.append('file', blob, 'cq5dam.thumbnail.319.319.png');
+    const rendRes = await fetch(`${AEM_HOST}/api/assets/odyssey-eds/${name}.jpg/renditions/cq5dam.thumbnail.319.319.png`, {
+      method: 'POST',
+      headers: {
+        Authorization: authHeader
+      },
+      body: rendFormData
+    });
+    if (rendRes.ok) {
+      console.log(`✅ Uploaded thumbnail for ${name}.jpg`);
+    } else {
+      console.error(`❌ Failed to upload thumbnail for ${name}.jpg: ${rendRes.status} - ${await rendRes.text()}`);
+    }
   } catch (e) {
     console.error(`❌ Error processing ${name}:`, e.message);
   }
