@@ -27,7 +27,9 @@
 }
 
 /* ------------------------------------- */
+
 /* Variant: Destinations                 */
+
 /* ------------------------------------- */
 .cards.destinations > ul {
   grid-template-columns: 1fr;
@@ -50,7 +52,7 @@
   position: relative;
   aspect-ratio: 3 / 4;
   overflow: hidden;
-  background-color: rgba(15, 45, 74, 0.05); /* ocean/5 */
+  background-color: rgb(15 45 74 / 5%); /* ocean/5 */
   line-height: 0;
 }
 
@@ -82,7 +84,7 @@
 
 /* Body layout */
 .cards.destinations .cards-card-body {
-  margin: 20px 0 0 0;
+  margin: 20px 0 0;
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
@@ -114,7 +116,7 @@
 }
 
 .cards.destinations .dest-title {
-  margin: 8px 0 0 0;
+  margin: 8px 0 0;
   font-family: var(--heading-font-family);
   font-size: 28px;
   line-height: 1;
@@ -149,7 +151,7 @@
 }
 
 .cards.destinations .dest-price {
-  margin: 4px 0 0 0;
+  margin: 4px 0 0;
   font-family: var(--heading-font-family);
   font-size: 18px;
   color: var(--gold);
@@ -162,7 +164,9 @@
 }
 
 /* ------------------------------------- */
+
 /* Variant: Fleet                        */
+
 /* ------------------------------------- */
 .cards.fleet > ul {
   grid-template-columns: 1fr;
@@ -185,7 +189,7 @@
   position: relative;
   aspect-ratio: 4 / 5;
   overflow: hidden;
-  background-color: rgba(15, 45, 74, 0.05);
+  background-color: rgb(15 45 74 / 5%);
   line-height: 0;
 }
 
@@ -203,7 +207,7 @@
   font-family: var(--heading-font-family);
   font-size: 11px;
   font-style: italic;
-  color: rgba(255, 255, 255, 0.9);
+  color: rgb(255 255 255 / 90%);
   z-index: 2;
 }
 
@@ -221,7 +225,7 @@
   display: flex;
   align-items: center;
   gap: 8px;
-  background: rgba(255, 255, 255, 0.9);
+  background: rgb(255 255 255 / 90%);
   padding: 4px 10px;
   font-size: 9px;
   text-transform: uppercase;
@@ -249,7 +253,7 @@
 }
 
 .cards.fleet .cards-card-body {
-  margin: 24px 0 0 0;
+  margin: 24px 0 0;
 }
 
 .cards.fleet .dest-top {
@@ -317,7 +321,7 @@
 }
 
 .cards.fleet .fleet-specs dd {
-  margin: 4px 0 0 0;
+  margin: 4px 0 0;
   font-family: var(--heading-font-family);
   font-size: 15px;
   text-transform: none;

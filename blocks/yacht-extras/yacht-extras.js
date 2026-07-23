@@ -6,7 +6,7 @@ export default function decorate(block) {
   const eyebrowRow = rows[0];
   const titleRow = rows[1];
   const descRow = rows[2];
-  
+
   const eyebrowText = eyebrowRow.textContent.trim();
   const titleHtml = titleRow.innerHTML;
   const descHtml = descRow.innerHTML;
@@ -25,7 +25,7 @@ export default function decorate(block) {
 
   const title = document.createElement('h2');
   title.className = 'yacht-extras-title';
-  title.innerHTML = titleRow.children[0]?.innerHTML || titleText;
+  title.innerHTML = titleRow.children[0]?.innerHTML || titleHtml;
 
   const desc = document.createElement('div');
   desc.className = 'yacht-extras-description';
@@ -41,7 +41,7 @@ export default function decorate(block) {
   list.className = 'yacht-extras-list';
 
   // Process extra items (remaining rows)
-  for (let i = 3; i < rows.length; i++) {
+  for (let i = 3; i < rows.length; i += 1) {
     const row = rows[i];
     const cols = Array.from(row.children);
     if (cols.length >= 2) {

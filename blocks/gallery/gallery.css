@@ -21,6 +21,7 @@
   scroll-snap-type: x mandatory;
   gap: 8px;
   padding: 0 20px;
+
   /* hide scrollbar */
   scrollbar-width: none; 
 }
@@ -81,7 +82,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: rgba(15, 45, 74, 0.6);
+  background-color: rgb(15 45 74 / 60%);
   font-family: var(--heading-font-family);
   font-size: 24px;
   font-style: italic;
@@ -90,6 +91,7 @@
 
 @media (width < 900px) {
   /* On mobile, only show overlay on the last visible item */
+
   /* If the item doesn't have .gallery-overlay, but it's the last one? 
      We injected it into item-5. On mobile, they can swipe past item-5.
      To match lovable: "i === gallery.length - 1".

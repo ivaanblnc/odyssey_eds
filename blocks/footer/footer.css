@@ -1,7 +1,7 @@
 /* Footer styling inspired by Lovable */
 footer {
   background-color: var(--ocean);
-  color: rgba(255, 255, 255, 0.7);
+  color: rgb(255 255 255 / 70%);
 }
 
 footer .footer-container {
@@ -64,7 +64,7 @@ footer .footer-brand p {
   font-size: 13px;
   font-weight: 300;
   line-height: 1.6;
-  color: rgba(255, 255, 255, 0.6);
+  color: rgb(255 255 255 / 60%);
 }
 
 @media (width >= 900px) {
@@ -77,7 +77,7 @@ footer .footer-col-title {
   font-size: 10px;
   text-transform: uppercase;
   letter-spacing: 0.32em;
-  color: rgba(255, 255, 255, 0.5);
+  color: rgb(255 255 255 / 50%);
 }
 
 @media (width >= 900px) {
@@ -89,9 +89,9 @@ footer .footer-col-title {
 footer ul {
   list-style: none;
   padding: 0;
-  margin: 16px 0 0 0;
+  margin: 16px 0 0;
   font-size: 13px;
-  color: rgba(255, 255, 255, 0.8);
+  color: rgb(255 255 255 / 80%);
 }
 
 @media (width >= 900px) {
@@ -115,7 +115,7 @@ footer ul li.gold {
 }
 
 footer .footer-bottom {
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-top: 1px solid rgb(255 255 255 / 10%);
 }
 
 footer .footer-bottom-container {
@@ -129,7 +129,7 @@ footer .footer-bottom-container {
   font-size: 10px;
   text-transform: uppercase;
   letter-spacing: 0.3em;
-  color: rgba(255, 255, 255, 0.4);
+  color: rgb(255 255 255 / 40%);
 }
 
 @media (width >= 900px) {

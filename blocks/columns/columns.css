@@ -33,7 +33,9 @@
 }
 
 /* ------------------------------------- */
+
 /* Variant: Concierge                    */
+
 /* ------------------------------------- */
 .columns.concierge {
   margin: 0 auto;
@@ -91,7 +93,7 @@
 
 /* Headline */
 .columns.concierge h2 {
-  margin: 16px 0 0 0;
+  margin: 16px 0 0;
   font-family: var(--heading-font-family);
   font-size: 32px;
   line-height: 1.1;
@@ -113,7 +115,7 @@
 
 /* Description */
 .columns.concierge p {
-  margin: 24px 0 0 0;
+  margin: 24px 0 0;
   max-width: 448px;
   font-size: 14px;
   font-weight: 300;

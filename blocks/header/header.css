@@ -239,7 +239,7 @@ header nav[aria-expanded="true"] {
   display: flex;
   align-items: baseline;
   justify-content: space-between;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  border-bottom: 1px solid rgb(255 255 255 / 15%);
   padding: 24px 0;
   color: white;
   text-decoration: none;
@@ -271,7 +271,7 @@ header nav[aria-expanded="true"] {
   font-size: 10px;
   text-transform: uppercase;
   letter-spacing: 0.32em;
-  color: rgba(255, 255, 255, 0.6);
+  color: rgb(255 255 255 / 60%);
 }
 
 .mobile-nav-overlay .overlay-footer .footer-left .auth {
@@ -289,12 +289,13 @@ header nav[aria-expanded="true"] {
   font-style: italic;
   text-transform: none;
   letter-spacing: normal;
-  color: rgba(255, 255, 255, 0.7);
+  color: rgb(255 255 255 / 70%);
 }
 
 .hide-mobile {
   display: none;
 }
+
 @media (width >= 900px) {
   .hide-mobile {
     display: inline-block;

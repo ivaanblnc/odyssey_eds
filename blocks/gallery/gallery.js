@@ -22,11 +22,10 @@ export default function decorate(block) {
     }
 
     // Add overlay for the 5th item if there are more than 5 images total
-    // (Wait, actually Lovable just shows + X photos on the last one if we have more, or exactly on the 5th)
-    // The design shows a 5 image grid in desktop. If there are 5 or more, 5th gets overlay in desktop.
-    // Let's always just render 5 items in DOM to match the CSS grid perfectly, or we render all and hide > 5?
+    // (Lovable just shows + X photos on the last one if we have more, or exactly on the 5th)
+    // The design shows a 5 image grid in desktop. If 5 or more, 5th gets overlay in desktop.
     // Let's render all but in CSS we will hide .item-6 and above.
-    
+
     if (idx === 4 && rows.length > 5) {
       const overlay = document.createElement('div');
       overlay.className = 'gallery-overlay';

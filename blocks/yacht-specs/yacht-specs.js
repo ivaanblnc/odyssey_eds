@@ -5,7 +5,7 @@ export default function decorate(block) {
   // Extract Eyebrow and Title (first two rows)
   const eyebrowRow = rows[0];
   const titleRow = rows[1];
-  
+
   const eyebrowText = eyebrowRow.textContent.trim();
   const titleText = titleRow.textContent.trim();
 
@@ -25,7 +25,7 @@ export default function decorate(block) {
   grid.className = 'yacht-specs-grid';
 
   // Process spec items (remaining rows)
-  for (let i = 2; i < rows.length; i++) {
+  for (let i = 2; i < rows.length; i += 1) {
     const row = rows[i];
     const cols = Array.from(row.children);
     if (cols.length >= 2) {
@@ -51,7 +51,7 @@ export default function decorate(block) {
   // Clear original block and append new structure
   block.textContent = '';
   block.append(wrapper);
-  
+
   // Section background color should ideally be handled by Section Metadata in AEM,
   // but if we want to force the Mist background, we can add a class to the block itself.
   block.classList.add('bg-mist');

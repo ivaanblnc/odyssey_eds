@@ -1,7 +1,7 @@
 .yacht-header {
   margin: 0 auto;
   max-width: var(--content-max-width);
-  padding: 32px 20px 32px;
+  padding: 32px 20px;
 }
 
 @media (width >= 900px) {
