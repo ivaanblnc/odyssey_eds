@@ -1,3 +1,4 @@
+
 import dotenv from 'dotenv';
 import path from 'path';
 import { fileURLToPath } from 'url';
@@ -18,7 +19,7 @@ const parents = [
   {
     path: '/content/odyssey-eds/destinos/mediterraneo',
     hero: {
-      image: '/content/dam/odyssey-eds/mallorca.png',
+      image: '/content/dam/odyssey-eds/mallorca.jpg',
       imageAlt: 'Mar Mediterráneo',
       eyebrow: 'Destinos Odyssey',
       title: 'Mar Mediterráneo',
@@ -29,8 +30,8 @@ const parents = [
       guestLabel: 'Clima', guestVal: 'Óptimo'
     },
     manifesto: {
-      image: '/content/dam/odyssey-eds/monaco.png',
-      text: '<h2>La Cuna del Yachting</h2><p>El Mediterráneo ofrece una combinación inigualable de historia, gastronomía y lujo. Cada puerto cuenta una historia diferente, invitándote a descubrir sus secretos desde la cubierta de tu yate privado.</p>'
+      image: '/content/dam/odyssey-eds/monaco.jpg',
+      text: '<h1>La Cuna del Yachting</h1><p>El Mediterráneo ofrece una combinación inigualable de historia, gastronomía y lujo. Cada puerto cuenta una historia diferente, invitándote a descubrir sus secretos desde la cubierta de tu yate privado.</p>'
     },
     destinations: [
       { id: 'ibiza', name: 'Ibiza', region: 'Baleares', price: '12.000 €' },
@@ -47,7 +48,7 @@ const parents = [
   {
     path: '/content/odyssey-eds/destinos/caribe',
     hero: {
-      image: '/content/dam/odyssey-eds/bahamas.png',
+      image: '/content/dam/odyssey-eds/varied/caribe_hero.jpg',
       imageAlt: 'El Caribe',
       eyebrow: 'Destinos Odyssey',
       title: 'El Caribe',
@@ -58,8 +59,11 @@ const parents = [
       guestLabel: 'Clima', guestVal: 'Tropical'
     },
     manifesto: {
-      image: '/content/dam/odyssey-eds/islas-exumas.png',
-      text: '<h2>El Paraíso Tropical</h2><p>Sumérgete en un entorno donde el tiempo parece detenerse. Explora arrecifes de coral vibrantes y relájate en playas desiertas accesibles únicamente por mar.</p>'
+      image: '/content/dam/odyssey-eds/varied/caribe_manifesto.jpg',
+      eyebrow: '01 — El Paraíso Tropical',
+      headline: '<h1>Un Mar de Posibilidades</h1>',
+      leftCol: '<p>Sumérgete en un entorno donde el tiempo parece detenerse. Explora arrecifes de coral vibrantes y relájate en playas desiertas accesibles únicamente por mar.</p>',
+      rightCol: '<p><picture><img src="/content/dam/odyssey-eds/varied/caribe_manifesto.jpg" alt="Manifesto Image"></picture></p>'
     },
     destinations: [
       { id: 'bahamas', name: 'Bahamas', region: 'Atlántico', price: '20.000 €' },
@@ -71,7 +75,7 @@ const parents = [
   {
     path: '/content/odyssey-eds/destinos/indico',
     hero: {
-      image: '/content/dam/odyssey-eds/maldivas.png',
+      image: '/content/dam/odyssey-eds/maldivas.jpg',
       imageAlt: 'Océano Índico',
       eyebrow: 'Destinos Odyssey',
       title: 'Océano Índico',
@@ -82,8 +86,8 @@ const parents = [
       guestLabel: 'Clima', guestVal: 'Ecuatorial'
     },
     manifesto: {
-      image: '/content/dam/odyssey-eds/seychelles.png',
-      text: '<h2>Santuarios Ocultos</h2><p>Experimenta el aislamiento total y reconecta con la naturaleza en su estado más prístino. Un destino reservado para los viajeros más exigentes.</p>'
+      image: '/content/dam/odyssey-eds/seychelles.jpg',
+      text: '<h1>Santuarios Ocultos</h1><p>Experimenta el aislamiento total y reconecta con la naturaleza en su estado más prístino. Un destino reservado para los viajeros más exigentes.</p>'
     },
     destinations: [
       { id: 'maldivas', name: 'Maldivas', region: 'Asia', price: '35.000 €' },
@@ -139,11 +143,12 @@ async function updateParentContent(parentData) {
   await updateNode(heroPath, {
     "jcr:primaryType": "nt:unstructured",
     "sling:resourceType": "core/franklin/components/block/v1/block",
+    "name": "hero",
     "model": "hero",
     "image": hero.image,
     "imageAlt": hero.imageAlt,
     "eyebrow": hero.eyebrow,
-    "content": `<h2>${hero.title}</h2><p>${hero.content}</p>`,
+    "content": `<h1>${hero.title}</h1><p>${hero.content}</p>`,
     "destinationLabel": hero.destLabel,
     "destinationValue": hero.destVal,
     "routesLabel": hero.routesLabel,
@@ -160,9 +165,14 @@ async function updateParentContent(parentData) {
   await updateNode(manifestoPath, {
     "jcr:primaryType": "nt:unstructured",
     "sling:resourceType": "core/franklin/components/block/v1/block",
+    "name": "manifesto",
     "model": "manifesto",
-    "image": manifesto.image,
-    "text": manifesto.text
+    "modelFields": ["eyebrow@text", "headline@richtext", "leftCol@richtext", "rightCol@richtext", "subtitle@text"],
+    "eyebrow": manifesto.eyebrow,
+    "headline": manifesto.headline,
+    "leftCol": manifesto.leftCol,
+    "rightCol": manifesto.rightCol,
+    "subtitle": ""
   });
   await delay(200);
 
@@ -171,26 +181,44 @@ async function updateParentContent(parentData) {
   await updateNode(cardsPath, {
     "jcr:primaryType": "nt:unstructured",
     "sling:resourceType": "core/franklin/components/block/v1/block",
-    "model": "cards",
+    "name": "cards",
+    "filter": "cards",
     "classes": "destinations"
   });
   await delay(200);
 
-  // 4. Cards Items
-  for (let index = 0; index < destinations.length; index++) {
-    const dest = destinations[index];
-    const destUrl = `${pagePath}/${dest.id}`;
-    const textHtml = `<p>${dest.region}</p><h3><a href="${destUrl}">${dest.name}</a></h3><p>Desde</p><p>${dest.price}</p>`;
-    
-    const itemPath = `${cardsPath}/item_${index + 1}`;
-    await updateNode(itemPath, {
-      "jcr:primaryType": "nt:unstructured",
-      "sling:resourceType": "core/franklin/components/block/v1/block/item",
-      "image": `/content/dam/odyssey-eds/${dest.id}.png`,
-      "text": textHtml
-    });
-    await delay(100);
-  }
+  const imagePool = [
+      '/content/dam/odyssey-eds/varied/unique_yacht_1.jpg',
+      '/content/dam/odyssey-eds/varied/unique_yacht_2.jpg',
+      '/content/dam/odyssey-eds/varied/unique_yacht_3.jpg',
+      '/content/dam/odyssey-eds/varied/unique_yacht_4.jpg'
+    ];
+
+    // 4. Cards Items
+    for (let i = 0; i < destinations.length; i++) {
+      const child = destinations[i];
+      const itemPath = `${cardsPath}/item_${i + 1}`;
+      const randomImage = imagePool[i % imagePool.length];
+
+      await updateNode(itemPath, {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "core/franklin/components/block/v1/block/item",
+        "model": "card",
+        "modelFields": ["image@reference", "text@richtext"],
+        "image": randomImage,
+        "text": `
+        <p>${hero.title}</p>
+        <h3><a href="${pagePath}/${child.id}">${child.name}</a></h3>
+        <ul>
+          <li>Región: ${child.region}</li>
+          <li>Precio: ${child.price}</li>
+        </ul>
+        <p>Desde / sem.</p>
+        <p>${child.price} / semana</p>
+      `
+      });
+      await delay(100);
+    }
 }
 
 async function run() {
