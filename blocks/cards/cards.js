@@ -123,7 +123,13 @@ export default function decorate(block) {
   }
 
   ul.querySelectorAll('picture > img').forEach((img) => {
-    const optimizedPic = createOptimizedPicture(img.src, img.alt, false, [{ width: '750' }]);
+    let imgSrc = img.getAttribute('src');
+    if (imgSrc && imgSrc.startsWith('/adobe/dynamicmedia')) {
+      imgSrc = `https://author-p34633-e913315.adobeaemcloud.com${imgSrc}`;
+    } else {
+      imgSrc = img.src;
+    }
+    const optimizedPic = createOptimizedPicture(imgSrc, img.alt, false, [{ width: '750' }]);
     moveInstrumentation(img, optimizedPic.querySelector('img'));
     img.closest('picture').replaceWith(optimizedPic);
   });

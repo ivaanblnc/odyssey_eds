@@ -38,6 +38,10 @@ export default function decorate(block) {
   // 1. Background image
   const textContent = imageRow?.textContent?.trim();
   if (picture) {
+    const img = picture.querySelector('img');
+    if (img && img.getAttribute('src') && img.getAttribute('src').startsWith('/adobe/dynamicmedia')) {
+      img.src = `https://author-p34633-e913315.adobeaemcloud.com${img.getAttribute('src')}`;
+    }
     picture.classList.add('hero-bg');
     block.append(picture);
   } else if (imageLink) {
